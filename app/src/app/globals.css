@@ -1,8 +1,32 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Default Light Mode (Matches Logo) */
+  --background: #F5F0E6; /* Cream */
+  --foreground: #1a1a1a; /* Ink */
+  
+  /* Brand Colors */
+  --brand-cream: #F5F0E6;
+  --brand-forest: #2D5A27;
+  --brand-hoops: #FF8C00;
+  --brand-ink: #1a1a1a;
+  
+  /* UI Colors */
+  --border-color: #1a1a1a;
+}
+
+.dark {
+  /* Dark Mode (Inverted) */
+  --background: #000000; /* Pure Black */
+  --foreground: #F5F0E6; /* Cream Text */
+  
+  /* Brand colors stay constant so utility classes mean what they say */
+  --brand-ink: #1a1a1a; 
+  --brand-cream: #F5F0E6;
+  
+  --border-color: #F5F0E6;
 }
 
 @theme inline {
@@ -10,19 +34,24 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  
+  /* New Fonts */
+  --font-display: var(--font-anton);
+  --font-serif: var(--font-dm-serif);
+  
+  /* New Colors */
+  --color-cream: var(--brand-cream);
+  --color-forest: var(--brand-forest);
+  --color-hoops: var(--brand-hoops);
+  --color-ink: var(--brand-ink);
+  
+  --color-border: var(--border-color);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans);
 }
 
 @keyframes shimmer {

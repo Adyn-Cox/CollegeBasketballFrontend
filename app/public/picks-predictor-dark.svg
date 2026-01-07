@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <style>
+      .paper { fill: #1a1a1a; }
+      .ink-fill { fill: #F5F0E6; }
+      .ink-stroke { stroke: #F5F0E6; }
+    </style>
+    <filter id="rough" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="5" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="hardShadow">
+      <feDropShadow dx="5" dy="5" stdDeviation="0" flood-color="#000000" flood-opacity="1"/>
+    </filter>
+    <filter id="redShadow">
+      <feDropShadow dx="4" dy="4" stdDeviation="0" flood-color="#8B0000" flood-opacity="1"/>
+    </filter>
+  </defs>
+  
+  <!-- Dark paper background -->
+  <rect width="500" height="500" class="paper"/>
+  
+  <!-- Subtle ink stains (lighter in dark mode) -->
+  <ellipse cx="400" cy="100" rx="50" ry="35" class="ink-fill" opacity="0.02" transform="rotate(-20 400 100)"/>
+  <ellipse cx="80" cy="420" rx="70" ry="45" fill="#2D5A27" opacity="0.04" transform="rotate(15 80 420)"/>
+  
+  <!-- Hand-drawn double border -->
+  <g class="ink-stroke" stroke-width="4" fill="none" filter="url(#rough)">
+    <path d="M38,42 L460,38 L462,462 L40,460 Z"/>
+    <path d="M52,55 L447,52 L449,448 L54,446 Z"/>
+  </g>
+  
+  <!-- Target/crosshair behind ball -->
+  <g stroke="#2D5A27" stroke-width="3" fill="none" opacity="0.4" filter="url(#rough)">
+    <circle cx="250" cy="195" r="130"/>
+    <circle cx="250" cy="195" r="100"/>
+    <circle cx="250" cy="195" r="70"/>
+    <line x1="250" y1="50" x2="250" y2="340"/>
+    <line x1="105" y1="195" x2="395" y2="195"/>
+  </g>
+  
+  <!-- Basketball with hard shadow -->
+  <g filter="url(#hardShadow)">
+    <circle cx="253" cy="198" r="85" fill="#FF5722"/>
+    <circle cx="250" cy="195" r="85" fill="#FF8C00"/>
+  </g>
+  
+  <!-- Basketball lines - marker style -->
+  <g class="ink-stroke" stroke-width="7" fill="none" stroke-linecap="round" filter="url(#rough)">
+    <path d="M250,110 C285,170 285,220 250,280"/>
+    <path d="M165,195 C205,165 295,165 335,195"/>
+    <path d="M182,125 C215,180 215,210 182,265"/>
+    <path d="M318,125 C285,180 285,210 318,265"/>
+  </g>
+  
+  <!-- Checkmark "called it" stamp -->
+  <g transform="translate(340, 120) rotate(15)" filter="url(#rough)">
+    <circle cx="0" cy="0" r="35" fill="none" stroke="#2D5A27" stroke-width="4"/>
+    <path d="M-15,0 L-5,12 L18,-15" stroke="#2D5A27" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Speed/motion lines -->
+  <g class="ink-stroke" stroke-width="5" stroke-linecap="round" filter="url(#rough)">
+    <line x1="55" y1="160" x2="125" y2="165"/>
+    <line x1="65" y1="190" x2="130" y2="195"/>
+    <line x1="50" y1="220" x2="125" y2="225"/>
+    <line x1="70" y1="250" x2="120" y2="248"/>
+  </g>
+  
+  <!-- Main text - PICKS -->
+  <g filter="url(#hardShadow)">
+    <text x="250" y="385" text-anchor="middle" class="ink-fill" font-family="'Arial Black', 'Impact', sans-serif" font-size="80" font-weight="900" letter-spacing="-3" filter="url(#rough)">PICKS</text>
+  </g>
+  
+  <!-- Underline scrawl -->
+  <path d="M95,400 Q180,418 250,398 Q320,378 405,405" stroke="#2D5A27" stroke-width="4" fill="none" filter="url(#rough)"/>
+  
+  <!-- Subtitle -->
+  <text x="250" y="440" text-anchor="middle" class="ink-fill" font-family="'Georgia', serif" font-size="16" font-style="italic" filter="url(#rough)">lock in your predictions</text>
+  
+  <!-- Corner marks - green for "go" -->
+  <g fill="#2D5A27" filter="url(#rough)">
+    <polygon points="60,60 90,60 60,90"/>
+    <polygon points="410,60 440,60 440,90"/>
+    <polygon points="60,410 60,440 90,440"/>
+    <polygon points="440,410 440,440 410,440"/>
+  </g>
+  
+  <!-- Scattered prediction symbols -->
+  <g class="ink-fill" font-family="'Courier New', monospace" font-weight="bold" opacity="0.12" filter="url(#rough)">
+    <text x="415" y="175" font-size="28" transform="rotate(10 415 175)">W</text>
+    <text x="75" y="320" font-size="24" transform="rotate(-12 75 320)">+3.5</text>
+    <text x="390" y="320" font-size="22" transform="rotate(8 390 320)">OVER</text>
+    <text x="85" y="130" font-size="20" transform="rotate(-8 85 130)">ML</text>
+  </g>
+  
+  <!-- Arrow pointing at ball - "this is the pick" -->
+  <g filter="url(#rough)">
+    <path d="M380,280 L340,240" class="ink-stroke" stroke-width="4" fill="none"/>
+    <polygon points="340,240 355,248 348,262" class="ink-fill"/>
+    <text x="395" y="300" class="ink-fill" font-family="'Courier New', monospace" font-size="11" transform="rotate(5 395 300)">LOCK</text>
+  </g>
+  
+  <!-- Tape strips -->
+  <g opacity="0.25">
+    <rect x="20" y="20" width="55" height="18" fill="#F5DEB3" transform="rotate(-45 47 29)"/>
+    <rect x="425" y="20" width="55" height="18" fill="#F5DEB3" transform="rotate(45 452 29)"/>
+  </g>
+  
+  <!-- Registration marks -->
+  <g class="ink-stroke" stroke-width="1" opacity="0.25">
+    <line x1="18" y1="250" x2="32" y2="250"/>
+    <line x1="25" y1="243" x2="25" y2="257"/>
+    <line x1="468" y1="250" x2="482" y2="250"/>
+    <line x1="475" y1="243" x2="475" y2="257"/>
+    <circle cx="25" cy="250" r="7" fill="none"/>
+    <circle cx="475" cy="250" r="7" fill="none"/>
+  </g>
+  
+  <!-- Edition stamp -->
+  <text x="250" y="478" text-anchor="middle" class="ink-fill" font-family="'Courier New', monospace" font-size="9" opacity="0.35">EST. 2024 — CALL YOUR SHOT</text>
+</svg>

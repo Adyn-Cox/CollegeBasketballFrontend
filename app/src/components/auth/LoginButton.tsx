@@ -51,7 +51,7 @@ export function LoginButton() {
       <div className="space-y-3 w-full">
         <button
           disabled
-          className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-zinc-800 px-5 text-zinc-400 opacity-50 cursor-not-allowed border border-zinc-700"
+          className="flex h-12 w-full items-center justify-center gap-2 bg-cream border-2 border-ink px-5 text-ink opacity-50 cursor-not-allowed font-sans font-bold tracking-wide dark:bg-black dark:border-cream dark:text-cream"
         >
           Loading...
         </button>
@@ -64,7 +64,7 @@ export function LoginButton() {
       <button
         onClick={() => handleLogin('google')}
         disabled={!!loading}
-        className="flex h-12 w-full items-center justify-center gap-3 rounded-full bg-white px-5 text-black hover:bg-zinc-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed font-medium"
+        className="flex h-12 w-full items-center justify-center gap-3 bg-cream border-2 border-ink px-5 text-ink hover:bg-zinc-50 transition-all disabled:opacity-50 disabled:cursor-not-allowed font-sans font-bold tracking-wide shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none dark:bg-black dark:border-cream dark:text-cream dark:hover:bg-zinc-900 dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]"
       >
         {loading === 'google' ? (
           'Connecting...'
@@ -96,7 +96,7 @@ export function LoginButton() {
       <button
         onClick={() => handleLogin('azure')}
         disabled={!!loading}
-        className="flex h-12 w-full items-center justify-center gap-3 rounded-full bg-[#2F2F2F] border border-zinc-700 px-5 text-white hover:bg-zinc-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed font-medium"
+        className="flex h-12 w-full items-center justify-center gap-3 bg-ink border-2 border-hoops px-5 text-cream hover:border-hoops hover:bg-zinc-900 transition-all disabled:opacity-50 disabled:cursor-not-allowed font-sans font-bold tracking-wide shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none dark:bg-cream dark:border-hoops dark:text-ink dark:hover:bg-zinc-100 dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]"
       >
         {loading === 'azure' ? (
           'Connecting...'
