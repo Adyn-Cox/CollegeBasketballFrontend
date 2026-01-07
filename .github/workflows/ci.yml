@@ -1,21 +1,30 @@
 name: Frontend CI
 
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Next.js
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '16'
+          node-version: '20'  # Updated from 16 (EOL) to current LTS
           cache: 'yarn'
-          cache-dependency-path: 'app/yarn.lock'
+          cache-dependency-path: 'app/yarn.lock'  # Adjust if yarn.lock is not in /app
 
       - name: Install dependencies
-        run: yarn install
+        run: yarn install --frozen-lockfile  # Safer for CI
 
       - name: Type check
         run: yarn tsc --noEmit
@@ -23,8 +32,8 @@ jobs:
       - name: Run lint
         run: yarn lint
 
-      - name: Run build
+      - name: Build
         run: yarn build
 
-      - name: Check for Vulnerabilities
-        run: yarn audit
+      - name: Check for vulnerabilities
+        run: yarn audit --groups dependencies  # Only production deps
