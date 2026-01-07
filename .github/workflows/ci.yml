@@ -24,16 +24,21 @@ jobs:
           cache-dependency-path: 'app/yarn.lock'  # Adjust if yarn.lock is not in /app
 
       - name: Install dependencies
+        working-directory: app
         run: yarn install --frozen-lockfile  # Safer for CI
 
       - name: Type check
+        working-directory: app
         run: yarn tsc --noEmit
 
       - name: Run lint
+        working-directory: app
         run: yarn lint
 
       - name: Build
+        working-directory: app
         run: yarn build
 
       - name: Check for vulnerabilities
+        working-directory: app
         run: yarn audit --groups dependencies  # Only production deps
