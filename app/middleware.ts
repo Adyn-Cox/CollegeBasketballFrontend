@@ -38,7 +38,23 @@ export async function middleware(request: NextRequest) {
   )
 
   // Refresh session if expired - required for Server Components
-  await supabase.auth.getUser()
+  const {
+    data: { user },
+  } = await supabase.auth.getUser()
+
+  const pathname = request.nextUrl.pathname
+
+  // Define public routes that don't require authentication
+  // Everything else is protected!
+  const isPublicRoute = pathname === '/' || pathname.startsWith('/auth/callback')
+
+  // If user is not authenticated and trying to access a protected route
+  if (!user && !isPublicRoute) {
+    const url = request.nextUrl.clone()
+    url.pathname = '/'
+    url.searchParams.set('error', 'session_expired')
+    return NextResponse.redirect(url)
+  }
 
   return response
 }
