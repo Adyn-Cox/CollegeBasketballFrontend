@@ -18,6 +18,7 @@ import {
 import { User } from '@supabase/supabase-js'
 import { useSupabaseClient } from '@/lib/supabase/client'
 import { backendLogout } from '@/lib/api/auth'
+import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import { ThemeToggle } from './ThemeToggle'
 
@@ -29,11 +30,24 @@ interface DashboardProps {
   user: User
 }
 
+interface Team {
+  id: string
+  name: string
+  logo?: string
+}
+
+interface Prediction {
+  id: string
+  homeTeam: string
+  awayTeam: string
+  predictedScore?: string
+}
+
 export function Dashboard({ user }: DashboardProps) {
   const [isLoading, setIsLoading] = useState(true)
-  const [favoriteTeams, setFavoriteTeams] = useState<any[]>([])
-  const [todayPredictions, setTodayPredictions] = useState<any[]>([])
-  const [predictionAccuracy, setPredictionAccuracy] = useState(0)
+  const [favoriteTeams] = useState<Team[]>([])
+  const [todayPredictions] = useState<Prediction[]>([])
+  const [predictionAccuracy] = useState(0)
   const supabase = useSupabaseClient()
   const router = useRouter()
 
@@ -98,15 +112,17 @@ export function Dashboard({ user }: DashboardProps) {
     <div className="hidden md:flex flex-col w-64 fixed left-0 top-0 bottom-0 bg-cream border-r-2 border-ink p-6 z-30 dark:bg-black dark:border-cream">
       <div className="flex items-center gap-3 mb-12 px-2">
         <div className="w-12 h-12 border-2 border-ink bg-white p-1 relative group transition-transform hover:scale-105 duration-300 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] dark:border-cream dark:bg-black">
-          <img 
+          <Image 
             src="/picks-predictor-light.svg" 
             alt="Logo" 
-            className="w-full h-full object-contain dark:hidden"
+            fill
+            className="object-contain dark:hidden"
           />
-          <img 
+          <Image 
             src="/picks-predictor-dark.svg" 
             alt="Logo" 
-            className="w-full h-full object-contain hidden dark:block"
+            fill
+            className="object-contain hidden dark:block"
           />
         </div>
         <div className="flex flex-col">

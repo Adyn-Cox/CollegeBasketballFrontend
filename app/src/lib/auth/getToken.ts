@@ -2,6 +2,7 @@
 
 import { useSupabaseClient } from '@/lib/supabase/client'
 import { useEffect, useState } from 'react'
+import type { AuthChangeEvent, Session } from '@supabase/supabase-js'
 
 /**
  * Retrieves the current session access token from Supabase
@@ -24,7 +25,7 @@ export function useToken() {
 
     const {
       data: { subscription },
-    } = supabase.auth.onAuthStateChange((_event, session) => {
+    } = supabase.auth.onAuthStateChange((_event: AuthChangeEvent, session: Session | null) => {
       setToken(session?.access_token ?? null)
     })
 
@@ -41,7 +42,7 @@ export function useToken() {
  */
 export function useSession() {
   const supabase = useSupabaseClient()
-  const [session, setSession] = useState<any>(null)
+  const [session, setSession] = useState<Session | null>(null)
 
   useEffect(() => {
     const getSession = async () => {
@@ -55,7 +56,7 @@ export function useSession() {
 
     const {
       data: { subscription },
-    } = supabase.auth.onAuthStateChange((_event, newSession) => {
+    } = supabase.auth.onAuthStateChange((_event: AuthChangeEvent, newSession: Session | null) => {
       setSession(newSession)
     })
 

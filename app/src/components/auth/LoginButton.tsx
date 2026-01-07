@@ -16,7 +16,14 @@ export function LoginButton() {
 
     try {
       setLoading(provider)
-      const options: any = {
+      const options: {
+        redirectTo: string
+        scopes?: string
+        queryParams?: {
+          access_type: string
+          prompt: string
+        }
+      } = {
         redirectTo: `${window.location.origin}/auth/callback`,
       }
 
