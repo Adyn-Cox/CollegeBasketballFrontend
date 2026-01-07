@@ -3,26 +3,23 @@
 import { LoginButton } from "@/components/auth/LoginButton";
 import { useSupabaseClient } from "@/lib/supabase/client";
 import { useSearchParams, useRouter } from "next/navigation";
-import { useEffect, useState, Suspense } from "react";
+import { useEffect, useState, Suspense, useMemo } from "react";
 import type { Session, AuthChangeEvent } from "@supabase/supabase-js";
+import Image from "next/image";
 
 function LoginContent() {
   const supabase = useSupabaseClient();
   const searchParams = useSearchParams();
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(true);
-  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
-  // Check for error query params
-  useEffect(() => {
+  // Derive error message from search params directly during render
+  const errorMessage = useMemo(() => {
     const error = searchParams.get('error');
-    if (error === 'auth_failed') {
-      setErrorMessage('Authentication failed. Please try again.');
-    } else if (error === 'backend_auth_failed') {
-      setErrorMessage('Failed to connect to server. Please try again.');
-    } else if (error === 'session_expired') {
-      setErrorMessage('Your session has expired. Please sign in again.');
-    }
+    if (error === 'auth_failed') return 'Authentication failed. Please try again.';
+    if (error === 'backend_auth_failed') return 'Failed to connect to server. Please try again.';
+    if (error === 'session_expired') return 'Your session has expired. Please sign in again.';
+    return null;
   }, [searchParams]);
 
   useEffect(() => {
@@ -65,15 +62,12 @@ function LoginContent() {
 
       <main className="flex min-h-screen w-full max-w-md flex-col items-center justify-center p-8 text-center relative z-10">
         <div className="w-48 h-48 border-4 border-ink bg-white p-2 relative group transition-transform hover:scale-105 duration-500 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:border-cream dark:bg-black dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)]">
-          <img 
-            src="/picks-predictor-light.svg" 
-            alt="Picks Predictor Logo" 
-            className="w-full h-full object-contain dark:hidden"
-          />
-          <img 
-            src="/picks-predictor-dark.svg" 
-            alt="Picks Predictor Logo" 
-            className="w-full h-full object-contain hidden dark:block"
+          <Image 
+            src="https://images.pexels.com/photos/220383/pexels-photo-220383.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="Basketball Arena"
+            fill
+            className="object-cover"
+            priority
           />
         </div>
         

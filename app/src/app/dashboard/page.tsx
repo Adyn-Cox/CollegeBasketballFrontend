@@ -3,7 +3,7 @@
 import { Dashboard } from "@/components/Dashboard";
 import { useSupabaseClient } from "@/lib/supabase/client";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import type { User, Session, AuthChangeEvent } from "@supabase/supabase-js";
 import { backendLogin, backendRefresh, isAuthError } from "@/lib/api/auth";
 
@@ -15,13 +15,13 @@ export default function DashboardPage() {
   const [isVerifying, setIsVerifying] = useState(false);
 
   // Redirect to login page
-  const redirectToLogin = (error?: string) => {
+  const redirectToLogin = useCallback((error?: string) => {
     const params = error ? `?error=${error}` : '';
     router.push(`/${params}`);
-  };
+  }, [router]);
 
   // Verify session with backend
-  const verifyWithBackend = async (accessToken: string, refreshToken: string): Promise<boolean> => {
+  const verifyWithBackend = useCallback(async (accessToken: string, refreshToken: string): Promise<boolean> => {
     try {
       await backendLogin(accessToken, refreshToken);
       return true;
@@ -31,10 +31,10 @@ export default function DashboardPage() {
       }
       return false;
     }
-  };
+  }, []);
 
   // Attempt to refresh tokens
-  const attemptRefresh = async (refreshToken: string): Promise<boolean> => {
+  const attemptRefresh = useCallback(async (refreshToken: string): Promise<boolean> => {
     try {
       const newTokens = await backendRefresh(refreshToken);
       
@@ -53,7 +53,7 @@ export default function DashboardPage() {
       }
       return false;
     }
-  };
+  }, [supabase]);
 
   useEffect(() => {
     if (!supabase) return;
@@ -126,7 +126,7 @@ export default function DashboardPage() {
     });
 
     return () => subscription.unsubscribe();
-  }, [supabase]);
+  }, [supabase, attemptRefresh, redirectToLogin, verifyWithBackend]);
 
   if (isLoading) {
     return (

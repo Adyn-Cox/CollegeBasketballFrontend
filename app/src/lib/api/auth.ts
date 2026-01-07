@@ -6,7 +6,7 @@
  * by redirecting to login on any error.
  */
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5001'
 
 export interface LoginResponse {
   message: string
@@ -40,23 +40,44 @@ export async function backendLogin(
   accessToken: string,
   refreshToken: string
 ): Promise<LoginResponse> {
-  const response = await fetch(`${API_BASE_URL}/api/auth/login/`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      access_token: accessToken,
-      refresh_token: refreshToken,
-    }),
-  })
+  const url = `${API_BASE_URL}/api/auth/login/`
+  console.log(`Calling backend login: ${url}`)
+  
+  try {
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        access_token: accessToken,
+        refresh_token: refreshToken,
+      }),
+    })
 
-  if (!response.ok) {
-    const error = await response.json()
-    throw error as AuthError
+    const responseText = await response.text()
+    
+    if (!response.ok) {
+      console.error(`Backend login error (${response.status}):`, responseText)
+      try {
+        const error = JSON.parse(responseText)
+        throw error as AuthError
+      } catch {
+        throw { error: `Backend returned ${response.status}: ${responseText.slice(0, 100)}` } as AuthError
+      }
+    }
+
+    try {
+      return JSON.parse(responseText)
+    } catch {
+      console.error('Invalid JSON from backend:', responseText)
+      throw { error: 'Invalid response from backend' } as AuthError
+    }
+  } catch (error) {
+    if (isAuthError(error)) throw error
+    console.error('Network error connecting to backend:', error)
+    throw { error: 'Failed to connect to backend server' } as AuthError
   }
-
-  return response.json()
 }
 
 /**

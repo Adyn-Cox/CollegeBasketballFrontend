@@ -1,0 +1,35 @@
+name: Frontend CI
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+      - uses: actions/checkout@v4
+
+      - name: Setup Next.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '16'
+          cache: 'yarn'
+          cache-dependency-path: 'app/yarn.lock'
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Type check
+        run: yarn tsc --noEmit
+
+      - name: Run lint
+        run: yarn lint
+
+      - name: Run build
+        run: yarn build
+
+      - name: Check for Vulnerabilities
+        run: yarn audit

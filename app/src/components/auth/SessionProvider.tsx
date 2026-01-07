@@ -2,6 +2,7 @@
 
 import { useSupabaseClient } from '@/lib/supabase/client'
 import { useEffect } from 'react'
+import type { AuthChangeEvent, Session } from '@supabase/supabase-js'
 
 /**
  * Client component to ensure Supabase session is initialized
@@ -19,8 +20,9 @@ export function SessionProvider({ children }: { children: React.ReactNode }) {
     // Subscribe to auth state changes
     const {
       data: { subscription },
-    } = supabase.auth.onAuthStateChange((_event, _session) => {
+    } = supabase.auth.onAuthStateChange(() => {
       // Session state is automatically managed by Supabase through cookies
+      // Parameters are intentionally unused - we just need to subscribe
     })
 
     return () => {

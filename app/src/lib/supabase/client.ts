@@ -51,12 +51,19 @@ export function useSupabaseClient() {
 
   useEffect(() => {
     if (supabaseClient) {
-      setClient(supabaseClient)
-      setLoading(false)
+      // Use setTimeout to avoid synchronous setState in effect
+      setTimeout(() => {
+        setClient(supabaseClient)
+        setLoading(false)
+      }, 0)
       return
     }
 
-    setLoading(true)
+    // Use setTimeout to avoid synchronous setState in effect
+    setTimeout(() => {
+      setLoading(true)
+    }, 0)
+    
     getSupabaseConfig()
       .then((config) => {
         supabaseClient = createBrowserClient(config.url, config.anonKey)
