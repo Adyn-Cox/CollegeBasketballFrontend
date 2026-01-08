@@ -21,6 +21,7 @@ import { backendLogout } from '@/lib/api/auth'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import { ThemeToggle } from './ThemeToggle'
+import { TeamSelectionModal } from './TeamSelectionModal'
 
 const Skeleton = ({ className = '' }: { className?: string }) => (
   <div className={`bg-zinc-200 animate-pulse rounded-lg dark:bg-zinc-700 ${className}`} />
@@ -34,6 +35,7 @@ interface Team {
   id: string
   name: string
   logo?: string
+  conference?: string
 }
 
 interface Prediction {
@@ -45,9 +47,10 @@ interface Prediction {
 
 export function Dashboard({ user }: DashboardProps) {
   const [isLoading, setIsLoading] = useState(true)
-  const [favoriteTeams] = useState<Team[]>([])
+  const [favoriteTeams, setFavoriteTeams] = useState<Team[]>([])
   const [todayPredictions] = useState<Prediction[]>([])
   const [predictionAccuracy] = useState(0)
+  const [isTeamModalOpen, setIsTeamModalOpen] = useState(false)
   const supabase = useSupabaseClient()
   const router = useRouter()
 
@@ -186,14 +189,20 @@ export function Dashboard({ user }: DashboardProps) {
       <div className="flex items-center justify-between mb-4 border-b-2 border-ink pb-2 border-dashed dark:border-cream">
         <h2 className="text-sm font-bold text-ink uppercase tracking-wider font-mono dark:text-cream">Your Teams</h2>
         {!isLoading && favoriteTeams.length > 0 && (
-          <button className="text-xs font-bold text-hoops hover:text-orange-600 flex items-center gap-1 font-mono uppercase">
+          <button 
+            onClick={() => setIsTeamModalOpen(true)}
+            className="text-xs font-bold text-hoops hover:text-orange-600 flex items-center gap-1 font-mono uppercase transition-colors"
+          >
             Manage <ChevronRight className="w-3 h-3" />
           </button>
         )}
       </div>
 
       {favoriteTeams.length === 0 && !isLoading ? (
-        <button className="w-full group relative overflow-hidden bg-white border-2 border-ink p-8 flex flex-col items-center justify-center text-center hover:bg-zinc-50 transition-all duration-300 md:h-48 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] active:translate-x-[2px] active:translate-y-[2px] active:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] dark:bg-black dark:border-cream dark:hover:bg-zinc-900 dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]">
+        <button 
+          onClick={() => setIsTeamModalOpen(true)}
+          className="w-full group relative overflow-hidden bg-white border-2 border-ink p-8 flex flex-col items-center justify-center text-center hover:bg-zinc-50 transition-all duration-300 md:h-48 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] active:translate-x-[2px] active:translate-y-[2px] active:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] dark:bg-black dark:border-cream dark:hover:bg-zinc-900 dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]"
+        >
           <div className="w-12 h-12 rounded-none border-2 border-ink flex items-center justify-center mb-3 group-hover:scale-110 group-hover:bg-hoops group-hover:text-white transition-all duration-300 bg-cream text-ink dark:border-cream dark:bg-black dark:text-cream">
             <Plus className="w-6 h-6" />
           </div>
@@ -448,6 +457,19 @@ export function Dashboard({ user }: DashboardProps) {
         {/* Background Texture - Light Mode Only */}
         <div className="fixed inset-0 opacity-[0.03] pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/paper.png')] dark:hidden" />
       </div>
+
+      {/* Team Selection Modal */}
+      <TeamSelectionModal
+        isOpen={isTeamModalOpen}
+        onClose={() => setIsTeamModalOpen(false)}
+        selectedTeams={favoriteTeams}
+        onSelectTeam={(team) => {
+          setFavoriteTeams((prev) => [...prev, team])
+        }}
+        onDeselectTeam={(teamId) => {
+          setFavoriteTeams((prev) => prev.filter((team) => team.id !== teamId))
+        }}
+      />
     </div>
   )
 }
