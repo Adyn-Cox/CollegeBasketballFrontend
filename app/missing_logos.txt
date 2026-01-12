@@ -1,0 +1,867 @@
+Total: 865 schools missing logo files
+Out of 831 unique schools
+Academy of Art|Academy_of_Art.svg
+Adams State|Adams_State.svg
+Alabama-Huntsville|Alabama_Huntsville.svg
+Alaska|Alaska.svg
+Alaska Anchorage|Alaska_Anchorage.svg
+Albertson College|Albertson_College.svg
+Albertus Magnus|Albertus_Magnus.svg
+Albright College|Albright_College.svg
+Alice Lloyd College|Alice_Lloyd_College.svg
+Allen University|Allen_University.svg
+Alliance University|Alliance_University.svg
+Alvernia College|Alvernia_College.svg
+Anderson (SC)|Anderson_SC.svg
+Andrews University|Andrews_University.svg
+Angelo State|Angelo_State.svg
+Antelope Valley|Antelope_Valley.svg
+Apprentice School|Apprentice_School.svg
+Aquinas|Aquinas.svg
+Arcadia|Arcadia.svg
+Arkansas Baptist|Arkansas_Baptist.svg
+Arkansas-Fort Smith|Arkansas_Fort_Smith.svg
+Arkansas-Monticello|Arkansas_Monticello.svg
+Arlington Baptist|Arlington_Baptist.svg
+Armstrong|Armstrong.svg
+Asbury|Asbury.svg
+Auburn-Montgomery|Auburn_Montgomery.svg
+Augustana (IL)|Augustana_IL.svg
+Augustana (IL)|Augustana_IL.svg
+Ave Maria|Ave_Maria.svg
+Avila|Avila.svg
+Azusa Pacific|Azusa_Pacific.svg
+BYU-Hawaii|BYU_Hawaii.svg
+Babson|Babson.svg
+Bacone|Bacone.svg
+Baker|Baker.svg
+Baker University|Baker_University.svg
+Baltimore|Baltimore.svg
+Baptist (Fl)|Baptist_Fl.svg
+Baptist Bible|Baptist_Bible.svg
+Baptist Bible College (MO)|Baptist_Bible_College_MO.svg
+Barber Scotia|Barber_Scotia.svg
+Barclay College|Barclay_College.svg
+Bard College|Bard_College.svg
+Barry University|Barry_University.svg
+Baruch College|Baruch_College.svg
+Belhaven|Belhaven.svg
+Bellevue University|Bellevue_University.svg
+Belmont Abbey|Belmont_Abbey.svg
+Benedictine College (KS)|Benedictine_College_KS.svg
+Benedictine College (KS)|Benedictine_College_KS.svg
+Benedictine University (IL)|Benedictine_University_IL.svg
+Berea|Berea.svg
+Bethany (KS)|Bethany_KS.svg
+Bethany (WV)|Bethany_WV.svg
+Bethany College (CA)|Bethany_College_CA.svg
+Bethel (IN)|Bethel_IN.svg
+Bethesda University|Bethesda_University.svg
+Biola|Biola.svg
+Blackburn|Blackburn.svg
+Bloomfield|Bloomfield.svg
+Blue Mountain|Blue_Mountain.svg
+Bluefield State|Bluefield_State.svg
+Bluefield University|Bluefield_University.svg
+Bob Jones|Bob_Jones.svg
+Bowie State|Bowie_State.svg
+Boyce|Boyce.svg
+Brandeis|Brandeis.svg
+Brandeis University|Brandeis_University.svg
+Brescia|Brescia.svg
+Brewton-Parker|Brewton_Parker.svg
+Briar Cliff|Briar_Cliff.svg
+Brigham Young College|Brigham_Young_College.svg
+Bristol|Bristol.svg
+Brooklyn|Brooklyn.svg
+Bryan (TN)|Bryan_TN.svg
+Bryant & Stratton|Bryant_Stratton.svg
+Bryant & Stratton (Ohio)|Bryant_Stratton_Ohio.svg
+Bryn Athyn|Bryn_Athyn.svg
+Bushnell|Bushnell.svg
+CS Dominguez Hills|CS_Dominguez_Hills.svg
+CS Monterey Bay|CS_Monterey_Bay.svg
+CS San Bernardino|CS_San_Bernardino.svg
+CSU San Marcos|CSU_San_Marcos.svg
+Cabrini|Cabrini.svg
+Cairn University|Cairn_University.svg
+Cal Maritime|Cal_Maritime.svg
+Cal Poly Pomona|Cal_Poly_Pomona.svg
+Cal State East Bay|Cal_State_East_Bay.svg
+Cal State LA|Cal_State_LA.svg
+Cal State Los Angeles|Cal_State_Los_Angeles.svg
+Caldwell|Caldwell.svg
+Caltech|Caltech.svg
+Calumet College|Calumet_College.svg
+Calvary|Calvary.svg
+Calvin University|Calvin_University.svg
+Cameron|Cameron.svg
+Campbellsville|Campbellsville.svg
+Campbellsville-Harrodsburg|Campbellsville_Harrodsburg.svg
+Canterbury College|Canterbury_College.svg
+Cardinal Stritch|Cardinal_Stritch.svg
+Carleton College|Carleton_College.svg
+Carlow|Carlow.svg
+Carolina Christian College|Carolina_Christian_College.svg
+Carolina University|Carolina_University.svg
+Carroll (MT)|Carroll_MT.svg
+Carson-Newman|Carson_Newman.svg
+Carver College|Carver_College.svg
+Carver College|Carver_College.svg
+Cascade|Cascade.svg
+Cazenovia College|Cazenovia_College.svg
+Cedarville|Cedarville.svg
+Centenary (LA)|Centenary_LA.svg
+Centenary (NJ)|Centenary_NJ.svg
+Central Baptist College|Central_Baptist_College.svg
+Central Christian College|Central_Christian_College.svg
+Central Methodist|Central_Methodist.svg
+Central Missouri|Central_Missouri.svg
+Central Missouri|Central_Missouri.svg
+Central Penn|Central_Penn.svg
+Central Pennsylvania College|Central_Pennsylvania_College.svg
+Central State (OH)|Central_State_OH.svg
+Central State Oklahoma|Central_State_Oklahoma.svg
+Centre (KY)|Centre_KY.svg
+Centre College|Centre_College.svg
+Chadron State|Chadron_State.svg
+Chaminade|Chaminade.svg
+Champion Christian|Champion_Christian.svg
+Chatham University|Chatham_University.svg
+Chestnut Hill College|Chestnut_Hill_College.svg
+Cheyenne Business College|Cheyenne_Business_College.svg
+Cheyney (PA)|Cheyney_PA.svg
+Chico State|Chico_State.svg
+Christendom|Christendom.svg
+Christian Brothers|Christian_Brothers.svg
+Cincinnati|Cincinnati.svg
+Cincinnati Clermont|Cincinnati_Clermont.svg
+City College NY|City_College_NY.svg
+City College of New York|City_College_of_New_York.svg
+Claflin|Claflin.svg
+Clark (MA)|Clark_MA.svg
+Clark (MA)|Clark_MA.svg
+Clarks Summit|Clarks_Summit.svg
+Clarkson|Clarkson.svg
+Clayton State|Clayton_State.svg
+Clearwater Christian|Clearwater_Christian.svg
+Cleary University|Cleary_University.svg
+Clinton College|Clinton_College.svg
+Coast Guard|Coast_Guard.svg
+Coastal Georgia|Coastal_Georgia.svg
+Coe|Coe.svg
+Coker|Coker.svg
+Colby-Sawyer|Colby_Sawyer.svg
+College Of Biblical Studies|College_Of_Biblical_Studies.svg
+College Of Faith|College_Of_Faith.svg
+College Of New Rochelle|College_Of_New_Rochelle.svg
+College of Idaho|College_of_Idaho.svg
+College of New Jersey|College_of_New_Jersey.svg
+College of New Jersey|College_of_New_Jersey.svg
+Colorado Christian|Colorado_Christian.svg
+Colorado College|Colorado_College.svg
+Colorado School Of Mines|Colorado_School_Of_Mines.svg
+Colorado School of Mines|Colorado_School_of_Mines.svg
+Columbia College (SC)|Columbia_College_SC.svg
+Columbia International|Columbia_International.svg
+Columbus State|Columbus_State.svg
+Concordia (WI)|Concordia_WI.svg
+Concordia College (AL)|Concordia_College_AL.svg
+Concordia College (NY)|Concordia_College_NY.svg
+Concordia Moorhead|Concordia_Moorhead.svg
+Concordia Oregon|Concordia_Oregon.svg
+Concordia Seminary|Concordia_Seminary.svg
+Concordia-Ann Arbor|Concordia_Ann_Arbor.svg
+Concordia-Chicago|Concordia_Chicago.svg
+Concordia-Irvine|Concordia_Irvine.svg
+Concordia-Nebraska|Concordia_Nebraska.svg
+Concordia-St. Paul|Concordia_St_Paul.svg
+Concordia-Texas|Concordia_Texas.svg
+Converse University|Converse_University.svg
+Corban College|Corban_College.svg
+Cornell College (IA)|Cornell_College_IA.svg
+Cornerstone University|Cornerstone_University.svg
+Cotner College|Cotner_College.svg
+Covenant|Covenant.svg
+Crossroads College|Crossroads_College.svg
+Crowley's Ridge|Crowleys_Ridge.svg
+Crown College|Crown_College.svg
+Culver-Stockton|Culver_Stockton.svg
+Cumberland|Cumberland.svg
+Cumberland (KY)|Cumberland_KY.svg
+Cumberland (TN)|Cumberland_TN.svg
+Curry College|Curry_College.svg
+D'Youville|DYouville.svg
+Dakota Wesleyan|Dakota_Wesleyan.svg
+Dakota Wesleyan|Dakota_Wesleyan.svg
+Dallas|Dallas.svg
+Dallas Baptist|Dallas_Baptist.svg
+Dallas Christian|Dallas_Christian.svg
+Dalton State|Dalton_State.svg
+Dana|Dana.svg
+Daniel Webster College|Daniel_Webster_College.svg
+Davis & Elkins|Davis_Elkins.svg
+DePauw|DePauw.svg
+DeSales|DeSales.svg
+Dean College|Dean_College.svg
+Dickinson (PA)|Dickinson_PA.svg
+Dickinson College|Dickinson_College.svg
+Dickinson State (ND)|Dickinson_State_ND.svg
+Dillard|Dillard.svg
+District Of Columbia|District_Of_Columbia.svg
+Doane|Doane.svg
+Dominican (CA)|Dominican_CA.svg
+Dominican (IL)|Dominican_IL.svg
+Dominican (NY)|Dominican_NY.svg
+Dowling|Dowling.svg
+E. New Mexico|E_New_Mexico.svg
+Earlham College|Earlham_College.svg
+East Central|East_Central.svg
+East Texas A&M|East_Texas_A_M.svg
+East-West University|East_West_University.svg
+Eastern Mennonite|Eastern_Mennonite.svg
+Eastern Nazarene|Eastern_Nazarene.svg
+Eastern Oregon|Eastern_Oregon.svg
+Eastern University (PA)|Eastern_University_PA.svg
+Ecclesia|Ecclesia.svg
+Eckerd|Eckerd.svg
+Elizabethtown|Elizabethtown.svg
+Elmira|Elmira.svg
+Elms College|Elms_College.svg
+Embry-Riddle (AZ)|Embry_Riddle_AZ.svg
+Embry-Riddle (AZ)|Embry_Riddle_AZ.svg
+Embry-Riddle (FL)|Embry_Riddle_FL.svg
+Emerson|Emerson.svg
+Emmanuel (MA)|Emmanuel_MA.svg
+Emory|Emory.svg
+Emory & Henry|Emory_Henry.svg
+Emporia State|Emporia_State.svg
+Endicott College|Endicott_College.svg
+Ensign College|Ensign_College.svg
+Evangel|Evangel.svg
+Evergreen State|Evergreen_State.svg
+FDU Florham|FDU_Florham.svg
+Faith Baptist Bible|Faith_Baptist_Bible.svg
+Farmingdale State|Farmingdale_State.svg
+Felician|Felician.svg
+Fisher College|Fisher_College.svg
+Fisk|Fisk.svg
+Flagler|Flagler.svg
+Florida College|Florida_College.svg
+Florida Memorial|Florida_Memorial.svg
+Florida National|Florida_National.svg
+Florida Southern|Florida_Southern.svg
+Fontbonne|Fontbonne.svg
+Fort Lauderdale|Fort_Lauderdale.svg
+Francis Marion|Francis_Marion.svg
+Franciscan University|Franciscan_University.svg
+Fredonia State|Fredonia_State.svg
+Freed-Hardeman|Freed_Hardeman.svg
+Fresno Pacific|Fresno_Pacific.svg
+Friends University|Friends_University.svg
+Georgetown|Georgetown.svg
+Georgia College|Georgia_College.svg
+Georgia Southern|Georgia_Southern.svg
+Georgian Court|Georgian_Court.svg
+Goldey-Beacom|Goldey_Beacom.svg
+Gordon College|Gordon_College.svg
+Goshen|Goshen.svg
+Goucher|Goucher.svg
+Grace|Grace.svg
+Grace Bible College|Grace_Bible_College.svg
+Grace Christian|Grace_Christian.svg
+Great Falls|Great_Falls.svg
+Gwynedd-Mercy|Gwynedd_Mercy.svg
+Hampden-Sydney|Hampden_Sydney.svg
+Hannibal-LaGrange|Hannibal_LaGrange.svg
+Hardin-Simmons|Hardin_Simmons.svg
+Hardin-Simmons|Hardin_Simmons.svg
+Harris-Stowe State|Harris_Stowe_State.svg
+Haskell|Haskell.svg
+Haskell (KS)|Haskell_KS.svg
+Hastings|Hastings.svg
+Haverford|Haverford.svg
+Hawai'i Hilo|Hawaii_Hilo.svg
+Hawai'i Pacific|Hawaii_Pacific.svg
+Hendrix College|Hendrix_College.svg
+Hiwassee|Hiwassee.svg
+Hobart College|Hobart_College.svg
+Holy Cross College (IN)|Holy_Cross_College_IN.svg
+Holy Family University|Holy_Family_University.svg
+Holy Names University|Holy_Names_University.svg
+Hood College|Hood_College.svg
+Hope International|Hope_International.svg
+Houghton|Houghton.svg
+Houston Christian|Houston_Christian.svg
+Humboldt State|Humboldt_State.svg
+Huntington (IN)|Huntington_IN.svg
+Huston-Tillotson|Huston_Tillotson.svg
+IU Columbus|IU_Columbus.svg
+Illinois Tech|Illinois_Tech.svg
+Illinois-Springfield|Illinois_Springfield.svg
+Immaculata|Immaculata.svg
+Indiana Tech|Indiana_Tech.svg
+Indiana University East|Indiana_University_East.svg
+Indiana University Northwest|Indiana_University_Northwest.svg
+Indiana Wesleyan|Indiana_Wesleyan.svg
+Indiana-Kokomo|Indiana_Kokomo.svg
+Indiana-Pennsylvania|Indiana_Pennsylvania.svg
+Indiana-South Bend|Indiana_South_Bend.svg
+Indiana-Southeast|Indiana_Southeast.svg
+Indianapolis|Indianapolis.svg
+Ithaca College|Ithaca_College.svg
+Jamestown|Jamestown.svg
+Jarvis Christian|Jarvis_Christian.svg
+Jessup University|Jessup_University.svg
+John Brown|John_Brown.svg
+John Jay College|John_Jay_College.svg
+John Melvin|John_Melvin.svg
+Johnson & Wales (CO)|Johnson_Wales_CO.svg
+Johnson & Wales (FL)|Johnson_Wales_FL.svg
+Johnson & Wales (NC)|Johnson_Wales_NC.svg
+Johnson & Wales (RI)|Johnson_Wales_RI.svg
+Johnson University (TN)|Johnson_University_TN.svg
+Johnson University Florida|Johnson_University_Florida.svg
+Judson University|Judson_University.svg
+Juniata College|Juniata_College.svg
+Justice College|Justice_College.svg
+Kansas Christian|Kansas_Christian.svg
+Keene St|Keene_St.svg
+Keene State|Keene_State.svg
+Keiser|Keiser.svg
+Kentucky Christian|Kentucky_Christian.svg
+Kentucky Wesleyan|Kentucky_Wesleyan.svg
+Kentucky Wesleyan|Kentucky_Wesleyan.svg
+Keuka|Keuka.svg
+Keuka College|Keuka_College.svg
+King (TN)|King_TN.svg
+Kings (PA)|Kings_PA.svg
+Knoxville|Knoxville.svg
+LIU Brooklyn|LIU_Brooklyn.svg
+LSU Alexandria|LSU_Alexandria.svg
+LSU Shreveport|LSU_Shreveport.svg
+La Grange|La_Grange.svg
+La Roche|La_Roche.svg
+La Sierra|La_Sierra.svg
+LaGrange|LaGrange.svg
+Lake Forest|Lake_Forest.svg
+Lake Forest|Lake_Forest.svg
+Lake Superior State|Lake_Superior_State.svg
+Lakeland|Lakeland.svg
+Lambuth|Lambuth.svg
+Lancaster Bible College|Lancaster_Bible_College.svg
+Lander|Lander.svg
+Lane College|Lane_College.svg
+Langston|Langston.svg
+Lasell College|Lasell_College.svg
+Lawrence Tech|Lawrence_Tech.svg
+Lawrence Tech|Lawrence_Tech.svg
+Lawrence University|Lawrence_University.svg
+Le Moyne|Le_Moyne.svg
+LeMoyne-Owen|LeMoyne_Owen.svg
+LeTourneau|LeTourneau.svg
+Lebanon Valley|Lebanon_Valley.svg
+Lee|Lee.svg
+Lees-McRae|Lees_McRae.svg
+Lehman College|Lehman_College.svg
+Lenoir-Rhyne|Lenoir_Rhyne.svg
+Lesley University|Lesley_University.svg
+Lewis|Lewis.svg
+Lewis|Lewis.svg
+Lewis & Clark|Lewis_Clark.svg
+Lewis-Clark St|Lewis_Clark_St.svg
+Life Pacific|Life_Pacific.svg
+Life University|Life_University.svg
+Lincoln|Lincoln.svg
+Lincoln Christian|Lincoln_Christian.svg
+Lincoln University (CA)|Lincoln_University_CA.svg
+Lindsey Wilson College|Lindsey_Wilson_College.svg
+Linfield College|Linfield_College.svg
+Lock Haven University|Lock_Haven_University.svg
+Loras|Loras.svg
+Louisiana Christian|Louisiana_Christian.svg
+Lourdes University|Lourdes_University.svg
+Loyola (LA)|Loyola_LA.svg
+Loyola Marymount|Loyola_Marymount.svg
+Loyola New Orleans|Loyola_New_Orleans.svg
+Lubbock Christian|Lubbock_Christian.svg
+Luther|Luther.svg
+Lycoming|Lycoming.svg
+Lynchburg|Lynchburg.svg
+Lynn|Lynn.svg
+Lyon|Lyon.svg
+MARIAN|MARIAN.svg
+MSU Denver|MSU_Denver.svg
+MacMurray College|MacMurray_College.svg
+Macalester|Macalester.svg
+Macalester|Macalester.svg
+Madonna|Madonna.svg
+Maine Maritime|Maine_Maritime.svg
+Maine-Augusta|Maine_Augusta.svg
+Maine-Farmington|Maine_Farmington.svg
+Maine-Fort Kent|Maine_Fort_Kent.svg
+Maine-Machias|Maine_Machias.svg
+Maine-Presque Isle|Maine_Presque_Isle.svg
+Malone|Malone.svg
+Manhattan Christian|Manhattan_Christian.svg
+Manhattanville|Manhattanville.svg
+Manor College|Manor_College.svg
+Mansfield|Mansfield.svg
+Marian (IN)|Marian_IN.svg
+Mary Baldwin|Mary_Baldwin.svg
+Mary Washington|Mary_Washington.svg
+Marygrove|Marygrove.svg
+Maryland Bible College|Maryland_Bible_College.svg
+Marymount (VA)|Marymount_VA.svg
+Maryville College (TN)|Maryville_College_TN.svg
+Maryville University (MO)|Maryville_University_MO.svg
+Marywood|Marywood.svg
+Massachusetts College of Liberal Arts|Massachusetts_College_of_Liberal_Arts.svg
+Massachusetts Institute of Technology|Massachusetts_Institute_of_Technology.svg
+Master's University|Masters_University.svg
+Mayville State|Mayville_State.svg
+McGill|McGill.svg
+McPherson|McPherson.svg
+Medaille College|Medaille_College.svg
+Medgar Evers|Medgar_Evers.svg
+Menlo|Menlo.svg
+Merchant Marine|Merchant_Marine.svg
+Mercy|Mercy.svg
+Messiah|Messiah.svg
+Miami (OH)-Hamilton|Miami_OH_Hamilton.svg
+Miami (OH)-Middletown|Miami_OH_Middletown.svg
+Michigan-Dearborn|Michigan_Dearborn.svg
+Mid-America Christian|Mid_America_Christian.svg
+Mid-Atlantic Christian|Mid_Atlantic_Christian.svg
+Mid-Continent University|Mid_Continent_University.svg
+Middle Georgia State|Middle_Georgia_State.svg
+Midland University|Midland_University.svg
+Midway University|Midway_University.svg
+Milligan|Milligan.svg
+Milwaukee School Of Engineering|Milwaukee_School_Of_Engineering.svg
+Minnesota A&M|Minnesota_A_M.svg
+Minnesota Crookston|Minnesota_Crookston.svg
+Minnesota Duluth|Minnesota_Duluth.svg
+Minnesota Morris|Minnesota_Morris.svg
+Minot State|Minot_State.svg
+Mississippi University For Women|Mississippi_University_For_Women.svg
+Missouri Southern State|Missouri_Southern_State.svg
+Missouri State|Missouri_State.svg
+Missouri Valley|Missouri_Valley.svg
+Mitchell College|Mitchell_College.svg
+Mobile|Mobile.svg
+Molloy|Molloy.svg
+Monmouth (IL)|Monmouth_IL.svg
+Montana State|Montana_State.svg
+Montana State-Northern|Montana_State_Northern.svg
+Montana Tech|Montana_Tech.svg
+Montana-Western|Montana_Western.svg
+Monterrey Tech|Monterrey_Tech.svg
+Montevallo|Montevallo.svg
+Montreat|Montreat.svg
+Morris Brown|Morris_Brown.svg
+Morris Brown|Morris_Brown.svg
+Morris College|Morris_College.svg
+Mount Aloysius|Mount_Aloysius.svg
+Mount Ida|Mount_Ida.svg
+Mount Marty College|Mount_Marty_College.svg
+Mount Olive|Mount_Olive.svg
+Mount Saint Mary (NY)|Mount_Saint_Mary_NY.svg
+Mount Saint Vincent|Mount_Saint_Vincent.svg
+Mount Union|Mount_Union.svg
+Mount Vernon Nazarene (OH)|Mount_Vernon_Nazarene_OH.svg
+Mountain State University|Mountain_State_University.svg
+Multnomah University|Multnomah_University.svg
+NVU-Lyndon|NVU_Lyndon.svg
+NYU Poly|NYU_Poly.svg
+Navajo Tech|Navajo_Tech.svg
+Nazareth College|Nazareth_College.svg
+Nebraska Christian|Nebraska_Christian.svg
+Nebraska-Kearney|Nebraska_Kearney.svg
+Nelson|Nelson.svg
+Neumann|Neumann.svg
+New College (FL)|New_College_FL.svg
+New Hope Christian College|New_Hope_Christian_College.svg
+New York City Tech|New_York_City_Tech.svg
+New York Institute Of Technology|New_York_Institute_Of_Technology.svg
+New York University|New_York_University.svg
+Newbury College|Newbury_College.svg
+Newman University|Newman_University.svg
+Nichols College|Nichols_College.svg
+Nobel|Nobel.svg
+North American|North_American.svg
+North Central (IL)|North_Central_IL.svg
+North Central (MN)|North_Central_MN.svg
+North Georgia|North_Georgia.svg
+Northeastern State|Northeastern_State.svg
+Northern New Mexico|Northern_New_Mexico.svg
+Northland|Northland.svg
+Northwest Indian|Northwest_Indian.svg
+Northwest Nazarene|Northwest_Nazarene.svg
+Northwest University|Northwest_University.svg
+Northwestern Oklahoma State|Northwestern_Oklahoma_State.svg
+Northwestern State|Northwestern_State.svg
+Northwood (FL)|Northwood_FL.svg
+Northwood (MI)|Northwood_MI.svg
+Northwood University|Northwood_University.svg
+Notre Dame (Md)|Notre_Dame_Md.svg
+Notre Dame de Namur|Notre_Dame_de_Namur.svg
+Nova Southeastern|Nova_Southeastern.svg
+Oak Hills Christian|Oak_Hills_Christian.svg
+Oakland City|Oakland_City.svg
+Oakwood|Oakwood.svg
+Oberlin|Oberlin.svg
+Oberlin|Oberlin.svg
+Occidental|Occidental.svg
+Oglethorpe|Oglethorpe.svg
+Ohio Christian|Ohio_Christian.svg
+Ohio Midwestern|Ohio_Midwestern.svg
+Ohio Northern|Ohio_Northern.svg
+Ohio Valley|Ohio_Valley.svg
+Ohio Wesleyan|Ohio_Wesleyan.svg
+Ohio Wesleyan|Ohio_Wesleyan.svg
+Ohio-Chillicothe|Ohio_Chillicothe.svg
+Oklahoma Baptist|Oklahoma_Baptist.svg
+Oklahoma Christian|Oklahoma_Christian.svg
+Oklahoma City|Oklahoma_City.svg
+Oklahoma City|Oklahoma_City.svg
+Oklahoma Wesleyan Un|Oklahoma_Wesleyan_Un.svg
+Old Westbury|Old_Westbury.svg
+Old Westbury|Old_Westbury.svg
+Olivet|Olivet.svg
+Olivet Nazarene|Olivet_Nazarene.svg
+Oregon Tech|Oregon_Tech.svg
+Oswego St|Oswego_St.svg
+Ottawa (AZ)|Ottawa_AZ.svg
+Ottawa (KS)|Ottawa_KS.svg
+Our Lady Of The Lake|Our_Lady_Of_The_Lake.svg
+Ozark Christian|Ozark_Christian.svg
+Pacific (OR)|Pacific_OR.svg
+Pacific Lutheran|Pacific_Lutheran.svg
+Pacific Union|Pacific_Union.svg
+Pacifica College|Pacifica_College.svg
+Paine|Paine.svg
+Palm Beach Atlantic|Palm_Beach_Atlantic.svg
+Panhandle St (OK)|Panhandle_St_OK.svg
+Park University Gilbert|Park_University_Gilbert.svg
+Paul Quinn|Paul_Quinn.svg
+Paul Smith'S|Paul_SmithS.svg
+Penn St Abington|Penn_St_Abington.svg
+Penn State (Beaver)|Penn_State_Beaver.svg
+Penn State (Brandywine)|Penn_State_Brandywine.svg
+Penn State (Harrisburg)|Penn_State_Harrisburg.svg
+Penn State (Mont Alto)|Penn_State_Mont_Alto.svg
+Penn State - Wilkes-Barre|Penn_State_Wilkes_Barre.svg
+Penn State Hazleton|Penn_State_Hazleton.svg
+Penn State Scranton|Penn_State_Scranton.svg
+Penn State-Alleghany|Penn_State_Alleghany.svg
+Penn State-Altoona|Penn_State_Altoona.svg
+Penn State-Behrend|Penn_State_Behrend.svg
+Penn State-Fayette|Penn_State_Fayette.svg
+Penn State-New Kensington|Penn_State_New_Kensington.svg
+Penn State-Schuylkill|Penn_State_Schuylkill.svg
+Penn State-Shenango|Penn_State_Shenango.svg
+Penn State-York|Penn_State_York.svg
+PennWest California|PennWest_California.svg
+Pensacola Christian College|Pensacola_Christian_College.svg
+Peru State|Peru_State.svg
+Pfeiffer|Pfeiffer.svg
+Philadelphia|Philadelphia.svg
+Philadelphia Biblical University|Philadelphia_Biblical_University.svg
+Philander Smith|Philander_Smith.svg
+Phoenix|Phoenix.svg
+Piedmont|Piedmont.svg
+Pikeville|Pikeville.svg
+Pine Manor|Pine_Manor.svg
+Pittsburg State|Pittsburg_State.svg
+Pittsburgh - Greensburg|Pittsburgh_Greensburg.svg
+Plattsburgh St|Plattsburgh_St.svg
+Plymouth State|Plymouth_State.svg
+Point|Point.svg
+Point Loma Nazarene|Point_Loma_Nazarene.svg
+Point Park|Point_Park.svg
+Point University|Point_University.svg
+Pomona Pitzer|Pomona_Pitzer.svg
+Portland Bible|Portland_Bible.svg
+Post University|Post_University.svg
+Pratt|Pratt.svg
+Presentation College|Presentation_College.svg
+Principia College|Principia_College.svg
+Puerto Rico-Bayamon|Puerto_Rico_Bayamon.svg
+Puerto Rico-Mayaguez|Puerto_Rico_Mayaguez.svg
+Puerto Rico-Rio Piedras|Puerto_Rico_Rio_Piedras.svg
+Puget Sound|Puget_Sound.svg
+Purchase|Purchase.svg
+Purdue North Central|Purdue_North_Central.svg
+Purdue Northwest|Purdue_Northwest.svg
+Purdue Northwest|Purdue_Northwest.svg
+Queens College NY|Queens_College_NY.svg
+Queens University|Queens_University.svg
+RIT|RIT.svg
+Randall University|Randall_University.svg
+Randolph College|Randolph_College.svg
+Randolph-Macon|Randolph_Macon.svg
+Regent|Regent.svg
+Regis|Regis.svg
+Regis (CO)|Regis_CO.svg
+Regis (CO)|Regis_CO.svg
+Reinhardt|Reinhardt.svg
+Rensselaer|Rensselaer.svg
+Rensselaer|Rensselaer.svg
+Rhema Bible Training Center|Rhema_Bible_Training_Center.svg
+Rhode Island|Rhode_Island.svg
+Rhodes|Rhodes.svg
+Rio Grande|Rio_Grande.svg
+Ripon|Ripon.svg
+Ripon|Ripon.svg
+Rivier|Rivier.svg
+Roanoke|Roanoke.svg
+Roanoke|Roanoke.svg
+Robert Morris|Robert_Morris.svg
+Robert Morris-Springfield (IL)|Robert_Morris_Springfield_IL.svg
+Roberts Wesleyan|Roberts_Wesleyan.svg
+Rochester (NY)|Rochester_NY.svg
+Rochester University (MI)|Rochester_University_MI.svg
+Rockford|Rockford.svg
+Rockhurst|Rockhurst.svg
+Rocky Mountain|Rocky_Mountain.svg
+Rogers State|Rogers_State.svg
+Rollins|Rollins.svg
+Roosevelt|Roosevelt.svg
+Rose-Hulman|Rose_Hulman.svg
+Rosemont|Rosemont.svg
+Rust|Rust.svg
+Rutgers-Camden|Rutgers_Camden.svg
+Rutgers-Newark|Rutgers_Newark.svg
+Ryerson|Ryerson.svg
+SUNY Cobleskill|SUNY_Cobleskill.svg
+SUNY Delhi|SUNY_Delhi.svg
+SUNY Morrisville|SUNY_Morrisville.svg
+SUNY Poly|SUNY_Poly.svg
+SUNY-Brockport|SUNY_Brockport.svg
+SUNY-Canton|SUNY_Canton.svg
+SUNY-Maritime|SUNY_Maritime.svg
+SUNY-New Paltz|SUNY_New_Paltz.svg
+SUNY-Oneonta|SUNY_Oneonta.svg
+SUNY-Potsdam|SUNY_Potsdam.svg
+SUNY-Potsdam|SUNY_Potsdam.svg
+Saint Elizabeth|Saint_Elizabeth.svg
+Saint John's (MN)|Saint_Johns_MN.svg
+Saint Joseph's Long Island|Saint_Josephs_Long_Island.svg
+Saint Leo|Saint_Leo.svg
+Saint Martin's|Saint_Martins.svg
+Saint Mary of the Woods College|Saint_Mary_of_the_Woods_College.svg
+Saint Mary's (MN)|Saint_Marys_MN.svg
+Saint Michael's|Saint_Michaels.svg
+Saint Rose|Saint_Rose.svg
+Saint Vincent|Saint_Vincent.svg
+Salem University|Salem_University.svg
+Salisbury|Salisbury.svg
+Salish Kootenai|Salish_Kootenai.svg
+Salve Regina|Salve_Regina.svg
+San Diego Christian|San_Diego_Christian.svg
+Sarah Lawrence|Sarah_Lawrence.svg
+Savage School of Physical Education|Savage_School_of_Physical_Education.svg
+Savannah College Of Art And Design|Savannah_College_Of_Art_And_Design.svg
+Schreiner|Schreiner.svg
+Science & Arts (OK)|Science_Arts_OK.svg
+Scranton|Scranton.svg
+Seattle Pacific|Seattle_Pacific.svg
+Selma|Selma.svg
+Seton Hill|Seton_Hill.svg
+Sewanee|Sewanee.svg
+Sewanee|Sewanee.svg
+Shawnee State|Shawnee_State.svg
+Siena Heights|Siena_Heights.svg
+Silver Lake|Silver_Lake.svg
+Simpson College (IA)|Simpson_College_IA.svg
+Simpson University (CA)|Simpson_University_CA.svg
+Skidmore|Skidmore.svg
+Sonoma State|Sonoma_State.svg
+South Carolina Upstate|South_Carolina_Upstate.svg
+South Dakota|South_Dakota.svg
+South Vermont|South_Vermont.svg
+Southeastern|Southeastern.svg
+Southeastern College|Southeastern_College.svg
+Southeastern Oklahoma State|Southeastern_Oklahoma_State.svg
+Southern Indiana|Southern_Indiana.svg
+Southern Polytechnic|Southern_Polytechnic.svg
+Southern Wesleyan|Southern_Wesleyan.svg
+Southern-New Orleans|Southern_New_Orleans.svg
+Southwestern (TX)|Southwestern_TX.svg
+Southwestern Assemblies of God|Southwestern_Assemblies_of_God.svg
+Southwestern Christian|Southwestern_Christian.svg
+Southwestern College|Southwestern_College.svg
+Southwestern College Arizona|Southwestern_College_Arizona.svg
+Southwestern Oklahoma State|Southwestern_Oklahoma_State.svg
+Spalding|Spalding.svg
+Spartanburg Methodist|Spartanburg_Methodist.svg
+Spring Arbor|Spring_Arbor.svg
+Spring Hill|Spring_Hill.svg
+Spurgeon College|Spurgeon_College.svg
+St Gregory's|St_Gregorys.svg
+St. Andrews|St_Andrews.svg
+St. Catharine (KY)|St_Catharine_KY.svg
+St. Catherine (MN)|St_Catherine_MN.svg
+St. Edward's|St_Edwards.svg
+St. Francis (IL)|St_Francis_IL.svg
+St. Francis (IN)|St_Francis_IN.svg
+St. Francis Brooklyn|St_Francis_Brooklyn.svg
+St. John's College (OH)|St_Johns_College_OH.svg
+St. Joseph (VT)|St_Joseph_VT.svg
+St. Joseph's (NY)|St_Josephs_NY.svg
+St. Josephs (IND)|St_Josephs_IND.svg
+St. Josephs (ME)|St_Josephs_ME.svg
+St. Mary's (MD)|St_Marys_MD.svg
+St. Mary's (TX)|St_Marys_TX.svg
+St. Pauls College|St_Pauls_College.svg
+St. Thomas (FL)|St_Thomas_FL.svg
+St. Thomas (TX)|St_Thomas_TX.svg
+St. Thomas (TX)|St_Thomas_TX.svg
+St. Thomas Aquinas|St_Thomas_Aquinas.svg
+St. Xavier  (IL)|St_Xavier_IL.svg
+Stanislaus State|Stanislaus_State.svg
+Stanton|Stanton.svg
+Staten Island|Staten_Island.svg
+Sterling College (KS)|Sterling_College_KS.svg
+Stevens Institute|Stevens_Institute.svg
+Stillman|Stillman.svg
+Stockton|Stockton.svg
+Suffolk|Suffolk.svg
+Swarthmore|Swarthmore.svg
+Swarthmore|Swarthmore.svg
+TBD|TBD.svg
+Tabor|Tabor.svg
+Talladega|Talladega.svg
+Tampa|Tampa.svg
+Taylor|Taylor.svg
+Tennessee State|Tennessee_State.svg
+Tennessee Tech|Tennessee_Tech.svg
+Tennessee Wesleyan|Tennessee_Wesleyan.svg
+Texas A&M-Corpus Christi|Texas_A_M_Corpus_Christi.svg
+Texas A&M-International|Texas_A_M_International.svg
+Texas A&M-Kingsville|Texas_A_M_Kingsville.svg
+Texas A&M-San Antonio|Texas_A_M_San_Antonio.svg
+Texas A&M-Texarkana|Texas_A_M_Texarkana.svg
+Texas College|Texas_College.svg
+Texas Pan American|Texas_Pan_American.svg
+Texas Permian Basin|Texas_Permian_Basin.svg
+Texas Wesleyan|Texas_Wesleyan.svg
+Texas Wesleyan|Texas_Wesleyan.svg
+The Open Bible|The_Open_Bible.svg
+Thomas (GA)|Thomas_GA.svg
+Thomas (ME)|Thomas_ME.svg
+Thomas More|Thomas_More.svg
+Toccoa Falls|Toccoa_Falls.svg
+Tougaloo|Tougaloo.svg
+Transylvania|Transylvania.svg
+Trevecca Nazarene|Trevecca_Nazarene.svg
+Trine University|Trine_University.svg
+Trinity (CT)|Trinity_CT.svg
+Trinity (FL)|Trinity_FL.svg
+Trinity (TX)|Trinity_TX.svg
+Trinity Baptist|Trinity_Baptist.svg
+Trinity Christian (IL)|Trinity_Christian_IL.svg
+Trinity International|Trinity_International.svg
+Truett-McConnell|Truett_McConnell.svg
+Truman State|Truman_State.svg
+U.S. International|US_International.svg
+UAlbany|UAlbany.svg
+UC Merced|UC_Merced.svg
+UC Santa Cruz|UC_Santa_Cruz.svg
+UNT Dallas|UNT_Dallas.svg
+UT Dallas|UT_Dallas.svg
+UT Permian Basin|UT_Permian_Basin.svg
+UT Tyler|UT_Tyler.svg
+UVA Wise|UVA_Wise.svg
+UW-Parkside|UW_Parkside.svg
+Union (KY)|Union_KY.svg
+Union (NY)|Union_NY.svg
+Union (NY)|Union_NY.svg
+Union (TN)|Union_TN.svg
+University Of The Virgin Islands|University_Of_The_Virgin_Islands.svg
+University Park|University_Park.svg
+University of Health Sciences & Pharmacy|University_of_Health_Sciences_Pharmacy.svg
+University of Mary|University_of_Mary.svg
+University of Rochester (NY)|University_of_Rochester_NY.svg
+University of Saint Katherine|University_of_Saint_Katherine.svg
+University of The Ozarks|University_of_The_Ozarks.svg
+University of The Sciences|University_of_The_Sciences.svg
+University of The Southwest|University_of_The_Southwest.svg
+University of Wisconsin River Falls|University_of_Wisconsin_River_Falls.svg
+Urbana|Urbana.svg
+Utah Tech|Utah_Tech.svg
+Valley City|Valley_City.svg
+Valley Forge|Valley_Forge.svg
+Vanguard|Vanguard.svg
+Vassar|Vassar.svg
+Vermont State - Johnson|Vermont_State_Johnson.svg
+Vermont State - Lyndon|Vermont_State_Lyndon.svg
+Vermont State - Randolph|Vermont_State_Randolph.svg
+Victory University|Victory_University.svg
+Virginia Intermont|Virginia_Intermont.svg
+Virginia Wesleyan|Virginia_Wesleyan.svg
+Virginia-Lynchburg|Virginia_Lynchburg.svg
+Viterbo|Viterbo.svg
+Voorhees|Voorhees.svg
+WVU Tech|WVU_Tech.svg
+Wabash College|Wabash_College.svg
+Waldorf College|Waldorf_College.svg
+Walla Walla|Walla_Walla.svg
+Warner Pacific|Warner_Pacific.svg
+Warner University|Warner_University.svg
+Warner University|Warner_University.svg
+Warren Wilson|Warren_Wilson.svg
+Washington & Jefferson|Washington_Jefferson.svg
+Washington & Jefferson|Washington_Jefferson.svg
+Washington & Lee|Washington_Lee.svg
+Washington College|Washington_College.svg
+Washington College (MD)|Washington_College_MD.svg
+Washington University (St. Louis)|Washington_University_St_Louis.svg
+Wayland Baptist|Wayland_Baptist.svg
+Wayne State (MI)|Wayne_State_MI.svg
+Wayne State (NE)|Wayne_State_NE.svg
+Webber International|Webber_International.svg
+Webster|Webster.svg
+Welch|Welch.svg
+Wells College|Wells_College.svg
+Wentworth Institute Of Technology|Wentworth_Institute_Of_Technology.svg
+Wesleyan (CT)|Wesleyan_CT.svg
+West Coast Baptist|West_Coast_Baptist.svg
+West Georgia|West_Georgia.svg
+West Virginia Tech|West_Virginia_Tech.svg
+Westcliff|Westcliff.svg
+Western New England|Western_New_England.svg
+Western State Colorado University|Western_State_Colorado_University.svg
+Westminster (PA)|Westminster_PA.svg
+Westminster (PA)|Westminster_PA.svg
+Westminster (UT)|Westminster_UT.svg
+Westmont|Westmont.svg
+Wheaton|Wheaton.svg
+Wheaton (IL)|Wheaton_IL.svg
+Wheaton (MA)|Wheaton_MA.svg
+Wheelock College|Wheelock_College.svg
+Whitman|Whitman.svg
+Wilberforce|Wilberforce.svg
+Wiley|Wiley.svg
+Wilkes University|Wilkes_University.svg
+William Carey|William_Carey.svg
+William Peace|William_Peace.svg
+William Penn|William_Penn.svg
+William Woods|William_Woods.svg
+Williams Baptist|Williams_Baptist.svg
+Wilmington (OH)|Wilmington_OH.svg
+Wilmington University|Wilmington_University.svg
+Wilson College|Wilson_College.svg
+Winston-Salem|Winston_Salem.svg
+Wisconsin-Lutheran|Wisconsin_Lutheran.svg
+Wisconsin-Stevens Point|Wisconsin_Stevens_Point.svg
+Wisconsin-Stout|Wisconsin_Stout.svg
+Wisconsin-Superior|Wisconsin_Superior.svg
+Wisconsin-Superior|Wisconsin_Superior.svg
+Xavier (LA)|Xavier_LA.svg
+Yellowstone Christian College|Yellowstone_Christian_College.svg
+York (NY)|York_NY.svg
+York College Nebraska|York_College_Nebraska.svg
+York College Pa|York_College_Pa.svg
+Young Harris College|Young_Harris_College.svg

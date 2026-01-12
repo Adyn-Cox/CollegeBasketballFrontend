@@ -2,7 +2,6 @@
 
 import { useSupabaseClient } from '@/lib/supabase/client'
 import { useEffect } from 'react'
-import type { AuthChangeEvent, Session } from '@supabase/supabase-js'
 
 /**
  * Client component to ensure Supabase session is initialized

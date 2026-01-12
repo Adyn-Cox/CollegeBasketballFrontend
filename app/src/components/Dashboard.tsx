@@ -36,6 +36,8 @@ interface Team {
   name: string
   logo?: string
   conference?: string
+  primaryColor?: string
+  secondaryColor?: string
 }
 
 interface Prediction {
@@ -183,6 +185,19 @@ export function Dashboard({ user }: DashboardProps) {
     </div>
   )
 
+  // Helper function to convert hex color to CSS color
+  const hexToColor = (hex: string | undefined): string => {
+    if (!hex || !hex.trim()) return ''
+    const cleanHex = hex.replace('#', '').trim()
+    if (cleanHex.length === 6) {
+      const r = parseInt(cleanHex.substring(0, 2), 16)
+      const g = parseInt(cleanHex.substring(2, 4), 16)
+      const b = parseInt(cleanHex.substring(4, 6), 16)
+      return `rgb(${r}, ${g}, ${b})`
+    }
+    return `#${cleanHex}`
+  }
+
   // Favorite Teams Section
   const renderFavoriteTeams = () => (
     <div className="mb-10 px-6 md:px-0">
@@ -211,33 +226,96 @@ export function Dashboard({ user }: DashboardProps) {
         </button>
       ) : (
         <div className="flex gap-4 overflow-x-auto pb-4 -mx-6 px-6 md:mx-0 md:px-0 scrollbar-hide md:grid md:grid-cols-4 md:overflow-visible">
-          {(isLoading ? [1, 2, 3, 4] : favoriteTeams).map((item, index) => (
-            <div
-              key={`team-${index}`}
-              className="flex-shrink-0 w-32 md:w-full group cursor-pointer"
-            >
-              <div className="aspect-square bg-white border-2 border-ink p-4 flex flex-col items-center justify-center mb-2 transition-all duration-300 relative overflow-hidden shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] dark:bg-black dark:border-cream dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]">
-                {isLoading ? (
-                  <>
-                    <Skeleton className="w-12 h-12 rounded-full mb-3" />
-                    <Skeleton className="w-20 h-3" />
-                  </>
-                ) : (
-                  <>
-                    <div className="w-12 h-12 rounded-full bg-cream border-2 border-ink flex items-center justify-center mb-3 text-2xl">
-                      🏀
-                    </div>
-                    <p className="text-lg font-display text-ink truncate w-full text-center uppercase dark:text-cream">Duke</p>
-                  </>
-                )}
+          {isLoading ? (
+            [1, 2, 3, 4].map((_, index) => (
+              <div
+                key={`skeleton-${index}`}
+                className="flex-shrink-0 w-32 md:w-full"
+              >
+                <div className="aspect-square bg-white border-2 border-ink p-4 flex flex-col items-center justify-center mb-2 transition-all duration-300 relative overflow-hidden shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:bg-black dark:border-cream dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]">
+                  <Skeleton className="w-12 h-12 rounded-full mb-3" />
+                  <Skeleton className="w-20 h-3" />
+                </div>
               </div>
-              {!isLoading && (
-                <p className="text-[10px] font-bold text-zinc-600 text-center uppercase tracking-wide font-mono border-t-2 border-transparent group-hover:border-hoops pt-1 transition-colors dark:text-cream">
-                  vs UNC • 7 PM
-                </p>
-              )}
-            </div>
-          ))}
+            ))
+          ) : (
+            favoriteTeams.map((team, index) => {
+              const primaryColor = hexToColor(team.primaryColor)
+              const secondaryColor = hexToColor(team.secondaryColor)
+              
+              return (
+              <div
+                key={team.id || `team-${index}`}
+                className="flex-shrink-0 w-32 md:w-full group cursor-pointer"
+              >
+                <div 
+                  className={`aspect-square border-2 p-4 flex flex-col items-center justify-center mb-2 transition-all duration-300 relative overflow-hidden shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] ${
+                    !primaryColor ? 'bg-white border-ink dark:bg-black dark:border-cream' : ''
+                  }`}
+                  style={primaryColor ? {
+                    backgroundColor: primaryColor,
+                    borderColor: secondaryColor || primaryColor,
+                  } : {}}
+                >
+                  {isLoading ? (
+                    <>
+                      <Skeleton className="w-12 h-12 rounded-full mb-3" />
+                      <Skeleton className="w-20 h-3" />
+                    </>
+                  ) : (
+                    <>
+                      <div className="w-16 h-16 md:w-20 md:h-20 flex-shrink-0 relative mb-3">
+                        {team.logo ? (
+                          <div className="w-full h-full rounded-full bg-white/90 border-2 border-black/10 flex items-center justify-center p-2 shadow-sm">
+                            <div className="w-full h-full relative">
+                              <Image
+                                src={team.logo}
+                                alt={`${team.name} logo`}
+                                fill
+                                className="object-contain"
+                                unoptimized
+                                onError={(e) => {
+                                  // Hide logo container if image fails
+                                  e.currentTarget.style.display = 'none'
+                                }}
+                              />
+                            </div>
+                          </div>
+                        ) : (
+                          <div 
+                            className="w-full h-full rounded-full flex items-center justify-center text-2xl md:text-3xl border-2 bg-white/90"
+                            style={{
+                              borderColor: primaryColor || 'currentColor',
+                            }}
+                          >
+                            🏀
+                          </div>
+                        )}
+                      </div>
+                      <p 
+                        className="text-base md:text-lg font-display truncate w-full text-center uppercase font-bold px-2"
+                        style={primaryColor ? {
+                          color: secondaryColor || '#ffffff',
+                          textShadow: '1px 1px 2px rgba(0,0,0,0.3)',
+                        } : undefined}
+                      >
+                        {team.name}
+                      </p>
+                    </>
+                  )}
+                </div>
+                {!isLoading && team.conference && (
+                  <p 
+                    className="text-[10px] font-bold text-center uppercase tracking-wide font-mono border-t-2 border-transparent group-hover:border-hoops pt-1 transition-colors"
+                    style={primaryColor ? { color: primaryColor } : undefined}
+                  >
+                    {team.conference}
+                  </p>
+                  )}
+                </div>
+              )
+            })
+          )}
         </div>
       )}
     </div>

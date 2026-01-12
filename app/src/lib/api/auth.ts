@@ -6,7 +6,7 @@
  * by redirecting to login on any error.
  */
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5001'
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'
 
 export interface LoginResponse {
   message: string
