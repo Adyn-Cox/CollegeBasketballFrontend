@@ -8,13 +8,9 @@ export function UserProfile() {
   const [user, setUser] = useState<User | null>(null)
   const [token, setToken] = useState<string | null>(null)
   const supabase = useSupabaseClient()
-  const [loading, setLoading] = useState(!supabase)
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    if (!supabase) {
-      return
-    }
-
     const loadUser = async () => {
       const {
         data: { session },
@@ -38,7 +34,6 @@ export function UserProfile() {
   }, [supabase])
 
   const handleSignOut = async () => {
-    if (!supabase) return
     await supabase.auth.signOut()
     setUser(null)
     setToken(null)

@@ -1,90 +1,59 @@
 'use client'
 
 import { createBrowserClient } from '@supabase/ssr'
-import { useState, useEffect } from 'react'
+import type { SupabaseClient } from '@supabase/supabase-js'
 
-let supabaseClient: ReturnType<typeof createBrowserClient> | null = null
-let configPromise: Promise<{ url: string; anonKey: string }> | null = null
+/**
+ * Supabase Browser Client
+ * 
+ * Uses NEXT_PUBLIC_ env vars which are inlined at build time.
+ * No async fetch needed - client is created synchronously.
+ */
 
-async function getSupabaseConfig() {
-  if (configPromise) {
-    return configPromise
-  }
+// Validate env vars at module load (will show clear error in console)
+const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL
+const SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 
-  configPromise = fetch('/api/supabase-config')
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error('Failed to fetch Supabase config')
-      }
-      return response.json()
-    })
-    .then((config) => {
-      if (!config.url || !config.anonKey) {
-        throw new Error(
-          'Missing Supabase environment variables. Please set SUPABASE_URL and SUPABASE_ANON_KEY'
-        )
-      }
-      return config
-    })
-
-  return configPromise
-}
-
-export function createClient() {
-  if (supabaseClient) {
-    return supabaseClient
-  }
-
-  // For initial render, we'll create a client that will be initialized
-  // This is a fallback - components should use useSupabaseClient hook instead
-  throw new Error(
-    'Supabase client not initialized. Use useSupabaseClient() hook in client components.'
+if (!SUPABASE_URL || !SUPABASE_ANON_KEY) {
+  console.error(
+    'Missing Supabase environment variables. Set NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY in .env.local'
   )
 }
 
-export function useSupabaseClient() {
-  const [client, setClient] = useState<ReturnType<typeof createBrowserClient> | null>(
-    supabaseClient
-  )
-  const [loading, setLoading] = useState(!supabaseClient)
-  const [error, setError] = useState<Error | null>(null)
+// Singleton client - created once, reused everywhere
+let browserClient: SupabaseClient | null = null
 
-  useEffect(() => {
-    if (supabaseClient) {
-      // Use setTimeout to avoid synchronous setState in effect
-      setTimeout(() => {
-        setClient(supabaseClient)
-        setLoading(false)
-      }, 0)
-      return
-    }
-
-    // Use setTimeout to avoid synchronous setState in effect
-    setTimeout(() => {
-      setLoading(true)
-    }, 0)
-    
-    getSupabaseConfig()
-      .then((config) => {
-        supabaseClient = createBrowserClient(config.url, config.anonKey)
-        setClient(supabaseClient)
-        setLoading(false)
-      })
-      .catch((err) => {
-        setError(err)
-        setLoading(false)
-        console.error('Failed to initialize Supabase client:', err)
-      })
-  }, [])
-
-  if (error) {
-    throw error
+/**
+ * Get or create the Supabase browser client.
+ * Safe to call multiple times - returns the same instance.
+ */
+export function getSupabaseClient(): SupabaseClient {
+  if (browserClient) {
+    return browserClient
   }
 
-  if (loading || !client) {
-    // Return null during loading - components should handle this
-    return null
+  if (!SUPABASE_URL || !SUPABASE_ANON_KEY) {
+    throw new Error(
+      'Missing Supabase environment variables. Set NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY'
+    )
   }
 
-  return client
+  browserClient = createBrowserClient(SUPABASE_URL, SUPABASE_ANON_KEY)
+  return browserClient
 }
+
+/**
+ * React hook to get the Supabase client.
+ * Returns the client directly (never null).
+ * 
+ * @example
+ * const supabase = useSupabaseClient()
+ * const { data } = await supabase.auth.getSession()
+ */
+export function useSupabaseClient(): SupabaseClient {
+  // Client is created synchronously - no loading state needed
+  return getSupabaseClient()
+}
+
+// Legacy export for compatibility
+export const createClient = getSupabaseClient

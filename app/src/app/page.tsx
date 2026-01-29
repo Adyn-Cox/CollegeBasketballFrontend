@@ -1,11 +1,12 @@
 'use client'
 
+// Root Page
 import { LoginButton } from "@/components/auth/LoginButton";
+import { AppLogo } from "@/components/AppLogo";
 import { useSupabaseClient } from "@/lib/supabase/client";
 import { useSearchParams, useRouter } from "next/navigation";
 import { useEffect, useState, Suspense, useMemo } from "react";
 import type { Session, AuthChangeEvent } from "@supabase/supabase-js";
-import Image from "next/image";
 
 function LoginContent() {
   const supabase = useSupabaseClient();
@@ -23,8 +24,6 @@ function LoginContent() {
   }, [searchParams]);
 
   useEffect(() => {
-    if (!supabase) return;
-
     // Check if user is already authenticated
     supabase.auth.getSession().then(({ data: { session } }: { data: { session: Session | null } }) => {
       if (session) {
@@ -61,14 +60,8 @@ function LoginContent() {
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/paper.png')] dark:hidden" />
 
       <main className="flex min-h-screen w-full max-w-md flex-col items-center justify-center p-8 text-center relative z-10">
-        <div className="w-48 h-48 border-4 border-ink bg-white p-2 relative group transition-transform hover:scale-105 duration-500 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:border-cream dark:bg-black dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)]">
-          <Image 
-            src="https://images.pexels.com/photos/220383/pexels-photo-220383.jpeg?auto=compress&cs=tinysrgb&w=600"
-            alt="Basketball Arena"
-            fill
-            className="object-cover"
-            priority
-          />
+        <div className="group transition-transform hover:scale-105 duration-500">
+          <AppLogo size={192} className="border-4 border-ink shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:border-cream dark:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)]" />
         </div>
         
         <h1 className="text-6xl font-display text-ink mb-2 tracking-tighter uppercase mt-8 dark:text-cream">

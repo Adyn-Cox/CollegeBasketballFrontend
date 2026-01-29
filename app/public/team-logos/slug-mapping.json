@@ -1,0 +1,5858 @@
+{
+  "nameToSlug": {
+    "abilene christian": "abilene-christian",
+    "academy of art": "academy-of-art",
+    "adams st.": "adams-st",
+    "adelphi": "adelphi",
+    "adrian": "adrian",
+    "agnes scott": "agnes-scott",
+    "air force": "air-force",
+    "akron": "akron",
+    "alabama-huntsville": "ala-huntsville",
+    "alabama": "alabama",
+    "alabama a&m": "alabama-am",
+    "alabama st.": "alabama-st",
+    "alas. anchorage": "alas-anchorage",
+    "alas. fairbanks": "alas-fairbanks",
+    "albany (ny)": "albany-ny",
+    "albany st. (ga)": "albany-st-ga",
+    "albertus magnus": "albertus-magnus",
+    "albion": "albion",
+    "albright": "albright",
+    "alcorn st.": "alcorn",
+    "alderson broaddus": "alderson-broaddus",
+    "alfred": "alfred",
+    "alfred state": "alfred-st",
+    "allegheny": "allegheny",
+    "allen": "allen",
+    "alma": "alma",
+    "alvernia": "alvernia",
+    "alverno": "alverno",
+    "texas-am-corpus": "am-corpus-chris",
+    "american": "american",
+    "american int'l": "american-intl",
+    "american (pr)": "american-pr",
+    "amherst": "amherst",
+    "anderson (in)": "anderson-in",
+    "anderson (sc)": "anderson-sc",
+    "angelo st.": "angelo-st",
+    "anna maria": "anna-maria",
+    "appalachian st.": "appalachian-st",
+    "arcadia": "arcadia",
+    "arizona": "arizona",
+    "arizona st.": "arizona-st",
+    "ark. - fort smith": "ark-fort-smith",
+    "ark.-monticello": "ark-monticello",
+    "ark.-pine bluff": "ark-pine-bluff",
+    "arkansas": "arkansas",
+    "arkansas st.": "arkansas-st",
+    "arkansas tech": "arkansas-tech",
+    "armstrong": "armstrong",
+    "army": "army",
+    "asbury university": "asbury",
+    "ashland": "ashland",
+    "assumption": "assumption",
+    "auburn-montgomery": "aub-montgomery",
+    "auburn": "auburn",
+    "augsburg": "augsburg",
+    "augustana (il)": "augustana-il",
+    "augustana (sd)": "augustana-sd",
+    "aurora": "aurora",
+    "austin": "austin",
+    "austin peay": "austin-peay",
+    "averett": "averett",
+    "azusa pacific": "azusa-pacific",
+    "babson": "babson",
+    "csu bakersfield": "bakersfield",
+    "baldwin wallace": "baldwin-wallace",
+    "ball st.": "ball-st",
+    "clarks summit university": "baptist-bible-pa",
+    "bard": "bard",
+    "barry": "barry",
+    "barton": "barton",
+    "baruch": "baruch",
+    "bates": "bates",
+    "bay path": "bay-path",
+    "baylor": "baylor",
+    "becker": "becker",
+    "belhaven": "belhaven",
+    "bellarmine": "bellarmine",
+    "belmont": "belmont",
+    "belmont abbey": "belmont-abbey",
+    "beloit": "beloit",
+    "bemidji st.": "bemidji-st",
+    "benedict": "benedict",
+    "benedictine (il)": "benedictine-il",
+    "bentley": "bentley",
+    "berea college": "berea",
+    "berry": "berry",
+    "bethany lutheran": "bethany-lutheran",
+    "bethany (wv)": "bethany-wv",
+    "bethel (mn)": "bethel-mn",
+    "bethune-cookman": "bethune-cookman",
+    "binghamton": "binghamton",
+    "biola": "biola",
+    "birmingham-so.": "birmingham-so",
+    "black hills st.": "black-hills-st",
+    "blackburn": "blackburn",
+    "bloomfield": "bloomfield",
+    "bloomsburg": "bloomsburg",
+    "bluefield st.": "bluefield-st",
+    "bluffton": "bluffton",
+    "boise st.": "boise-st",
+    "boston college": "boston-college",
+    "boston u.": "boston-u",
+    "bowdoin": "bowdoin",
+    "bowie st.": "bowie-st",
+    "bowling green": "bowling-green",
+    "bradley": "bradley",
+    "brandeis": "brandeis",
+    "brevard": "brevard",
+    "bridgeport": "bridgeport",
+    "bridgewater st.": "bridgewater-st",
+    "bridgewater (va)": "bridgewater-va",
+    "brooklyn": "brooklyn",
+    "brown": "brown",
+    "bryant": "bryant",
+    "bryn athyn": "bryn-athyn",
+    "bryn mawr": "bryn-mawr",
+    "bucknell": "bucknell",
+    "buena vista": "buena-vista",
+    "buffalo": "buffalo",
+    "buffalo st.": "buffalo-st",
+    "butler": "butler",
+    "byu": "byu",
+    "byu-hawaii": "byu-hawaii",
+    "cabrini": "cabrini",
+    "cairn": "cairn",
+    "cal lutheran": "cal-lutheran",
+    "cal poly": "cal-poly",
+    "cal poly pomona": "cal-poly-pomona",
+    "cal st. dom. hills": "cal-st-dom-hills",
+    "cal st. east bay": "cal-st-east-bay",
+    "cal st. fullerton": "cal-st-fullerton",
+    "cal state la": "cal-st-la",
+    "cal st. monterey bay": "cal-st-monterey-bay",
+    "cal st. northridge": "cal-st-northridge",
+    "cal st. san b'dino": "cal-st-san-bdino",
+    "cal state-san marcos": "cal-st-san-marcos",
+    "cal st. stanislaus": "cal-st-stanislaus",
+    "caldwell": "caldwell",
+    "california": "california",
+    "cal baptist": "california-baptist",
+    "california (pa)": "california-pa",
+    "caltech": "caltech",
+    "calvin": "calvin",
+    "cameron": "cameron",
+    "campbell": "campbell",
+    "canisius": "canisius",
+    "capital": "capital",
+    "carleton": "carleton",
+    "carnegie mellon": "carnegie-mellon",
+    "carroll (wi)": "carroll-wi",
+    "carson-newman": "carson-newman",
+    "carthage": "carthage",
+    "case western reserve": "case",
+    "castleton": "castleton",
+    "catawba": "catawba",
+    "catholic": "catholic",
+    "cazenovia": "cazenovia",
+    "ccny": "ccny",
+    "cedar crest": "cedar-crest",
+    "cedarville": "cedarville",
+    "centenary (la)": "centenary-la",
+    "centenary (nj)": "centenary-nj",
+    "central ark.": "central-ark",
+    "central conn. st.": "central-conn-st",
+    "central (ia)": "central-ia",
+    "central mich.": "central-mich",
+    "central mo.": "central-mo",
+    "central okla.": "central-okla",
+    "central st. (oh)": "central-st-oh",
+    "central wash.": "central-wash",
+    "centre": "centre",
+    "chadron st.": "chadron-st",
+    "chaminade": "chaminade",
+    "chapman": "chapman",
+    "charleston so.": "charleston-so",
+    "charleston (wv)": "charleston-wv",
+    "charlotte": "charlotte",
+    "chatham": "chatham",
+    "tenn-chattanooga": "chattanooga",
+    "chestnut hill": "chestnut-hill",
+    "cheyney": "cheyney",
+    "chicago": "chicago",
+    "chicago st.": "chicago-st",
+    "chico state": "chico-st",
+    "chowan": "chowan",
+    "chris. newport": "chris-newport",
+    "christian bros.": "christian-bros",
+    "cincinnati": "cincinnati",
+    "citadel": "citadel",
+    "new-york-city-tech": "city-tech",
+    "claflin": "claflin",
+    "claremont-m-s": "claremont-m-s",
+    "clarion": "clarion",
+    "clark atlanta": "clark-atlanta",
+    "clark (ma)": "clark-ma",
+    "clarke": "clarke",
+    "clarkson": "clarkson",
+    "clayton st.": "clayton-st",
+    "clemson": "clemson",
+    "cleveland st.": "cleveland-st",
+    "coast guard": "coast-guard",
+    "coastal caro.": "coastal-caro",
+    "suny-cobleskill": "cobleskill-st",
+    "coe": "coe",
+    "coker": "coker",
+    "col. of charleston": "col-of-charleston",
+    "colby": "colby",
+    "colby-sawyer": "colby-sawyer",
+    "colgate": "colgate",
+    "colo. christian": "colo-christian",
+    "colorado": "colorado",
+    "colorado col.": "colorado-col",
+    "colorado mesa": "colorado-mesa",
+    "colorado school of mines": "colorado-mines",
+    "colorado st.": "colorado-st",
+    "colorado st.-pueblo": "colorado-st-pueblo",
+    "columbia": "columbia",
+    "columbus st.": "columbus-st",
+    "concord": "concord",
+    "concordia chicago": "concordia-chicago",
+    "concordia university irvine": "concordia-irvine",
+    "concordia-m'head": "concordia-mhead",
+    "concordia (ny)": "concordia-ny",
+    "concordia university-portland": "concordia-or",
+    "concordia-st. paul": "concordia-st-paul",
+    "concordia (tx)": "concordia-tx",
+    "concordia (wis.)": "concordia-wi",
+    "connecticut col.": "connecticut-col",
+    "converse": "converse",
+    "coppin st.": "coppin-st",
+    "cornell": "cornell",
+    "cornell college": "cornell-college",
+    "covenant": "covenant",
+    "creighton": "creighton",
+    "crown (mn)": "crown-mn",
+    "curry": "curry",
+    "daemen": "daemen",
+    "dallas": "dallas",
+    "dallas baptist": "dallas-baptist",
+    "daniel webster": "daniel-webster",
+    "dartmouth": "dartmouth",
+    "davenport": "davenport",
+    "davidson": "davidson",
+    "davis & elkins": "davis-elkins",
+    "dayton": "dayton",
+    "dean college": "dean-college",
+    "delaware": "delaware",
+    "delaware st.": "delaware-st",
+    "delaware valley": "delaware-valley",
+    "delta st.": "delta-st",
+    "denison": "denison",
+    "denver": "denver",
+    "depaul": "depaul",
+    "depauw": "depauw",
+    "desales": "desales",
+    "detroit": "detroit",
+    "dickinson": "dickinson",
+    "dist. columbia": "dist-columbia",
+    "dominican (cal.)": "dominican-ca",
+    "dominican (il)": "dominican-il",
+    "dominican (ny)": "dominican-ny",
+    "dowling": "dowling",
+    "drake": "drake",
+    "drew": "drew",
+    "drexel": "drexel",
+    "drury": "drury",
+    "dubuque": "dubuque",
+    "duke": "duke",
+    "duquesne": "duquesne",
+    "d'youville": "dyouville",
+    "earlham": "earlham",
+    "east carolina": "east-carolina",
+    "east central": "east-central",
+    "east. mennonite": "east-mennonite",
+    "east stroudsburg": "east-stroudsburg",
+    "east tenn. st.": "east-tenn-st",
+    "east tex. a&m": "east-tex-am",
+    "east tex. baptist": "east-tex-baptist",
+    "eastern": "eastern",
+    "eastern conn. st.": "eastern-conn-st",
+    "eastern ill.": "eastern-ill",
+    "eastern ky.": "eastern-ky",
+    "eastern mich.": "eastern-mich",
+    "eastern n.m.": "eastern-nm",
+    "eastern ore.": "eastern-ore",
+    "eastern wash.": "eastern-wash",
+    "eckerd": "eckerd",
+    "edgewood": "edgewood",
+    "edinboro": "edinboro",
+    "edward waters": "edward-waters",
+    "elizabeth city st.": "elizabeth-city-st",
+    "elizabethtown": "elizabethtown",
+    "elmhurst": "elmhurst",
+    "elmira": "elmira",
+    "elms": "elms",
+    "elon": "elon",
+    "embry-riddle university": "embry-riddle-fl",
+    "emerson": "emerson",
+    "emmanuel (ga.)": "emmanuel-ga",
+    "emmanuel (mass.)": "emmanuel-ma",
+    "emory": "emory",
+    "emory & henry": "emory-henry",
+    "emporia st.": "emporia-st",
+    "endicott": "endicott",
+    "erskine": "erskine",
+    "eureka": "eureka",
+    "evansville": "evansville",
+    "evergreen st.": "evergreen-st",
+    "fairfield": "fairfield",
+    "fairmont st.": "fairmont-st",
+    "farmingdale st.": "farmingdale-st",
+    "fayetteville st.": "fayetteville-st",
+    "fdu": "fdu",
+    "fdu-florham": "fdu-florham",
+    "felician": "felician",
+    "ferris st.": "ferris-st",
+    "ferrum": "ferrum",
+    "fgcu": "fgcu",
+    "findlay": "findlay",
+    "finlandia": "finlandia",
+    "fisk": "fisk",
+    "fitchburg st.": "fitchburg-st",
+    "fiu": "fiu",
+    "florida atlantic": "fla-atlantic",
+    "fla. southern": "fla-southern",
+    "flagler": "flagler",
+    "florida": "florida",
+    "florida a&m": "florida-am",
+    "florida st.": "florida-st",
+    "florida tech": "florida-tech",
+    "fontbonne": "fontbonne",
+    "fordham": "fordham",
+    "fort hays st.": "fort-hays-st",
+    "fort lewis": "fort-lewis",
+    "fort valley st.": "fort-valley-st",
+    "framingham st.": "framingham-st",
+    "francis marion": "francis-marion",
+    "franciscan": "franciscan",
+    "frank. & marsh.": "frank-marsh",
+    "franklin": "franklin",
+    "franklin pierce": "franklin-pierce",
+    "fredonia": "fredonia-st",
+    "fresno pacific": "fresno-pacific",
+    "fresno st.": "fresno-st",
+    "frostburg st.": "frostburg-st",
+    "furman": "furman",
+    "georgia southern": "ga-southern",
+    "ga. southwestern": "ga-southwestern",
+    "gallaudet": "gallaudet",
+    "gannon": "gannon",
+    "gardner-webb": "gardner-webb",
+    "geneva": "geneva",
+    "george fox": "george-fox",
+    "george mason": "george-mason",
+    "george washington": "george-washington",
+    "georgetown": "georgetown",
+    "georgia": "georgia",
+    "georgia college": "georgia-college",
+    "georgia st.": "georgia-st",
+    "georgia tech": "georgia-tech",
+    "georgian court": "georgian-court",
+    "gettysburg": "gettysburg",
+    "glenville st.": "glenville-st",
+    "goldey-beacom": "goldey-beacom",
+    "gonzaga": "gonzaga",
+    "gordon": "gordon",
+    "goucher": "goucher",
+    "grambling": "grambling",
+    "grand canyon": "grand-canyon",
+    "grand valley st.": "grand-valley-st",
+    "green bay": "green-bay",
+    "green mountain": "green-mountain",
+    "greensboro": "greensboro",
+    "greenville": "greenville",
+    "grinnell": "grinnell",
+    "grove city": "grove-city",
+    "augusta university": "gru-augusta",
+    "guilford": "guilford",
+    "gust. adolphus": "gust-adolphus",
+    "gwynedd-mercy": "gwynedd-mercy",
+    "hamilton": "hamilton",
+    "hamline": "hamline",
+    "hampden-sydney": "hampden-sydney",
+    "hampton": "hampton",
+    "hanover": "hanover",
+    "hardin-simmons": "hardin-simmons",
+    "harding": "harding",
+    "hartford": "hartford",
+    "hartwick": "hartwick",
+    "harvard": "harvard",
+    "haverford": "haverford",
+    "hawaii": "hawaii",
+    "hawaii hilo": "hawaii-hilo",
+    "hawaii pacific": "hawaii-pacific",
+    "heidelberg": "heidelberg",
+    "henderson st.": "henderson-st",
+    "hendrix": "hendrix",
+    "high point": "high-point",
+    "hilbert": "hilbert",
+    "hillsdale": "hillsdale",
+    "hiram": "hiram",
+    "hobart": "hobart",
+    "hofstra": "hofstra",
+    "hollins": "hollins",
+    "holy cross": "holy-cross",
+    "holy family": "holy-family",
+    "holy names": "holy-names",
+    "hood": "hood",
+    "hope": "hope",
+    "houghton": "houghton",
+    "houston": "houston",
+    "houston christian": "houston-christian",
+    "howard": "howard",
+    "howard payne": "howard-payne",
+    "cal poly humboldt": "humboldt-st",
+    "hunter": "hunter",
+    "huntingdon": "huntingdon",
+    "husson": "husson",
+    "idaho": "idaho",
+    "idaho st.": "idaho-st",
+    "illinois tech": "iit",
+    "ill.-chicago": "ill-chicago",
+    "ill.- springfield": "ill-springfield",
+    "ill. wesleyan": "ill-wesleyan",
+    "illinois": "illinois",
+    "illinois col.": "illinois-col",
+    "illinois st.": "illinois-st",
+    "immaculata": "immaculata",
+    "uiw": "incarnate-word",
+    "indiana": "indiana",
+    "indiana (pa)": "indiana-pa",
+    "indiana st.": "indiana-st",
+    "indianapolis": "indianapolis",
+    "iona": "iona",
+    "iowa": "iowa",
+    "iowa st.": "iowa-st",
+    "iowa wesleyan": "iowa-wesleyan",
+    "purdue university fort wayne": "ipfw",
+    "ithaca": "ithaca",
+    "iu indy": "iu-indy",
+    "jackson st.": "jackson-st",
+    "jacksonville": "jacksonville",
+    "jacksonville st.": "jacksonville-st",
+    "james madison": "james-madison",
+    "jessup university": "jessup",
+    "john carroll": "john-carroll",
+    "john jay": "john-jay",
+    "johns hopkins": "johns-hopkins",
+    "johnson c. smith": "johnson-c-smith",
+    "johnson st.": "johnson-st",
+    "johnson & wales (ri)": "johnson-wales-ri",
+    "juniata": "juniata",
+    "johnson & wales (denver)": "jwu-denver",
+    "kalamazoo": "kalamazoo",
+    "kansas": "kansas",
+    "kansas st.": "kansas-st",
+    "kean": "kean",
+    "keene st.": "keene-st",
+    "kennesaw st.": "kennesaw-st",
+    "kent st.": "kent-st",
+    "kentucky": "kentucky",
+    "kentucky st.": "kentucky-st",
+    "kenyon": "kenyon",
+    "keuka": "keuka",
+    "keystone": "keystone",
+    "king (tn)": "king-tn",
+    "king's (pa)": "kings-pa",
+    "knox": "knox",
+    "kutztown": "kutztown",
+    "ky. wesleyan": "ky-wesleyan",
+    "la.-lafayette": "la-lafayette",
+    "la.-monroe": "la-monroe",
+    "la roche": "la-roche",
+    "la salle": "la-salle",
+    "la sierra": "la-sierra",
+    "la verne": "la-verne",
+    "lafayette": "lafayette",
+    "lagrange": "lagrange",
+    "lake erie": "lake-erie",
+    "lake forest": "lake-forest",
+    "lake superior st.": "lake-superior-st",
+    "lakeland": "lakeland",
+    "lamar": "lamar",
+    "lambuth": "lambuth",
+    "lancaster bible": "lancaster-bible",
+    "lander": "lander",
+    "lane": "lane",
+    "langston": "langston",
+    "lasell": "lasell",
+    "lawrence": "lawrence",
+    "le moyne": "le-moyne",
+    "lebanon valley": "lebanon-valley",
+    "lee": "lee",
+    "lees-mcrae": "lees-mcrae",
+    "lehigh": "lehigh",
+    "lehman": "lehman",
+    "lemoyne-owen": "lemoyne-owen",
+    "lenoir-rhyne": "lenoir-rhyne",
+    "lesley": "lesley",
+    "letourneau": "letourneau",
+    "lewis": "lewis",
+    "lewis & clark": "lewis-clark",
+    "liberty": "liberty",
+    "limestone": "limestone",
+    "lincoln christian": "lincoln-christian",
+    "lincoln memorial": "lincoln-memorial",
+    "lincoln (mo)": "lincoln-mo",
+    "lincoln (pa)": "lincoln-pa",
+    "lindenwood": "lindenwood-mo",
+    "linfield": "linfield",
+    "lipscomb": "lipscomb",
+    "liu post": "liu-post",
+    "livingstone": "livingstone",
+    "lock haven": "lock-haven",
+    "long beach st.": "long-beach-st",
+    "long island": "long-island",
+    "longwood": "longwood",
+    "loras": "loras",
+    "louisiana col.": "louisiana-col",
+    "louisiana tech": "louisiana-tech",
+    "louisville": "louisville",
+    "loyola (il)": "loyola-chicago",
+    "loyola maryland": "loyola-maryland",
+    "loyola marymount": "loyola-marymount",
+    "lsu": "lsu",
+    "lubbock christian": "lubbock-christian",
+    "luther": "luther",
+    "lycoming": "lycoming",
+    "lynchburg": "lynchburg",
+    "lyndon st.": "lyndon-st",
+    "lynn": "lynn",
+    "lyon college": "lyon",
+    "macalester": "macalester",
+    "macmurray": "macmurray",
+    "maine": "maine",
+    "maine maritime": "maine-maritime",
+    "malone": "malone",
+    "manchester": "manchester",
+    "manhattan": "manhattan",
+    "manhattanville": "manhattanville",
+    "mansfield": "mansfield",
+    "maranatha baptist": "maranatha-baptist",
+    "marian (wi)": "marian-wi",
+    "marietta": "marietta",
+    "marist": "marist",
+    "marquette": "marquette",
+    "mars hill": "mars-hill",
+    "marshall": "marshall",
+    "martin luther": "martin-luther",
+    "mary": "mary",
+    "mary baldwin": "mary-baldwin",
+    "mary hardin-baylor": "mary-hardin-baylor",
+    "mary washington": "mary-washington",
+    "maryland": "maryland",
+    "marymount (va)": "marymount-va",
+    "maryville (mo)": "maryville-mo",
+    "maryville (tn)": "maryville-tn",
+    "marywood": "marywood",
+    "mass. maritime": "mass-maritime",
+    "mass-amherst": "massachusetts",
+    "mcdaniel": "mcdaniel",
+    "mckendree": "mckendree",
+    "mass-liberal-arts": "mcla",
+    "mcmurry": "mcmurry",
+    "mcneese st.": "mcneese-st",
+    "md.-east. shore": "md-east-shore",
+    "me.-farmington": "me-farmington",
+    "me.-presque isle": "me-presque-isle",
+    "medaille": "medaille",
+    "medgar evers": "medgar-evers",
+    "memphis": "memphis",
+    "menlo": "menlo",
+    "mercer": "mercer",
+    "merchant marine": "merchant-marine",
+    "mercy": "mercy",
+    "mercyhurst": "mercyhurst",
+    "meredith": "meredith",
+    "merrimack": "merrimack",
+    "messiah": "messiah",
+    "methodist": "methodist",
+    "metro st.": "metro-st",
+    "miami (fla.)": "miami-fl",
+    "miami (oh)": "miami-oh",
+    "michigan": "michigan",
+    "michigan st.": "michigan-st",
+    "michigan tech": "michigan-tech",
+    "middle tenn.": "middle-tenn",
+    "middlebury": "middlebury",
+    "msu texas": "midwestern-st",
+    "miles": "miles",
+    "millersville": "millersville",
+    "millikin": "millikin",
+    "mills": "mills",
+    "millsaps": "millsaps",
+    "milwaukee": "milwaukee",
+    "minn.-crookston": "minn-crookston",
+    "minn. duluth": "minn-duluth",
+    "minn.-morris": "minn-morris",
+    "minn. st. mankato": "minn-st-mankato",
+    "minn. st. moorhead": "minn-st-moorhead",
+    "minnesota": "minnesota",
+    "minot st.": "minot-st",
+    "misericordia": "misericordia",
+    "mississippi col.": "mississippi-col",
+    "mississippi st.": "mississippi-st",
+    "mississippi val.": "mississippi-val",
+    "missouri": "missouri",
+    "missouri s&t": "missouri-snt",
+    "missouri st.": "missouri-st",
+    "mit": "mit",
+    "mitchell": "mitchell",
+    "mo. southern st.": "mo-southern-st",
+    "mo.-st. louis": "mo-st-louis",
+    "mo. western st.": "mo-western-st",
+    "molloy": "molloy",
+    "monmouth": "monmouth",
+    "monmouth (il)": "monmouth-il",
+    "mont. st. billings": "mont-st-billings",
+    "montana": "montana",
+    "montana st.": "montana-st",
+    "montclair st.": "montclair-st",
+    "montevallo": "montevallo",
+    "moravian": "moravian",
+    "morehead st.": "morehead-st",
+    "morehouse": "morehouse",
+    "morgan st.": "morgan-st",
+    "morningside": "morningside",
+    "morris brown": "morris-brown",
+    "mount holyoke": "mount-holyoke",
+    "mount ida": "mount-ida",
+    "mount olive": "mount-olive",
+    "mount union": "mount-union",
+    "milwaukee engr.": "msoe",
+    "mt. aloysius": "mt-aloysius",
+    "mt. mary": "mt-mary",
+    "mount st. joseph": "mt-st-joseph",
+    "mt. st. mary (ny)": "mt-st-mary-ny",
+    "mt. st. mary's": "mt-st-marys",
+    "mt. st. vincent": "mt-st-vincent",
+    "muhlenberg": "muhlenberg",
+    "murray st.": "murray-st",
+    "muskingum": "muskingum",
+    "navy": "navy",
+    "nazareth": "nazareth",
+    "north carolina a&t": "nc-at",
+    "north carolina central": "nc-central",
+    "north carolina wesleyan": "nc-wesleyan",
+    "neb.-kearney": "neb-kearney",
+    "omaha": "neb-omaha",
+    "neb. wesleyan": "neb-wesleyan",
+    "nebraska": "nebraska",
+    "neumann": "neumann",
+    "nevada": "nevada",
+    "new england col.": "new-england-col",
+    "new hampshire": "new-hampshire",
+    "new haven": "new-haven",
+    "new jersey city": "new-jersey-city",
+    "new mexico": "new-mexico",
+    "new mexico st.": "new-mexico-st",
+    "new orleans": "new-orleans",
+    "new rochelle": "new-rochelle",
+    "new york u.": "new-york-u",
+    "newberry": "newberry",
+    "newbury": "newbury",
+    "newman": "newman",
+    "niagara": "niagara",
+    "nicholls st.": "nicholls-st",
+    "nichols": "nichols",
+    "new-jersey-tech": "njit",
+    "new-mexico-highlands": "nm-highlands",
+    "norfolk st.": "norfolk-st",
+    "north ala.": "north-ala",
+    "north carolina": "north-carolina",
+    "north carolina st.": "north-carolina-st",
+    "north central (il)": "north-central-il",
+    "north central (mn)": "north-central-mn",
+    "north dakota": "north-dakota",
+    "north dakota st.": "north-dakota-st",
+    "north florida": "north-florida",
+    "north ga.": "north-georgia",
+    "north greenville": "north-greenville",
+    "north park": "north-park",
+    "north texas": "north-texas",
+    "northeastern": "northeastern",
+    "northeastern ill.": "northeastern-ill",
+    "northeastern st.": "northeastern-st",
+    "northern ariz.": "northern-ariz",
+    "northern colo.": "northern-colo",
+    "northern ill.": "northern-ill",
+    "northern ky.": "northern-ky",
+    "northern mich.": "northern-mich",
+    "northern st.": "northern-st",
+    "northland": "northland",
+    "northwest mo. st.": "northwest-mo-st",
+    "northwest nazarene": "northwest-nazarene",
+    "northwestern": "northwestern",
+    "northwestern oklahoma": "northwestern-okla",
+    "northwestern st.": "northwestern-st",
+    "northwestern-st. paul": "northwestern-st-paul",
+    "northwood (mi)": "northwood-mi",
+    "norwich": "norwich",
+    "notre dame": "notre-dame",
+    "notre dame de namur": "notre-dame-de-namur",
+    "notre dame (md)": "notre-dame-md",
+    "notre dame (oh)": "notre-dame-oh",
+    "nova southeastern": "nova-southeastern",
+    "nyack": "nyack",
+    "new-york-inst": "nyit",
+    "oakland": "oakland",
+    "oakland city": "oakland-city",
+    "oberlin": "oberlin",
+    "occidental": "occidental",
+    "oglethorpe": "oglethorpe",
+    "ohio": "ohio",
+    "ohio dominican": "ohio-dominican",
+    "ohio northern": "ohio-northern",
+    "ohio st.": "ohio-st",
+    "ohio valley": "ohio-valley",
+    "ohio wesleyan": "ohio-wesleyan",
+    "oklahoma baptist university": "okla-baptist",
+    "oklahoma christian": "okla-christian",
+    "oklahoma panhandle": "okla-panhandle",
+    "oklahoma": "oklahoma",
+    "oklahoma st.": "oklahoma-st",
+    "old dominion": "old-dominion",
+    "suny-old-westbury": "old-westbury",
+    "mississippi": "ole-miss",
+    "olivet": "olivet",
+    "suny oneonta": "oneonta-st",
+    "oral roberts": "oral-roberts",
+    "oregon": "oregon",
+    "oregon state": "oregon-st",
+    "suny-oswego": "oswego-st",
+    "otterbein": "otterbein",
+    "ouachita baptist": "ouachita-baptist",
+    "ozarks (ar)": "ozarks-ar",
+    "pace": "pace",
+    "pacific": "pacific",
+    "pacific lutheran": "pacific-lutheran",
+    "pacific (or)": "pacific-or",
+    "paine": "paine",
+    "palm beach atl.": "palm-beach-atl",
+    "penn": "penn",
+    "penn state": "penn-st",
+    "penn st.-abington": "penn-st-abington",
+    "penn st.-altoona": "penn-st-altoona",
+    "penn st.-behrend": "penn-st-behrend",
+    "penn st.-berks": "penn-st-berks",
+    "penn st. brandywine": "penn-st-brandywine",
+    "penn st.-harrisburg": "penn-st-harrisburg",
+    "penn college": "penn-tech",
+    "pepperdine": "pepperdine",
+    "pfeiffer": "pfeiffer",
+    "jefferson university": "philadelphia-u",
+    "piedmont": "piedmont",
+    "pine manor": "pine-manor",
+    "pitt.-bradford": "pitt-bradford",
+    "pitt.-greensburg": "pitt-greensburg",
+    "pitt.-johnstown": "pitt-johnstown",
+    "pittsburg state": "pittsburg-st",
+    "pittsburgh": "pittsburgh",
+    "plattsburgh state": "plattsburgh-st",
+    "plymouth st.": "plymouth-st",
+    "point loma": "point-loma",
+    "polytechnic (ny)": "polytechnic-ny",
+    "pomona-pitzer": "pomona-pitzer",
+    "portland": "portland",
+    "portland st.": "portland-st",
+    "post": "post",
+    "p.r.-bayamon": "pr-bayamon",
+    "p.r.-cayey": "pr-cayey",
+    "p.r.-humacao": "pr-humacao",
+    "p.r.-mayaguez": "pr-mayaguez",
+    "p.r.-rio piedras": "pr-rio-piedras",
+    "prairie view": "prairie-view",
+    "pratt institute": "pratt-institute",
+    "presbyterian": "presbyterian",
+    "presentation": "presentation",
+    "princeton": "princeton",
+    "principia": "principia",
+    "providence": "providence",
+    "puget sound": "puget-sound",
+    "purchase": "purchase-st",
+    "purdue": "purdue",
+    "purdue northwest": "purdue-northwest",
+    "queens (nc)": "queens-nc",
+    "queens (ny)": "queens-ny",
+    "quincy": "quincy",
+    "quinnipiac": "quinnipiac",
+    "radford": "radford",
+    "ramapo": "ramapo",
+    "randolph": "randolph",
+    "randolph-macon": "randolph-macon",
+    "redlands": "redlands",
+    "regis (co)": "regis-co",
+    "regis college": "regis-ma",
+    "reneau university": "reneau-university",
+    "rensselaer": "rensselaer",
+    "rhode island": "rhode-island",
+    "rhode island col.": "rhode-island-col",
+    "rhodes": "rhodes",
+    "rice": "rice",
+    "stockton": "richard-stockton",
+    "richmond": "richmond",
+    "rider": "rider",
+    "ripon": "ripon",
+    "rivier": "rivier",
+    "roanoke": "roanoke",
+    "robert morris": "robert-morris",
+    "roberts wesleyan": "roberts-wesleyan",
+    "rochester inst.": "rochester-inst",
+    "rochester (ny)": "rochester-ny",
+    "rockford": "rockford",
+    "rockhurst": "rockhurst",
+    "roger williams": "roger-williams",
+    "rogers state": "rogers-st",
+    "rollins": "rollins",
+    "roosevelt university": "roosevelt-university",
+    "rose-hulman": "rose-hulman",
+    "rosemont": "rosemont",
+    "rowan": "rowan",
+    "rust": "rust",
+    "rutgers": "rutgers",
+    "rutgers-camden": "rutgers-camden",
+    "rutgers-newark": "rutgers-newark",
+    "sacramento st.": "sacramento-st",
+    "sacred heart": "sacred-heart",
+    "sage colleges": "sage-colleges",
+    "saginaw valley": "saginaw-valley",
+    "st. john's (mn)": "saint-johns-mn",
+    "saint joseph's": "saint-josephs",
+    "st. leo": "saint-leo",
+    "st. louis": "saint-louis",
+    "saint-martins": "saint-martins",
+    "st. michael's": "saint-michaels",
+    "saint rose": "saint-rose",
+    "st. vincent": "saint-vincent",
+    "salem": "salem",
+    "salem university": "salem-intl",
+    "salem st.": "salem-st",
+    "salisbury": "salisbury",
+    "salve regina": "salve-regina",
+    "sam houston st.": "sam-houston-st",
+    "samford": "samford",
+    "san diego": "san-diego",
+    "san diego st.": "san-diego-st",
+    "san fran. st.": "san-fran-st",
+    "san francisco": "san-francisco",
+    "san jose st.": "san-jose-st",
+    "santa clara": "santa-clara",
+    "sarah lawrence": "sarah-lawrence",
+    "savannah st.": "savannah-st",
+    "south-carolina-aiken": "sc-aiken",
+    "scad": "scad",
+    "schreiner": "schreiner",
+    "scranton": "scranton",
+    "seattle": "seattle",
+    "seattle pacific": "seattle-pacific",
+    "seton hall": "seton-hall",
+    "seton hill": "seton-hill",
+    "sewanee": "sewanee",
+    "shaw": "shaw",
+    "shenandoah": "shenandoah",
+    "shepherd": "shepherd",
+    "shippensburg": "shippensburg",
+    "shorter": "shorter",
+    "siena": "siena",
+    "simmons": "simmons",
+    "simon fraser": "simon-fraser",
+    "simpson": "simpson",
+    "sioux falls": "sioux-falls",
+    "siue": "siu-edwardsville",
+    "skidmore": "skidmore",
+    "slippery rock": "slippery-rock",
+    "smith": "smith",
+    "smu": "smu",
+    "sonoma st.": "sonoma-st",
+    "south ala.": "south-ala",
+    "south carolina": "south-carolina",
+    "south carolina st.": "south-carolina-st",
+    "south dakota": "south-dakota",
+    "south dakota mines": "south-dakota-mines",
+    "south dakota st.": "south-dakota-st",
+    "south fla.": "south-fla",
+    "southampton": "southampton",
+    "southeast mo. st.": "southeast-mo-st",
+    "southeastern la.": "southeastern-la",
+    "southeastern okla.": "southeastern-okla",
+    "southern ark.": "southern-ark",
+    "southern california": "southern-california",
+    "southern conn. st.": "southern-conn-st",
+    "southern ill.": "southern-ill",
+    "southern ind.": "southern-ind",
+    "southern me.": "southern-me",
+    "southern miss.": "southern-miss",
+    "southern nazarene": "southern-nazarene",
+    "southern n.h.": "southern-nh",
+    "southern u.": "southern-u",
+    "southern utah": "southern-utah",
+    "southern virginia": "southern-va",
+    "southern vt.": "southern-vt",
+    "southern wesleyan": "southern-wesleyan",
+    "southwest baptist": "southwest-baptist",
+    "southwest minn. st.": "southwest-minn-st",
+    "southwestern okla.": "southwestern-okla",
+    "southwestern (tx)": "southwestern-tx",
+    "spalding": "spalding",
+    "spelman": "spelman",
+    "spring hill": "spring-hill",
+    "springfield": "springfield",
+    "st. andrews": "st-andrews",
+    "st. anselm": "st-anselm",
+    "st. augustine's": "st-augustines",
+    "saint benedict": "st-benedict",
+    "st. bonaventure": "st-bonaventure",
+    "st. catherine": "st-catherine",
+    "st. cloud state": "st-cloud-st",
+    "st. edward's": "st-edwards",
+    "st. elizabeth": "st-elizabeth",
+    "st. francis (il)": "st-francis-il",
+    "st. francis brooklyn": "st-francis-ny",
+    "st. francis (pa)": "st-francis-pa",
+    "st. john fisher": "st-john-fisher",
+    "st. john's (ny)": "st-johns-ny",
+    "st. joseph (ct)": "st-joseph-ct",
+    "st. joseph's (brkln)": "st-josephs-brkln",
+    "st. joseph's (in)": "st-josephs-in",
+    "st. joseph's (l.i.)": "st-josephs-li",
+    "st. joseph's (me.)": "st-josephs-me",
+    "st. lawrence": "st-lawrence",
+    "saint-mary's (ca)": "st-marys-ca",
+    "saint-mary's (in)": "st-marys-in",
+    "saint-mary's (md)": "st-marys-md",
+    "saint mary's (minn.)": "st-marys-mn",
+    "st. mary's (tx)": "st-marys-tx",
+    "st. norbert": "st-norbert",
+    "st. olaf": "st-olaf",
+    "st. paul's": "st-pauls",
+    "saint peter's": "st-peters",
+    "st. scholastica": "st-scholastica",
+    "st. thomas aquinas": "st-thomas-aquinas",
+    "st. thomas (fl)": "st-thomas-fl",
+    "st. thomas (mn)": "st-thomas-mn",
+    "st. thomas houston": "st-thomas-tx",
+    "stanford": "stanford",
+    "staten island": "staten-island",
+    "stephen f. austin": "stephen-f-austin",
+    "stephens": "stephens",
+    "stetson": "stetson",
+    "stevens": "stevens",
+    "stevenson": "stevenson",
+    "stillman": "stillman",
+    "stonehill": "stonehill",
+    "stony brook": "stony-brook",
+    "suffolk": "suffolk",
+    "sul ross st.": "sul-ross-st",
+    "suny brockport": "suny-brockport",
+    "suny canton": "suny-canton",
+    "suny cortland": "suny-cortland",
+    "suny delhi": "suny-delhi",
+    "suny geneseo": "suny-geneseo",
+    "suny maritime": "suny-maritime",
+    "state university of new york at morrisville": "suny-morrisville",
+    "suny new paltz": "suny-new-paltz",
+    "suny potsdam": "suny-potsdam",
+    "suny poly": "sunyit",
+    "susquehanna": "susquehanna",
+    "swarthmore": "swarthmore",
+    "sweet briar": "sweet-briar",
+    "syracuse": "syracuse",
+    "tampa": "tampa",
+    "tarleton st.": "tarleton-st",
+    "tcnj": "tcnj",
+    "tcu": "tcu",
+    "temple": "temple",
+    "tennessee": "tennessee",
+    "tennessee st.": "tennessee-st",
+    "tennessee tech": "tennessee-tech",
+    "tex. a&m int'l": "tex-am-intl",
+    "tex. a&m-kingsville": "tex-am-kingsville",
+    "texas of the permian basin": "tex-permian-basin",
+    "texas": "texas",
+    "texas a&m": "texas-am",
+    "texas at arlington": "texas-arlington",
+    "texas at dallas": "texas-dallas",
+    "texas lutheran": "texas-lutheran",
+    "texas southern": "texas-southern",
+    "texas st.": "texas-st",
+    "texas tech": "texas-tech",
+    "texas at tyler": "texas-tyler",
+    "texas wesleyan": "texas-wesleyan",
+    "texas woman's": "texas-womans",
+    "thiel": "thiel",
+    "thomas (me)": "thomas-me",
+    "thomas more": "thomas-more",
+    "tiffin": "tiffin",
+    "toledo": "toledo",
+    "towson": "towson",
+    "transylvania": "transylvania",
+    "trevecca nazarene": "trevecca-nazarene",
+    "trine": "trine",
+    "trinity (ct)": "trinity-ct",
+    "trinity (tx)": "trinity-tx",
+    "trinity washington": "trinity-washington",
+    "troy": "troy",
+    "truman": "truman",
+    "tufts": "tufts",
+    "tulane": "tulane",
+    "tulsa": "tulsa",
+    "tusculum": "tusculum",
+    "tuskegee": "tuskegee",
+    "new-england": "u-new-england",
+    "uab": "uab",
+    "little-rock": "ualr",
+    "colo-springs": "uc-colo-springs",
+    "uc davis": "uc-davis",
+    "uc irvine": "uc-irvine",
+    "uc riverside": "uc-riverside",
+    "uc san diego": "uc-san-diego",
+    "uc santa barbara": "uc-santa-barbara",
+    "uc santa cruz": "uc-santa-cruz",
+    "ucf": "ucf",
+    "ucla": "ucla",
+    "connecticut": "uconn",
+    "mass.-boston": "umass-boston",
+    "mass.-dartmouth": "umass-dartmouth",
+    "mass.-lowell": "umass-lowell",
+    "maryland-baltimore-county": "umbc",
+    "kansas city": "umkc",
+    "unc asheville": "unc-asheville",
+    "unc greensboro": "unc-greensboro",
+    "unc pembroke": "unc-pembroke",
+    "uncw": "unc-wilmington",
+    "northern iowa": "uni",
+    "union (ny)": "union-ny",
+    "union (tenn.)": "union-tn",
+    "unlv": "unlv",
+    "upper iowa": "upper-iowa",
+    "urbana university": "urbana",
+    "ursinus": "ursinus",
+    "ursuline": "ursuline",
+    "usc beaufort": "usc-beaufort",
+    "south-carolina-upstate": "usc-upstate",
+    "tenn-martin": "ut-martin",
+    "utah": "utah",
+    "utah st.": "utah-st",
+    "utah tech": "utah-tech",
+    "utah valley": "utah-valley",
+    "texas at el paso": "utep",
+    "utica": "utica",
+    "texas rio grande valley": "utrgv",
+    "texas at san antonio": "utsa",
+    "virginia-wise": "uva-wise",
+    "virg-wesleyan": "va-wesleyan",
+    "valdosta st.": "valdosta-st",
+    "valley forge": "valley-forge-chrst",
+    "valparaiso": "valparaiso",
+    "vanderbilt": "vanderbilt",
+    "vassar": "vassar",
+    "vcu": "vcu",
+    "vermont": "vermont",
+    "villanova": "villanova",
+    "virginia": "virginia",
+    "virginia st.": "virginia-st",
+    "virginia tech": "virginia-tech",
+    "virginia union": "virginia-union",
+    "vmi": "vmi",
+    "wabash": "wabash",
+    "wagner": "wagner",
+    "wake forest": "wake-forest",
+    "walsh": "walsh",
+    "warren wilson college": "warren-wilson-college",
+    "wartburg": "wartburg",
+    "wash. & jeff.": "wash-jeff",
+    "wash. & lee": "wash-lee",
+    "washburn": "washburn",
+    "washington": "washington",
+    "washington adventist": "washington-adventist",
+    "washington col.": "washington-col",
+    "washington st.": "washington-st",
+    "washington-st. louis": "washington-st-louis",
+    "wayne st. (mi)": "wayne-st-mi",
+    "wayne st. (ne)": "wayne-st-ne",
+    "waynesburg": "waynesburg",
+    "weber st.": "weber-st",
+    "webster": "webster",
+    "wellesley": "wellesley",
+    "wells": "wells",
+    "wentworth inst.": "wentworth",
+    "wesley": "wesley",
+    "wesleyan (ct)": "wesleyan-ct",
+    "wesleyan (ga)": "wesleyan-ga",
+    "west ala.": "west-ala",
+    "west chester": "west-chester",
+    "west fla.": "west-florida",
+    "west ga.": "west-ga",
+    "west liberty": "west-liberty",
+    "west tex. a&m": "west-tex-am",
+    "west va. tech": "west-va-tech",
+    "west va. wesleyan": "west-va-wesleyan",
+    "west virginia": "west-virginia",
+    "west virginia st.": "west-virginia-st",
+    "western caro.": "western-caro",
+    "western conn. st.": "western-conn-st",
+    "western ill.": "western-ill",
+    "western ky.": "western-ky",
+    "western mich.": "western-mich",
+    "western new eng.": "western-new-eng",
+    "western n.m.": "western-nm",
+    "western ore.": "western-ore",
+    "western colo.": "western-st",
+    "western wash.": "western-wash",
+    "westfield st.": "westfield-st",
+    "westminster (mo)": "westminster-mo",
+    "westminster (pa)": "westminster-pa",
+    "westminster (ut)": "westminster-ut",
+    "westmont college": "westmont-college",
+    "wheaton (il)": "wheaton-il",
+    "wheaton (ma)": "wheaton-ma",
+    "wheeling jesuit": "wheeling-jesuit",
+    "wheelock": "wheelock",
+    "whitman": "whitman",
+    "whittier": "whittier",
+    "whitworth": "whitworth",
+    "wichita st.": "wichita-st",
+    "widener": "widener",
+    "wilkes": "wilkes",
+    "willamette": "willamette",
+    "william jewell": "william-jewell",
+    "william & mary": "william-mary",
+    "william peace": "william-peace",
+    "william penn": "william-penn",
+    "william smith": "william-smith",
+    "williams": "williams",
+    "wilmington (de)": "wilmington-de",
+    "wilmington (oh)": "wilmington-oh",
+    "wilson": "wilson",
+    "wingate": "wingate",
+    "winona st.": "winona-st",
+    "winston-salem": "winston-salem",
+    "winthrop": "winthrop",
+    "wis.-eau claire": "wis-eau-claire",
+    "wis.-la crosse": "wis-la-crosse",
+    "wis. lutheran": "wis-lutheran",
+    "wis.-oshkosh": "wis-oshkosh",
+    "wis.-parkside": "wis-parkside",
+    "wis.-platteville": "wis-platteville",
+    "wis.-river falls": "wis-river-falls",
+    "wis.-stevens point": "wis-stevens-point",
+    "wis.-stout": "wis-stout",
+    "wis.-superior": "wis-superior",
+    "wis.-whitewater": "wis-whitewater",
+    "wisconsin": "wisconsin",
+    "wittenberg": "wittenberg",
+    "william paterson": "wm-paterson",
+    "wofford": "wofford",
+    "wooster": "wooster",
+    "worcester st.": "worcester-st",
+    "wpi": "wpi",
+    "wright st.": "wright-st",
+    "wyoming": "wyoming",
+    "xavier": "xavier",
+    "yale": "yale",
+    "yeshiva": "yeshiva",
+    "york (ny)": "york-ny",
+    "york (pa)": "york-pa",
+    "young harris": "young-harris",
+    "youngstown st.": "youngstown-st"
+  },
+  "slugToName": {
+    "abilene-christian": {
+      "name": "Abilene Christian",
+      "longName": ""
+    },
+    "academy-of-art": {
+      "name": "Academy of Art",
+      "longName": ""
+    },
+    "adams-st": {
+      "name": "Adams St.",
+      "longName": ""
+    },
+    "adelphi": {
+      "name": "Adelphi",
+      "longName": ""
+    },
+    "adrian": {
+      "name": "Adrian",
+      "longName": ""
+    },
+    "agnes-scott": {
+      "name": "Agnes Scott",
+      "longName": ""
+    },
+    "air-force": {
+      "name": "Air Force",
+      "longName": ""
+    },
+    "akron": {
+      "name": "Akron",
+      "longName": ""
+    },
+    "ala-huntsville": {
+      "name": "Alabama-Huntsville",
+      "longName": ""
+    },
+    "alabama": {
+      "name": "Alabama",
+      "longName": ""
+    },
+    "alabama-am": {
+      "name": "Alabama A&M",
+      "longName": ""
+    },
+    "alabama-st": {
+      "name": "Alabama St.",
+      "longName": ""
+    },
+    "alas-anchorage": {
+      "name": "Alas. Anchorage",
+      "longName": ""
+    },
+    "alas-fairbanks": {
+      "name": "Alas. Fairbanks",
+      "longName": ""
+    },
+    "albany-ny": {
+      "name": "Albany (NY)",
+      "longName": ""
+    },
+    "albany-st-ga": {
+      "name": "Albany St. (GA)",
+      "longName": ""
+    },
+    "albertus-magnus": {
+      "name": "Albertus Magnus",
+      "longName": ""
+    },
+    "albion": {
+      "name": "Albion",
+      "longName": ""
+    },
+    "albright": {
+      "name": "Albright",
+      "longName": ""
+    },
+    "alcorn": {
+      "name": "Alcorn St.",
+      "longName": ""
+    },
+    "alderson-broaddus": {
+      "name": "Alderson Broaddus",
+      "longName": ""
+    },
+    "alfred": {
+      "name": "Alfred",
+      "longName": ""
+    },
+    "alfred-st": {
+      "name": "Alfred State",
+      "longName": ""
+    },
+    "allegheny": {
+      "name": "Allegheny",
+      "longName": ""
+    },
+    "allen": {
+      "name": "Allen",
+      "longName": ""
+    },
+    "alma": {
+      "name": "Alma",
+      "longName": ""
+    },
+    "alvernia": {
+      "name": "Alvernia",
+      "longName": ""
+    },
+    "alverno": {
+      "name": "Alverno",
+      "longName": ""
+    },
+    "am-corpus-chris": {
+      "name": "Texas-Am-Corpus",
+      "longName": ""
+    },
+    "american": {
+      "name": "American",
+      "longName": ""
+    },
+    "american-intl": {
+      "name": "American Int'l",
+      "longName": ""
+    },
+    "american-pr": {
+      "name": "American (PR)",
+      "longName": ""
+    },
+    "amherst": {
+      "name": "Amherst",
+      "longName": ""
+    },
+    "anderson-in": {
+      "name": "Anderson (IN)",
+      "longName": ""
+    },
+    "anderson-sc": {
+      "name": "Anderson (SC)",
+      "longName": ""
+    },
+    "angelo-st": {
+      "name": "Angelo St.",
+      "longName": ""
+    },
+    "anna-maria": {
+      "name": "Anna Maria",
+      "longName": ""
+    },
+    "appalachian-st": {
+      "name": "Appalachian St.",
+      "longName": ""
+    },
+    "arcadia": {
+      "name": "Arcadia",
+      "longName": ""
+    },
+    "arizona": {
+      "name": "Arizona",
+      "longName": ""
+    },
+    "arizona-st": {
+      "name": "Arizona St.",
+      "longName": ""
+    },
+    "ark-fort-smith": {
+      "name": "Ark. - Fort Smith",
+      "longName": ""
+    },
+    "ark-monticello": {
+      "name": "Ark.-Monticello",
+      "longName": ""
+    },
+    "ark-pine-bluff": {
+      "name": "Ark.-Pine Bluff",
+      "longName": ""
+    },
+    "arkansas": {
+      "name": "Arkansas",
+      "longName": ""
+    },
+    "arkansas-st": {
+      "name": "Arkansas St.",
+      "longName": ""
+    },
+    "arkansas-tech": {
+      "name": "Arkansas Tech",
+      "longName": ""
+    },
+    "armstrong": {
+      "name": "Armstrong",
+      "longName": ""
+    },
+    "army": {
+      "name": "Army",
+      "longName": ""
+    },
+    "asbury": {
+      "name": "Asbury University",
+      "longName": ""
+    },
+    "ashland": {
+      "name": "Ashland",
+      "longName": ""
+    },
+    "assumption": {
+      "name": "Assumption",
+      "longName": ""
+    },
+    "aub-montgomery": {
+      "name": "Auburn-Montgomery",
+      "longName": ""
+    },
+    "auburn": {
+      "name": "Auburn",
+      "longName": ""
+    },
+    "augsburg": {
+      "name": "Augsburg",
+      "longName": ""
+    },
+    "augustana-il": {
+      "name": "Augustana (IL)",
+      "longName": ""
+    },
+    "augustana-sd": {
+      "name": "Augustana (SD)",
+      "longName": ""
+    },
+    "aurora": {
+      "name": "Aurora",
+      "longName": ""
+    },
+    "austin": {
+      "name": "Austin",
+      "longName": ""
+    },
+    "austin-peay": {
+      "name": "Austin Peay",
+      "longName": ""
+    },
+    "averett": {
+      "name": "Averett",
+      "longName": ""
+    },
+    "azusa-pacific": {
+      "name": "Azusa Pacific",
+      "longName": ""
+    },
+    "babson": {
+      "name": "Babson",
+      "longName": ""
+    },
+    "bakersfield": {
+      "name": "CSU Bakersfield",
+      "longName": ""
+    },
+    "baldwin-wallace": {
+      "name": "Baldwin Wallace",
+      "longName": ""
+    },
+    "ball-st": {
+      "name": "Ball St.",
+      "longName": ""
+    },
+    "baptist-bible-pa": {
+      "name": "Clarks Summit University",
+      "longName": ""
+    },
+    "bard": {
+      "name": "Bard",
+      "longName": ""
+    },
+    "barry": {
+      "name": "Barry",
+      "longName": ""
+    },
+    "barton": {
+      "name": "Barton",
+      "longName": ""
+    },
+    "baruch": {
+      "name": "Baruch",
+      "longName": ""
+    },
+    "bates": {
+      "name": "Bates",
+      "longName": ""
+    },
+    "bay-path": {
+      "name": "Bay Path",
+      "longName": ""
+    },
+    "baylor": {
+      "name": "Baylor",
+      "longName": ""
+    },
+    "becker": {
+      "name": "Becker",
+      "longName": ""
+    },
+    "belhaven": {
+      "name": "Belhaven",
+      "longName": ""
+    },
+    "bellarmine": {
+      "name": "Bellarmine",
+      "longName": ""
+    },
+    "belmont": {
+      "name": "Belmont",
+      "longName": ""
+    },
+    "belmont-abbey": {
+      "name": "Belmont Abbey",
+      "longName": ""
+    },
+    "beloit": {
+      "name": "Beloit",
+      "longName": ""
+    },
+    "bemidji-st": {
+      "name": "Bemidji St.",
+      "longName": ""
+    },
+    "benedict": {
+      "name": "Benedict",
+      "longName": ""
+    },
+    "benedictine-il": {
+      "name": "Benedictine (IL)",
+      "longName": ""
+    },
+    "bentley": {
+      "name": "Bentley",
+      "longName": ""
+    },
+    "berea": {
+      "name": "Berea College",
+      "longName": ""
+    },
+    "berry": {
+      "name": "Berry",
+      "longName": ""
+    },
+    "bethany-lutheran": {
+      "name": "Bethany Lutheran",
+      "longName": ""
+    },
+    "bethany-wv": {
+      "name": "Bethany (WV)",
+      "longName": ""
+    },
+    "bethel-mn": {
+      "name": "Bethel (MN)",
+      "longName": ""
+    },
+    "bethune-cookman": {
+      "name": "Bethune-Cookman",
+      "longName": ""
+    },
+    "binghamton": {
+      "name": "Binghamton",
+      "longName": ""
+    },
+    "biola": {
+      "name": "Biola",
+      "longName": ""
+    },
+    "birmingham-so": {
+      "name": "Birmingham-So.",
+      "longName": ""
+    },
+    "black-hills-st": {
+      "name": "Black Hills St.",
+      "longName": ""
+    },
+    "blackburn": {
+      "name": "Blackburn",
+      "longName": ""
+    },
+    "bloomfield": {
+      "name": "Bloomfield",
+      "longName": ""
+    },
+    "bloomsburg": {
+      "name": "Bloomsburg",
+      "longName": ""
+    },
+    "bluefield-st": {
+      "name": "Bluefield St.",
+      "longName": ""
+    },
+    "bluffton": {
+      "name": "Bluffton",
+      "longName": ""
+    },
+    "boise-st": {
+      "name": "Boise St.",
+      "longName": ""
+    },
+    "boston-college": {
+      "name": "Boston College",
+      "longName": ""
+    },
+    "boston-u": {
+      "name": "Boston U.",
+      "longName": ""
+    },
+    "bowdoin": {
+      "name": "Bowdoin",
+      "longName": ""
+    },
+    "bowie-st": {
+      "name": "Bowie St.",
+      "longName": ""
+    },
+    "bowling-green": {
+      "name": "Bowling Green",
+      "longName": ""
+    },
+    "bradley": {
+      "name": "Bradley",
+      "longName": ""
+    },
+    "brandeis": {
+      "name": "Brandeis",
+      "longName": ""
+    },
+    "brevard": {
+      "name": "Brevard",
+      "longName": ""
+    },
+    "bridgeport": {
+      "name": "Bridgeport",
+      "longName": ""
+    },
+    "bridgewater-st": {
+      "name": "Bridgewater St.",
+      "longName": ""
+    },
+    "bridgewater-va": {
+      "name": "Bridgewater (VA)",
+      "longName": ""
+    },
+    "brooklyn": {
+      "name": "Brooklyn",
+      "longName": ""
+    },
+    "brown": {
+      "name": "Brown",
+      "longName": ""
+    },
+    "bryant": {
+      "name": "Bryant",
+      "longName": ""
+    },
+    "bryn-athyn": {
+      "name": "Bryn Athyn",
+      "longName": ""
+    },
+    "bryn-mawr": {
+      "name": "Bryn Mawr",
+      "longName": ""
+    },
+    "bucknell": {
+      "name": "Bucknell",
+      "longName": ""
+    },
+    "buena-vista": {
+      "name": "Buena Vista",
+      "longName": ""
+    },
+    "buffalo": {
+      "name": "Buffalo",
+      "longName": ""
+    },
+    "buffalo-st": {
+      "name": "Buffalo St.",
+      "longName": ""
+    },
+    "butler": {
+      "name": "Butler",
+      "longName": ""
+    },
+    "byu": {
+      "name": "BYU",
+      "longName": ""
+    },
+    "byu-hawaii": {
+      "name": "BYU-Hawaii",
+      "longName": ""
+    },
+    "cabrini": {
+      "name": "Cabrini",
+      "longName": ""
+    },
+    "cairn": {
+      "name": "Cairn",
+      "longName": ""
+    },
+    "cal-lutheran": {
+      "name": "Cal Lutheran",
+      "longName": ""
+    },
+    "cal-poly": {
+      "name": "Cal Poly",
+      "longName": ""
+    },
+    "cal-poly-pomona": {
+      "name": "Cal Poly Pomona",
+      "longName": ""
+    },
+    "cal-st-dom-hills": {
+      "name": "Cal St. Dom. Hills",
+      "longName": ""
+    },
+    "cal-st-east-bay": {
+      "name": "Cal St. East Bay",
+      "longName": ""
+    },
+    "cal-st-fullerton": {
+      "name": "Cal St. Fullerton",
+      "longName": ""
+    },
+    "cal-st-la": {
+      "name": "Cal State LA",
+      "longName": ""
+    },
+    "cal-st-monterey-bay": {
+      "name": "Cal St. Monterey Bay",
+      "longName": ""
+    },
+    "cal-st-northridge": {
+      "name": "Cal St. Northridge",
+      "longName": ""
+    },
+    "cal-st-san-bdino": {
+      "name": "Cal St. San B'dino",
+      "longName": ""
+    },
+    "cal-st-san-marcos": {
+      "name": "Cal State-San Marcos",
+      "longName": ""
+    },
+    "cal-st-stanislaus": {
+      "name": "Cal St. Stanislaus",
+      "longName": ""
+    },
+    "caldwell": {
+      "name": "Caldwell",
+      "longName": ""
+    },
+    "california": {
+      "name": "California",
+      "longName": ""
+    },
+    "california-baptist": {
+      "name": "Cal Baptist",
+      "longName": ""
+    },
+    "california-pa": {
+      "name": "California (PA)",
+      "longName": ""
+    },
+    "caltech": {
+      "name": "Caltech",
+      "longName": ""
+    },
+    "calvin": {
+      "name": "Calvin",
+      "longName": ""
+    },
+    "cameron": {
+      "name": "Cameron",
+      "longName": ""
+    },
+    "campbell": {
+      "name": "Campbell",
+      "longName": ""
+    },
+    "canisius": {
+      "name": "Canisius",
+      "longName": ""
+    },
+    "capital": {
+      "name": "Capital",
+      "longName": ""
+    },
+    "carleton": {
+      "name": "Carleton",
+      "longName": ""
+    },
+    "carnegie-mellon": {
+      "name": "Carnegie Mellon",
+      "longName": ""
+    },
+    "carroll-wi": {
+      "name": "Carroll (WI)",
+      "longName": ""
+    },
+    "carson-newman": {
+      "name": "Carson-Newman",
+      "longName": ""
+    },
+    "carthage": {
+      "name": "Carthage",
+      "longName": ""
+    },
+    "case": {
+      "name": "Case Western Reserve",
+      "longName": ""
+    },
+    "castleton": {
+      "name": "Castleton",
+      "longName": ""
+    },
+    "catawba": {
+      "name": "Catawba",
+      "longName": ""
+    },
+    "catholic": {
+      "name": "Catholic",
+      "longName": ""
+    },
+    "cazenovia": {
+      "name": "Cazenovia",
+      "longName": ""
+    },
+    "ccny": {
+      "name": "CCNY",
+      "longName": ""
+    },
+    "cedar-crest": {
+      "name": "Cedar Crest",
+      "longName": ""
+    },
+    "cedarville": {
+      "name": "Cedarville",
+      "longName": ""
+    },
+    "centenary-la": {
+      "name": "Centenary (LA)",
+      "longName": ""
+    },
+    "centenary-nj": {
+      "name": "Centenary (NJ)",
+      "longName": ""
+    },
+    "central-ark": {
+      "name": "Central Ark.",
+      "longName": ""
+    },
+    "central-conn-st": {
+      "name": "Central Conn. St.",
+      "longName": ""
+    },
+    "central-ia": {
+      "name": "Central (IA)",
+      "longName": ""
+    },
+    "central-mich": {
+      "name": "Central Mich.",
+      "longName": ""
+    },
+    "central-mo": {
+      "name": "Central Mo.",
+      "longName": ""
+    },
+    "central-okla": {
+      "name": "Central Okla.",
+      "longName": ""
+    },
+    "central-st-oh": {
+      "name": "Central St. (OH)",
+      "longName": ""
+    },
+    "central-wash": {
+      "name": "Central Wash.",
+      "longName": ""
+    },
+    "centre": {
+      "name": "Centre",
+      "longName": ""
+    },
+    "chadron-st": {
+      "name": "Chadron St.",
+      "longName": ""
+    },
+    "chaminade": {
+      "name": "Chaminade",
+      "longName": ""
+    },
+    "chapman": {
+      "name": "Chapman",
+      "longName": ""
+    },
+    "charleston-so": {
+      "name": "Charleston So.",
+      "longName": ""
+    },
+    "charleston-wv": {
+      "name": "Charleston (WV)",
+      "longName": ""
+    },
+    "charlotte": {
+      "name": "Charlotte",
+      "longName": ""
+    },
+    "chatham": {
+      "name": "Chatham",
+      "longName": ""
+    },
+    "chattanooga": {
+      "name": "Tenn-Chattanooga",
+      "longName": ""
+    },
+    "chestnut-hill": {
+      "name": "Chestnut Hill",
+      "longName": ""
+    },
+    "cheyney": {
+      "name": "Cheyney",
+      "longName": ""
+    },
+    "chicago": {
+      "name": "Chicago",
+      "longName": ""
+    },
+    "chicago-st": {
+      "name": "Chicago St.",
+      "longName": ""
+    },
+    "chico-st": {
+      "name": "Chico State",
+      "longName": ""
+    },
+    "chowan": {
+      "name": "Chowan",
+      "longName": ""
+    },
+    "chris-newport": {
+      "name": "Chris. Newport",
+      "longName": ""
+    },
+    "christian-bros": {
+      "name": "Christian Bros.",
+      "longName": ""
+    },
+    "cincinnati": {
+      "name": "Cincinnati",
+      "longName": ""
+    },
+    "citadel": {
+      "name": "Citadel",
+      "longName": ""
+    },
+    "city-tech": {
+      "name": "New-York-City-Tech",
+      "longName": ""
+    },
+    "claflin": {
+      "name": "Claflin",
+      "longName": ""
+    },
+    "claremont-m-s": {
+      "name": "Claremont-M-S",
+      "longName": ""
+    },
+    "clarion": {
+      "name": "Clarion",
+      "longName": ""
+    },
+    "clark-atlanta": {
+      "name": "Clark Atlanta",
+      "longName": ""
+    },
+    "clark-ma": {
+      "name": "Clark (MA)",
+      "longName": ""
+    },
+    "clarke": {
+      "name": "Clarke",
+      "longName": ""
+    },
+    "clarkson": {
+      "name": "Clarkson",
+      "longName": ""
+    },
+    "clayton-st": {
+      "name": "Clayton St.",
+      "longName": ""
+    },
+    "clemson": {
+      "name": "Clemson",
+      "longName": ""
+    },
+    "cleveland-st": {
+      "name": "Cleveland St.",
+      "longName": ""
+    },
+    "coast-guard": {
+      "name": "Coast Guard",
+      "longName": ""
+    },
+    "coastal-caro": {
+      "name": "Coastal Caro.",
+      "longName": ""
+    },
+    "cobleskill-st": {
+      "name": "Suny-Cobleskill",
+      "longName": ""
+    },
+    "coe": {
+      "name": "Coe",
+      "longName": ""
+    },
+    "coker": {
+      "name": "Coker",
+      "longName": ""
+    },
+    "col-of-charleston": {
+      "name": "Col. of Charleston",
+      "longName": ""
+    },
+    "colby": {
+      "name": "Colby",
+      "longName": ""
+    },
+    "colby-sawyer": {
+      "name": "Colby-Sawyer",
+      "longName": ""
+    },
+    "colgate": {
+      "name": "Colgate",
+      "longName": ""
+    },
+    "colo-christian": {
+      "name": "Colo. Christian",
+      "longName": ""
+    },
+    "colorado": {
+      "name": "Colorado",
+      "longName": ""
+    },
+    "colorado-col": {
+      "name": "Colorado Col.",
+      "longName": ""
+    },
+    "colorado-mesa": {
+      "name": "Colorado Mesa",
+      "longName": ""
+    },
+    "colorado-mines": {
+      "name": "Colorado School of Mines",
+      "longName": ""
+    },
+    "colorado-st": {
+      "name": "Colorado St.",
+      "longName": ""
+    },
+    "colorado-st-pueblo": {
+      "name": "Colorado St.-Pueblo",
+      "longName": ""
+    },
+    "columbia": {
+      "name": "Columbia",
+      "longName": ""
+    },
+    "columbus-st": {
+      "name": "Columbus St.",
+      "longName": ""
+    },
+    "concord": {
+      "name": "Concord",
+      "longName": ""
+    },
+    "concordia-chicago": {
+      "name": "Concordia Chicago",
+      "longName": ""
+    },
+    "concordia-irvine": {
+      "name": "Concordia University Irvine",
+      "longName": ""
+    },
+    "concordia-mhead": {
+      "name": "Concordia-M'head",
+      "longName": ""
+    },
+    "concordia-ny": {
+      "name": "Concordia (NY)",
+      "longName": ""
+    },
+    "concordia-or": {
+      "name": "Concordia University-Portland",
+      "longName": ""
+    },
+    "concordia-st-paul": {
+      "name": "Concordia-St. Paul",
+      "longName": ""
+    },
+    "concordia-tx": {
+      "name": "Concordia (TX)",
+      "longName": ""
+    },
+    "concordia-wi": {
+      "name": "Concordia (Wis.)",
+      "longName": ""
+    },
+    "connecticut-col": {
+      "name": "Connecticut Col.",
+      "longName": ""
+    },
+    "converse": {
+      "name": "Converse",
+      "longName": ""
+    },
+    "coppin-st": {
+      "name": "Coppin St.",
+      "longName": ""
+    },
+    "cornell": {
+      "name": "Cornell",
+      "longName": ""
+    },
+    "cornell-college": {
+      "name": "Cornell College",
+      "longName": ""
+    },
+    "covenant": {
+      "name": "Covenant",
+      "longName": ""
+    },
+    "creighton": {
+      "name": "Creighton",
+      "longName": ""
+    },
+    "crown-mn": {
+      "name": "Crown (MN)",
+      "longName": ""
+    },
+    "curry": {
+      "name": "Curry",
+      "longName": ""
+    },
+    "daemen": {
+      "name": "Daemen",
+      "longName": ""
+    },
+    "dallas": {
+      "name": "Dallas",
+      "longName": ""
+    },
+    "dallas-baptist": {
+      "name": "Dallas Baptist",
+      "longName": ""
+    },
+    "daniel-webster": {
+      "name": "Daniel Webster",
+      "longName": ""
+    },
+    "dartmouth": {
+      "name": "Dartmouth",
+      "longName": ""
+    },
+    "davenport": {
+      "name": "Davenport",
+      "longName": ""
+    },
+    "davidson": {
+      "name": "Davidson",
+      "longName": ""
+    },
+    "davis-elkins": {
+      "name": "Davis & Elkins",
+      "longName": ""
+    },
+    "dayton": {
+      "name": "Dayton",
+      "longName": ""
+    },
+    "dean-college": {
+      "name": "Dean College",
+      "longName": ""
+    },
+    "delaware": {
+      "name": "Delaware",
+      "longName": ""
+    },
+    "delaware-st": {
+      "name": "Delaware St.",
+      "longName": ""
+    },
+    "delaware-valley": {
+      "name": "Delaware Valley",
+      "longName": ""
+    },
+    "delta-st": {
+      "name": "Delta St.",
+      "longName": ""
+    },
+    "denison": {
+      "name": "Denison",
+      "longName": ""
+    },
+    "denver": {
+      "name": "Denver",
+      "longName": ""
+    },
+    "depaul": {
+      "name": "DePaul",
+      "longName": ""
+    },
+    "depauw": {
+      "name": "DePauw",
+      "longName": ""
+    },
+    "desales": {
+      "name": "DeSales",
+      "longName": ""
+    },
+    "detroit": {
+      "name": "Detroit",
+      "longName": ""
+    },
+    "dickinson": {
+      "name": "Dickinson",
+      "longName": ""
+    },
+    "dist-columbia": {
+      "name": "Dist. Columbia",
+      "longName": ""
+    },
+    "dominican-ca": {
+      "name": "Dominican (Cal.)",
+      "longName": ""
+    },
+    "dominican-il": {
+      "name": "Dominican (IL)",
+      "longName": ""
+    },
+    "dominican-ny": {
+      "name": "Dominican (NY)",
+      "longName": ""
+    },
+    "dowling": {
+      "name": "Dowling",
+      "longName": ""
+    },
+    "drake": {
+      "name": "Drake",
+      "longName": ""
+    },
+    "drew": {
+      "name": "Drew",
+      "longName": ""
+    },
+    "drexel": {
+      "name": "Drexel",
+      "longName": ""
+    },
+    "drury": {
+      "name": "Drury",
+      "longName": ""
+    },
+    "dubuque": {
+      "name": "Dubuque",
+      "longName": ""
+    },
+    "duke": {
+      "name": "Duke",
+      "longName": ""
+    },
+    "duquesne": {
+      "name": "Duquesne",
+      "longName": ""
+    },
+    "dyouville": {
+      "name": "D'Youville",
+      "longName": ""
+    },
+    "earlham": {
+      "name": "Earlham",
+      "longName": ""
+    },
+    "east-carolina": {
+      "name": "East Carolina",
+      "longName": ""
+    },
+    "east-central": {
+      "name": "East Central",
+      "longName": ""
+    },
+    "east-mennonite": {
+      "name": "East. Mennonite",
+      "longName": ""
+    },
+    "east-stroudsburg": {
+      "name": "East Stroudsburg",
+      "longName": ""
+    },
+    "east-tenn-st": {
+      "name": "East Tenn. St.",
+      "longName": ""
+    },
+    "east-tex-am": {
+      "name": "East Tex. A&M",
+      "longName": ""
+    },
+    "east-tex-baptist": {
+      "name": "East Tex. Baptist",
+      "longName": ""
+    },
+    "eastern": {
+      "name": "Eastern",
+      "longName": ""
+    },
+    "eastern-conn-st": {
+      "name": "Eastern Conn. St.",
+      "longName": ""
+    },
+    "eastern-ill": {
+      "name": "Eastern Ill.",
+      "longName": ""
+    },
+    "eastern-ky": {
+      "name": "Eastern Ky.",
+      "longName": ""
+    },
+    "eastern-mich": {
+      "name": "Eastern Mich.",
+      "longName": ""
+    },
+    "eastern-nm": {
+      "name": "Eastern N.M.",
+      "longName": ""
+    },
+    "eastern-ore": {
+      "name": "Eastern Ore.",
+      "longName": ""
+    },
+    "eastern-wash": {
+      "name": "Eastern Wash.",
+      "longName": ""
+    },
+    "eckerd": {
+      "name": "Eckerd",
+      "longName": ""
+    },
+    "edgewood": {
+      "name": "Edgewood",
+      "longName": ""
+    },
+    "edinboro": {
+      "name": "Edinboro",
+      "longName": ""
+    },
+    "edward-waters": {
+      "name": "Edward Waters",
+      "longName": ""
+    },
+    "elizabeth-city-st": {
+      "name": "Elizabeth City St.",
+      "longName": ""
+    },
+    "elizabethtown": {
+      "name": "Elizabethtown",
+      "longName": ""
+    },
+    "elmhurst": {
+      "name": "Elmhurst",
+      "longName": ""
+    },
+    "elmira": {
+      "name": "Elmira",
+      "longName": ""
+    },
+    "elms": {
+      "name": "Elms",
+      "longName": ""
+    },
+    "elon": {
+      "name": "Elon",
+      "longName": ""
+    },
+    "embry-riddle-fl": {
+      "name": "Embry-Riddle University",
+      "longName": ""
+    },
+    "emerson": {
+      "name": "Emerson",
+      "longName": ""
+    },
+    "emmanuel-ga": {
+      "name": "Emmanuel (Ga.)",
+      "longName": ""
+    },
+    "emmanuel-ma": {
+      "name": "Emmanuel (Mass.)",
+      "longName": ""
+    },
+    "emory": {
+      "name": "Emory",
+      "longName": ""
+    },
+    "emory-henry": {
+      "name": "Emory & Henry",
+      "longName": ""
+    },
+    "emporia-st": {
+      "name": "Emporia St.",
+      "longName": ""
+    },
+    "endicott": {
+      "name": "Endicott",
+      "longName": ""
+    },
+    "erskine": {
+      "name": "Erskine",
+      "longName": ""
+    },
+    "eureka": {
+      "name": "Eureka",
+      "longName": ""
+    },
+    "evansville": {
+      "name": "Evansville",
+      "longName": ""
+    },
+    "evergreen-st": {
+      "name": "Evergreen St.",
+      "longName": ""
+    },
+    "fairfield": {
+      "name": "Fairfield",
+      "longName": ""
+    },
+    "fairmont-st": {
+      "name": "Fairmont St.",
+      "longName": ""
+    },
+    "farmingdale-st": {
+      "name": "Farmingdale St.",
+      "longName": ""
+    },
+    "fayetteville-st": {
+      "name": "Fayetteville St.",
+      "longName": ""
+    },
+    "fdu": {
+      "name": "FDU",
+      "longName": ""
+    },
+    "fdu-florham": {
+      "name": "FDU-Florham",
+      "longName": ""
+    },
+    "felician": {
+      "name": "Felician",
+      "longName": ""
+    },
+    "ferris-st": {
+      "name": "Ferris St.",
+      "longName": ""
+    },
+    "ferrum": {
+      "name": "Ferrum",
+      "longName": ""
+    },
+    "fgcu": {
+      "name": "FGCU",
+      "longName": ""
+    },
+    "findlay": {
+      "name": "Findlay",
+      "longName": ""
+    },
+    "finlandia": {
+      "name": "Finlandia",
+      "longName": ""
+    },
+    "fisk": {
+      "name": "Fisk",
+      "longName": ""
+    },
+    "fitchburg-st": {
+      "name": "Fitchburg St.",
+      "longName": ""
+    },
+    "fiu": {
+      "name": "FIU",
+      "longName": ""
+    },
+    "fla-atlantic": {
+      "name": "Florida Atlantic",
+      "longName": ""
+    },
+    "fla-southern": {
+      "name": "Fla. Southern",
+      "longName": ""
+    },
+    "flagler": {
+      "name": "Flagler",
+      "longName": ""
+    },
+    "florida": {
+      "name": "Florida",
+      "longName": ""
+    },
+    "florida-am": {
+      "name": "Florida A&M",
+      "longName": ""
+    },
+    "florida-st": {
+      "name": "Florida St.",
+      "longName": ""
+    },
+    "florida-tech": {
+      "name": "Florida Tech",
+      "longName": ""
+    },
+    "fontbonne": {
+      "name": "Fontbonne",
+      "longName": ""
+    },
+    "fordham": {
+      "name": "Fordham",
+      "longName": ""
+    },
+    "fort-hays-st": {
+      "name": "Fort Hays St.",
+      "longName": ""
+    },
+    "fort-lewis": {
+      "name": "Fort Lewis",
+      "longName": ""
+    },
+    "fort-valley-st": {
+      "name": "Fort Valley St.",
+      "longName": ""
+    },
+    "framingham-st": {
+      "name": "Framingham St.",
+      "longName": ""
+    },
+    "francis-marion": {
+      "name": "Francis Marion",
+      "longName": ""
+    },
+    "franciscan": {
+      "name": "Franciscan",
+      "longName": ""
+    },
+    "frank-marsh": {
+      "name": "Frank. & Marsh.",
+      "longName": ""
+    },
+    "franklin": {
+      "name": "Franklin",
+      "longName": ""
+    },
+    "franklin-pierce": {
+      "name": "Franklin Pierce",
+      "longName": ""
+    },
+    "fredonia-st": {
+      "name": "Fredonia",
+      "longName": ""
+    },
+    "fresno-pacific": {
+      "name": "Fresno Pacific",
+      "longName": ""
+    },
+    "fresno-st": {
+      "name": "Fresno St.",
+      "longName": ""
+    },
+    "frostburg-st": {
+      "name": "Frostburg St.",
+      "longName": ""
+    },
+    "furman": {
+      "name": "Furman",
+      "longName": ""
+    },
+    "ga-southern": {
+      "name": "Georgia Southern",
+      "longName": ""
+    },
+    "ga-southwestern": {
+      "name": "Ga. Southwestern",
+      "longName": ""
+    },
+    "gallaudet": {
+      "name": "Gallaudet",
+      "longName": ""
+    },
+    "gannon": {
+      "name": "Gannon",
+      "longName": ""
+    },
+    "gardner-webb": {
+      "name": "Gardner-Webb",
+      "longName": ""
+    },
+    "geneva": {
+      "name": "Geneva",
+      "longName": ""
+    },
+    "george-fox": {
+      "name": "George Fox",
+      "longName": ""
+    },
+    "george-mason": {
+      "name": "George Mason",
+      "longName": ""
+    },
+    "george-washington": {
+      "name": "George Washington",
+      "longName": ""
+    },
+    "georgetown": {
+      "name": "Georgetown",
+      "longName": ""
+    },
+    "georgia": {
+      "name": "Georgia",
+      "longName": ""
+    },
+    "georgia-college": {
+      "name": "Georgia College",
+      "longName": ""
+    },
+    "georgia-st": {
+      "name": "Georgia St.",
+      "longName": ""
+    },
+    "georgia-tech": {
+      "name": "Georgia Tech",
+      "longName": ""
+    },
+    "georgian-court": {
+      "name": "Georgian Court",
+      "longName": ""
+    },
+    "gettysburg": {
+      "name": "Gettysburg",
+      "longName": ""
+    },
+    "glenville-st": {
+      "name": "Glenville St.",
+      "longName": ""
+    },
+    "goldey-beacom": {
+      "name": "Goldey-Beacom",
+      "longName": ""
+    },
+    "gonzaga": {
+      "name": "Gonzaga",
+      "longName": ""
+    },
+    "gordon": {
+      "name": "Gordon",
+      "longName": ""
+    },
+    "goucher": {
+      "name": "Goucher",
+      "longName": ""
+    },
+    "grambling": {
+      "name": "Grambling",
+      "longName": ""
+    },
+    "grand-canyon": {
+      "name": "Grand Canyon",
+      "longName": ""
+    },
+    "grand-valley-st": {
+      "name": "Grand Valley St.",
+      "longName": ""
+    },
+    "green-bay": {
+      "name": "Green Bay",
+      "longName": ""
+    },
+    "green-mountain": {
+      "name": "Green Mountain",
+      "longName": ""
+    },
+    "greensboro": {
+      "name": "Greensboro",
+      "longName": ""
+    },
+    "greenville": {
+      "name": "Greenville",
+      "longName": ""
+    },
+    "grinnell": {
+      "name": "Grinnell",
+      "longName": ""
+    },
+    "grove-city": {
+      "name": "Grove City",
+      "longName": ""
+    },
+    "gru-augusta": {
+      "name": "Augusta University",
+      "longName": ""
+    },
+    "guilford": {
+      "name": "Guilford",
+      "longName": ""
+    },
+    "gust-adolphus": {
+      "name": "Gust. Adolphus",
+      "longName": ""
+    },
+    "gwynedd-mercy": {
+      "name": "Gwynedd-Mercy",
+      "longName": ""
+    },
+    "hamilton": {
+      "name": "Hamilton",
+      "longName": ""
+    },
+    "hamline": {
+      "name": "Hamline",
+      "longName": ""
+    },
+    "hampden-sydney": {
+      "name": "Hampden-Sydney",
+      "longName": ""
+    },
+    "hampton": {
+      "name": "Hampton",
+      "longName": ""
+    },
+    "hanover": {
+      "name": "Hanover",
+      "longName": ""
+    },
+    "hardin-simmons": {
+      "name": "Hardin-Simmons",
+      "longName": ""
+    },
+    "harding": {
+      "name": "Harding",
+      "longName": ""
+    },
+    "hartford": {
+      "name": "Hartford",
+      "longName": ""
+    },
+    "hartwick": {
+      "name": "Hartwick",
+      "longName": ""
+    },
+    "harvard": {
+      "name": "Harvard",
+      "longName": ""
+    },
+    "haverford": {
+      "name": "Haverford",
+      "longName": ""
+    },
+    "hawaii": {
+      "name": "Hawaii",
+      "longName": ""
+    },
+    "hawaii-hilo": {
+      "name": "Hawaii Hilo",
+      "longName": ""
+    },
+    "hawaii-pacific": {
+      "name": "Hawaii Pacific",
+      "longName": ""
+    },
+    "heidelberg": {
+      "name": "Heidelberg",
+      "longName": ""
+    },
+    "henderson-st": {
+      "name": "Henderson St.",
+      "longName": ""
+    },
+    "hendrix": {
+      "name": "Hendrix",
+      "longName": ""
+    },
+    "high-point": {
+      "name": "High Point",
+      "longName": ""
+    },
+    "hilbert": {
+      "name": "Hilbert",
+      "longName": ""
+    },
+    "hillsdale": {
+      "name": "Hillsdale",
+      "longName": ""
+    },
+    "hiram": {
+      "name": "Hiram",
+      "longName": ""
+    },
+    "hobart": {
+      "name": "Hobart",
+      "longName": ""
+    },
+    "hofstra": {
+      "name": "Hofstra",
+      "longName": ""
+    },
+    "hollins": {
+      "name": "Hollins",
+      "longName": ""
+    },
+    "holy-cross": {
+      "name": "Holy Cross",
+      "longName": ""
+    },
+    "holy-family": {
+      "name": "Holy Family",
+      "longName": ""
+    },
+    "holy-names": {
+      "name": "Holy Names",
+      "longName": ""
+    },
+    "hood": {
+      "name": "Hood",
+      "longName": ""
+    },
+    "hope": {
+      "name": "Hope",
+      "longName": ""
+    },
+    "houghton": {
+      "name": "Houghton",
+      "longName": ""
+    },
+    "houston": {
+      "name": "Houston",
+      "longName": ""
+    },
+    "houston-christian": {
+      "name": "Houston Christian",
+      "longName": ""
+    },
+    "howard": {
+      "name": "Howard",
+      "longName": ""
+    },
+    "howard-payne": {
+      "name": "Howard Payne",
+      "longName": ""
+    },
+    "humboldt-st": {
+      "name": "Cal Poly Humboldt",
+      "longName": ""
+    },
+    "hunter": {
+      "name": "Hunter",
+      "longName": ""
+    },
+    "huntingdon": {
+      "name": "Huntingdon",
+      "longName": ""
+    },
+    "husson": {
+      "name": "Husson",
+      "longName": ""
+    },
+    "idaho": {
+      "name": "Idaho",
+      "longName": ""
+    },
+    "idaho-st": {
+      "name": "Idaho St.",
+      "longName": ""
+    },
+    "iit": {
+      "name": "Illinois Tech",
+      "longName": ""
+    },
+    "ill-chicago": {
+      "name": "Ill.-Chicago",
+      "longName": ""
+    },
+    "ill-springfield": {
+      "name": "Ill.- Springfield",
+      "longName": ""
+    },
+    "ill-wesleyan": {
+      "name": "Ill. Wesleyan",
+      "longName": ""
+    },
+    "illinois": {
+      "name": "Illinois",
+      "longName": ""
+    },
+    "illinois-col": {
+      "name": "Illinois Col.",
+      "longName": ""
+    },
+    "illinois-st": {
+      "name": "Illinois St.",
+      "longName": ""
+    },
+    "immaculata": {
+      "name": "Immaculata",
+      "longName": ""
+    },
+    "incarnate-word": {
+      "name": "UIW",
+      "longName": ""
+    },
+    "indiana": {
+      "name": "Indiana",
+      "longName": ""
+    },
+    "indiana-pa": {
+      "name": "Indiana (PA)",
+      "longName": ""
+    },
+    "indiana-st": {
+      "name": "Indiana St.",
+      "longName": ""
+    },
+    "indianapolis": {
+      "name": "Indianapolis",
+      "longName": ""
+    },
+    "iona": {
+      "name": "Iona",
+      "longName": ""
+    },
+    "iowa": {
+      "name": "Iowa",
+      "longName": ""
+    },
+    "iowa-st": {
+      "name": "Iowa St.",
+      "longName": ""
+    },
+    "iowa-wesleyan": {
+      "name": "Iowa Wesleyan",
+      "longName": ""
+    },
+    "ipfw": {
+      "name": "Purdue University Fort Wayne",
+      "longName": ""
+    },
+    "ithaca": {
+      "name": "Ithaca",
+      "longName": ""
+    },
+    "iu-indy": {
+      "name": "IU Indy",
+      "longName": ""
+    },
+    "jackson-st": {
+      "name": "Jackson St.",
+      "longName": ""
+    },
+    "jacksonville": {
+      "name": "Jacksonville",
+      "longName": ""
+    },
+    "jacksonville-st": {
+      "name": "Jacksonville St.",
+      "longName": ""
+    },
+    "james-madison": {
+      "name": "James Madison",
+      "longName": ""
+    },
+    "jessup": {
+      "name": "Jessup University",
+      "longName": ""
+    },
+    "john-carroll": {
+      "name": "John Carroll",
+      "longName": ""
+    },
+    "john-jay": {
+      "name": "John Jay",
+      "longName": ""
+    },
+    "johns-hopkins": {
+      "name": "Johns Hopkins",
+      "longName": ""
+    },
+    "johnson-c-smith": {
+      "name": "Johnson C. Smith",
+      "longName": ""
+    },
+    "johnson-st": {
+      "name": "Johnson St.",
+      "longName": ""
+    },
+    "johnson-wales-ri": {
+      "name": "Johnson & Wales (RI)",
+      "longName": ""
+    },
+    "juniata": {
+      "name": "Juniata",
+      "longName": ""
+    },
+    "jwu-denver": {
+      "name": "Johnson & Wales (Denver)",
+      "longName": ""
+    },
+    "kalamazoo": {
+      "name": "Kalamazoo",
+      "longName": ""
+    },
+    "kansas": {
+      "name": "Kansas",
+      "longName": ""
+    },
+    "kansas-st": {
+      "name": "Kansas St.",
+      "longName": ""
+    },
+    "kean": {
+      "name": "Kean",
+      "longName": ""
+    },
+    "keene-st": {
+      "name": "Keene St.",
+      "longName": ""
+    },
+    "kennesaw-st": {
+      "name": "Kennesaw St.",
+      "longName": ""
+    },
+    "kent-st": {
+      "name": "Kent St.",
+      "longName": ""
+    },
+    "kentucky": {
+      "name": "Kentucky",
+      "longName": ""
+    },
+    "kentucky-st": {
+      "name": "Kentucky St.",
+      "longName": ""
+    },
+    "kenyon": {
+      "name": "Kenyon",
+      "longName": ""
+    },
+    "keuka": {
+      "name": "Keuka",
+      "longName": ""
+    },
+    "keystone": {
+      "name": "Keystone",
+      "longName": ""
+    },
+    "king-tn": {
+      "name": "King (TN)",
+      "longName": ""
+    },
+    "kings-pa": {
+      "name": "King's (PA)",
+      "longName": ""
+    },
+    "knox": {
+      "name": "Knox",
+      "longName": ""
+    },
+    "kutztown": {
+      "name": "Kutztown",
+      "longName": ""
+    },
+    "ky-wesleyan": {
+      "name": "Ky. Wesleyan",
+      "longName": ""
+    },
+    "la-lafayette": {
+      "name": "La.-Lafayette",
+      "longName": ""
+    },
+    "la-monroe": {
+      "name": "La.-Monroe",
+      "longName": ""
+    },
+    "la-roche": {
+      "name": "La Roche",
+      "longName": ""
+    },
+    "la-salle": {
+      "name": "La Salle",
+      "longName": ""
+    },
+    "la-sierra": {
+      "name": "La Sierra",
+      "longName": ""
+    },
+    "la-verne": {
+      "name": "La Verne",
+      "longName": ""
+    },
+    "lafayette": {
+      "name": "Lafayette",
+      "longName": ""
+    },
+    "lagrange": {
+      "name": "LaGrange",
+      "longName": ""
+    },
+    "lake-erie": {
+      "name": "Lake Erie",
+      "longName": ""
+    },
+    "lake-forest": {
+      "name": "Lake Forest",
+      "longName": ""
+    },
+    "lake-superior-st": {
+      "name": "Lake Superior St.",
+      "longName": ""
+    },
+    "lakeland": {
+      "name": "Lakeland",
+      "longName": ""
+    },
+    "lamar": {
+      "name": "Lamar",
+      "longName": ""
+    },
+    "lambuth": {
+      "name": "Lambuth",
+      "longName": ""
+    },
+    "lancaster-bible": {
+      "name": "Lancaster Bible",
+      "longName": ""
+    },
+    "lander": {
+      "name": "Lander",
+      "longName": ""
+    },
+    "lane": {
+      "name": "Lane",
+      "longName": ""
+    },
+    "langston": {
+      "name": "Langston",
+      "longName": ""
+    },
+    "lasell": {
+      "name": "Lasell",
+      "longName": ""
+    },
+    "lawrence": {
+      "name": "Lawrence",
+      "longName": ""
+    },
+    "le-moyne": {
+      "name": "Le Moyne",
+      "longName": ""
+    },
+    "lebanon-valley": {
+      "name": "Lebanon Valley",
+      "longName": ""
+    },
+    "lee": {
+      "name": "Lee",
+      "longName": ""
+    },
+    "lees-mcrae": {
+      "name": "Lees-McRae",
+      "longName": ""
+    },
+    "lehigh": {
+      "name": "Lehigh",
+      "longName": ""
+    },
+    "lehman": {
+      "name": "Lehman",
+      "longName": ""
+    },
+    "lemoyne-owen": {
+      "name": "LeMoyne-Owen",
+      "longName": ""
+    },
+    "lenoir-rhyne": {
+      "name": "Lenoir-Rhyne",
+      "longName": ""
+    },
+    "lesley": {
+      "name": "Lesley",
+      "longName": ""
+    },
+    "letourneau": {
+      "name": "LeTourneau",
+      "longName": ""
+    },
+    "lewis": {
+      "name": "Lewis",
+      "longName": ""
+    },
+    "lewis-clark": {
+      "name": "Lewis & Clark",
+      "longName": ""
+    },
+    "liberty": {
+      "name": "Liberty",
+      "longName": ""
+    },
+    "limestone": {
+      "name": "Limestone",
+      "longName": ""
+    },
+    "lincoln-christian": {
+      "name": "Lincoln Christian",
+      "longName": ""
+    },
+    "lincoln-memorial": {
+      "name": "Lincoln Memorial",
+      "longName": ""
+    },
+    "lincoln-mo": {
+      "name": "Lincoln (MO)",
+      "longName": ""
+    },
+    "lincoln-pa": {
+      "name": "Lincoln (PA)",
+      "longName": ""
+    },
+    "lindenwood-mo": {
+      "name": "Lindenwood",
+      "longName": ""
+    },
+    "linfield": {
+      "name": "Linfield",
+      "longName": ""
+    },
+    "lipscomb": {
+      "name": "Lipscomb",
+      "longName": ""
+    },
+    "liu-post": {
+      "name": "LIU Post",
+      "longName": ""
+    },
+    "livingstone": {
+      "name": "Livingstone",
+      "longName": ""
+    },
+    "lock-haven": {
+      "name": "Lock Haven",
+      "longName": ""
+    },
+    "long-beach-st": {
+      "name": "Long Beach St.",
+      "longName": ""
+    },
+    "long-island": {
+      "name": "Long Island",
+      "longName": ""
+    },
+    "longwood": {
+      "name": "Longwood",
+      "longName": ""
+    },
+    "loras": {
+      "name": "Loras",
+      "longName": ""
+    },
+    "louisiana-col": {
+      "name": "Louisiana Col.",
+      "longName": ""
+    },
+    "louisiana-tech": {
+      "name": "Louisiana Tech",
+      "longName": ""
+    },
+    "louisville": {
+      "name": "Louisville",
+      "longName": ""
+    },
+    "loyola-chicago": {
+      "name": "Loyola (IL)",
+      "longName": ""
+    },
+    "loyola-maryland": {
+      "name": "Loyola Maryland",
+      "longName": ""
+    },
+    "loyola-marymount": {
+      "name": "Loyola Marymount",
+      "longName": ""
+    },
+    "lsu": {
+      "name": "LSU",
+      "longName": ""
+    },
+    "lubbock-christian": {
+      "name": "Lubbock Christian",
+      "longName": ""
+    },
+    "luther": {
+      "name": "Luther",
+      "longName": ""
+    },
+    "lycoming": {
+      "name": "Lycoming",
+      "longName": ""
+    },
+    "lynchburg": {
+      "name": "Lynchburg",
+      "longName": ""
+    },
+    "lyndon-st": {
+      "name": "Lyndon St.",
+      "longName": ""
+    },
+    "lynn": {
+      "name": "Lynn",
+      "longName": ""
+    },
+    "lyon": {
+      "name": "Lyon College",
+      "longName": ""
+    },
+    "macalester": {
+      "name": "Macalester",
+      "longName": ""
+    },
+    "macmurray": {
+      "name": "MacMurray",
+      "longName": ""
+    },
+    "maine": {
+      "name": "Maine",
+      "longName": ""
+    },
+    "maine-maritime": {
+      "name": "Maine Maritime",
+      "longName": ""
+    },
+    "malone": {
+      "name": "Malone",
+      "longName": ""
+    },
+    "manchester": {
+      "name": "Manchester",
+      "longName": ""
+    },
+    "manhattan": {
+      "name": "Manhattan",
+      "longName": ""
+    },
+    "manhattanville": {
+      "name": "Manhattanville",
+      "longName": ""
+    },
+    "mansfield": {
+      "name": "Mansfield",
+      "longName": ""
+    },
+    "maranatha-baptist": {
+      "name": "Maranatha Baptist",
+      "longName": ""
+    },
+    "marian-wi": {
+      "name": "Marian (WI)",
+      "longName": ""
+    },
+    "marietta": {
+      "name": "Marietta",
+      "longName": ""
+    },
+    "marist": {
+      "name": "Marist",
+      "longName": ""
+    },
+    "marquette": {
+      "name": "Marquette",
+      "longName": ""
+    },
+    "mars-hill": {
+      "name": "Mars Hill",
+      "longName": ""
+    },
+    "marshall": {
+      "name": "Marshall",
+      "longName": ""
+    },
+    "martin-luther": {
+      "name": "Martin Luther",
+      "longName": ""
+    },
+    "mary": {
+      "name": "Mary",
+      "longName": ""
+    },
+    "mary-baldwin": {
+      "name": "Mary Baldwin",
+      "longName": ""
+    },
+    "mary-hardin-baylor": {
+      "name": "Mary Hardin-Baylor",
+      "longName": ""
+    },
+    "mary-washington": {
+      "name": "Mary Washington",
+      "longName": ""
+    },
+    "maryland": {
+      "name": "Maryland",
+      "longName": ""
+    },
+    "marymount-va": {
+      "name": "Marymount (VA)",
+      "longName": ""
+    },
+    "maryville-mo": {
+      "name": "Maryville (MO)",
+      "longName": ""
+    },
+    "maryville-tn": {
+      "name": "Maryville (TN)",
+      "longName": ""
+    },
+    "marywood": {
+      "name": "Marywood",
+      "longName": ""
+    },
+    "mass-maritime": {
+      "name": "Mass. Maritime",
+      "longName": ""
+    },
+    "massachusetts": {
+      "name": "Mass-Amherst",
+      "longName": ""
+    },
+    "mcdaniel": {
+      "name": "McDaniel",
+      "longName": ""
+    },
+    "mckendree": {
+      "name": "McKendree",
+      "longName": ""
+    },
+    "mcla": {
+      "name": "Mass-Liberal-Arts",
+      "longName": ""
+    },
+    "mcmurry": {
+      "name": "McMurry",
+      "longName": ""
+    },
+    "mcneese-st": {
+      "name": "McNeese St.",
+      "longName": ""
+    },
+    "md-east-shore": {
+      "name": "Md.-East. Shore",
+      "longName": ""
+    },
+    "me-farmington": {
+      "name": "Me.-Farmington",
+      "longName": ""
+    },
+    "me-presque-isle": {
+      "name": "Me.-Presque Isle",
+      "longName": ""
+    },
+    "medaille": {
+      "name": "Medaille",
+      "longName": ""
+    },
+    "medgar-evers": {
+      "name": "Medgar Evers",
+      "longName": ""
+    },
+    "memphis": {
+      "name": "Memphis",
+      "longName": ""
+    },
+    "menlo": {
+      "name": "Menlo",
+      "longName": ""
+    },
+    "mercer": {
+      "name": "Mercer",
+      "longName": ""
+    },
+    "merchant-marine": {
+      "name": "Merchant Marine",
+      "longName": ""
+    },
+    "mercy": {
+      "name": "Mercy",
+      "longName": ""
+    },
+    "mercyhurst": {
+      "name": "Mercyhurst",
+      "longName": ""
+    },
+    "meredith": {
+      "name": "Meredith",
+      "longName": ""
+    },
+    "merrimack": {
+      "name": "Merrimack",
+      "longName": ""
+    },
+    "messiah": {
+      "name": "Messiah",
+      "longName": ""
+    },
+    "methodist": {
+      "name": "Methodist",
+      "longName": ""
+    },
+    "metro-st": {
+      "name": "Metro St.",
+      "longName": ""
+    },
+    "miami-fl": {
+      "name": "Miami (Fla.)",
+      "longName": ""
+    },
+    "miami-oh": {
+      "name": "Miami (OH)",
+      "longName": ""
+    },
+    "michigan": {
+      "name": "Michigan",
+      "longName": ""
+    },
+    "michigan-st": {
+      "name": "Michigan St.",
+      "longName": ""
+    },
+    "michigan-tech": {
+      "name": "Michigan Tech",
+      "longName": ""
+    },
+    "middle-tenn": {
+      "name": "Middle Tenn.",
+      "longName": ""
+    },
+    "middlebury": {
+      "name": "Middlebury",
+      "longName": ""
+    },
+    "midwestern-st": {
+      "name": "MSU Texas",
+      "longName": ""
+    },
+    "miles": {
+      "name": "Miles",
+      "longName": ""
+    },
+    "millersville": {
+      "name": "Millersville",
+      "longName": ""
+    },
+    "millikin": {
+      "name": "Millikin",
+      "longName": ""
+    },
+    "mills": {
+      "name": "Mills",
+      "longName": ""
+    },
+    "millsaps": {
+      "name": "Millsaps",
+      "longName": ""
+    },
+    "milwaukee": {
+      "name": "Milwaukee",
+      "longName": ""
+    },
+    "minn-crookston": {
+      "name": "Minn.-Crookston",
+      "longName": ""
+    },
+    "minn-duluth": {
+      "name": "Minn. Duluth",
+      "longName": ""
+    },
+    "minn-morris": {
+      "name": "Minn.-Morris",
+      "longName": ""
+    },
+    "minn-st-mankato": {
+      "name": "Minn. St. Mankato",
+      "longName": ""
+    },
+    "minn-st-moorhead": {
+      "name": "Minn. St. Moorhead",
+      "longName": ""
+    },
+    "minnesota": {
+      "name": "Minnesota",
+      "longName": ""
+    },
+    "minot-st": {
+      "name": "Minot St.",
+      "longName": ""
+    },
+    "misericordia": {
+      "name": "Misericordia",
+      "longName": ""
+    },
+    "mississippi-col": {
+      "name": "Mississippi Col.",
+      "longName": ""
+    },
+    "mississippi-st": {
+      "name": "Mississippi St.",
+      "longName": ""
+    },
+    "mississippi-val": {
+      "name": "Mississippi Val.",
+      "longName": ""
+    },
+    "missouri": {
+      "name": "Missouri",
+      "longName": ""
+    },
+    "missouri-snt": {
+      "name": "Missouri S&T",
+      "longName": ""
+    },
+    "missouri-st": {
+      "name": "Missouri St.",
+      "longName": ""
+    },
+    "mit": {
+      "name": "MIT",
+      "longName": ""
+    },
+    "mitchell": {
+      "name": "Mitchell",
+      "longName": ""
+    },
+    "mo-southern-st": {
+      "name": "Mo. Southern St.",
+      "longName": ""
+    },
+    "mo-st-louis": {
+      "name": "Mo.-St. Louis",
+      "longName": ""
+    },
+    "mo-western-st": {
+      "name": "Mo. Western St.",
+      "longName": ""
+    },
+    "molloy": {
+      "name": "Molloy",
+      "longName": ""
+    },
+    "monmouth": {
+      "name": "Monmouth",
+      "longName": ""
+    },
+    "monmouth-il": {
+      "name": "Monmouth (IL)",
+      "longName": ""
+    },
+    "mont-st-billings": {
+      "name": "Mont. St. Billings",
+      "longName": ""
+    },
+    "montana": {
+      "name": "Montana",
+      "longName": ""
+    },
+    "montana-st": {
+      "name": "Montana St.",
+      "longName": ""
+    },
+    "montclair-st": {
+      "name": "Montclair St.",
+      "longName": ""
+    },
+    "montevallo": {
+      "name": "Montevallo",
+      "longName": ""
+    },
+    "moravian": {
+      "name": "Moravian",
+      "longName": ""
+    },
+    "morehead-st": {
+      "name": "Morehead St.",
+      "longName": ""
+    },
+    "morehouse": {
+      "name": "Morehouse",
+      "longName": ""
+    },
+    "morgan-st": {
+      "name": "Morgan St.",
+      "longName": ""
+    },
+    "morningside": {
+      "name": "Morningside",
+      "longName": ""
+    },
+    "morris-brown": {
+      "name": "Morris Brown",
+      "longName": ""
+    },
+    "mount-holyoke": {
+      "name": "Mount Holyoke",
+      "longName": ""
+    },
+    "mount-ida": {
+      "name": "Mount Ida",
+      "longName": ""
+    },
+    "mount-olive": {
+      "name": "Mount Olive",
+      "longName": ""
+    },
+    "mount-union": {
+      "name": "Mount Union",
+      "longName": ""
+    },
+    "msoe": {
+      "name": "Milwaukee Engr.",
+      "longName": ""
+    },
+    "mt-aloysius": {
+      "name": "Mt. Aloysius",
+      "longName": ""
+    },
+    "mt-mary": {
+      "name": "Mt. Mary",
+      "longName": ""
+    },
+    "mt-st-joseph": {
+      "name": "Mount St. Joseph",
+      "longName": ""
+    },
+    "mt-st-mary-ny": {
+      "name": "Mt. St. Mary (NY)",
+      "longName": ""
+    },
+    "mt-st-marys": {
+      "name": "Mt. St. Mary's",
+      "longName": ""
+    },
+    "mt-st-vincent": {
+      "name": "Mt. St. Vincent",
+      "longName": ""
+    },
+    "muhlenberg": {
+      "name": "Muhlenberg",
+      "longName": ""
+    },
+    "murray-st": {
+      "name": "Murray St.",
+      "longName": ""
+    },
+    "muskingum": {
+      "name": "Muskingum",
+      "longName": ""
+    },
+    "navy": {
+      "name": "Navy",
+      "longName": ""
+    },
+    "nazareth": {
+      "name": "Nazareth",
+      "longName": ""
+    },
+    "nc-at": {
+      "name": "North Carolina A&T",
+      "longName": ""
+    },
+    "nc-central": {
+      "name": "North Carolina Central",
+      "longName": ""
+    },
+    "nc-wesleyan": {
+      "name": "North Carolina Wesleyan",
+      "longName": ""
+    },
+    "neb-kearney": {
+      "name": "Neb.-Kearney",
+      "longName": ""
+    },
+    "neb-omaha": {
+      "name": "Omaha",
+      "longName": ""
+    },
+    "neb-wesleyan": {
+      "name": "Neb. Wesleyan",
+      "longName": ""
+    },
+    "nebraska": {
+      "name": "Nebraska",
+      "longName": ""
+    },
+    "neumann": {
+      "name": "Neumann",
+      "longName": ""
+    },
+    "nevada": {
+      "name": "Nevada",
+      "longName": ""
+    },
+    "new-england-col": {
+      "name": "New England Col.",
+      "longName": ""
+    },
+    "new-hampshire": {
+      "name": "New Hampshire",
+      "longName": ""
+    },
+    "new-haven": {
+      "name": "New Haven",
+      "longName": ""
+    },
+    "new-jersey-city": {
+      "name": "New Jersey City",
+      "longName": ""
+    },
+    "new-mexico": {
+      "name": "New Mexico",
+      "longName": ""
+    },
+    "new-mexico-st": {
+      "name": "New Mexico St.",
+      "longName": ""
+    },
+    "new-orleans": {
+      "name": "New Orleans",
+      "longName": ""
+    },
+    "new-rochelle": {
+      "name": "New Rochelle",
+      "longName": ""
+    },
+    "new-york-u": {
+      "name": "New York U.",
+      "longName": ""
+    },
+    "newberry": {
+      "name": "Newberry",
+      "longName": ""
+    },
+    "newbury": {
+      "name": "Newbury",
+      "longName": ""
+    },
+    "newman": {
+      "name": "Newman",
+      "longName": ""
+    },
+    "niagara": {
+      "name": "Niagara",
+      "longName": ""
+    },
+    "nicholls-st": {
+      "name": "Nicholls St.",
+      "longName": ""
+    },
+    "nichols": {
+      "name": "Nichols",
+      "longName": ""
+    },
+    "njit": {
+      "name": "New-Jersey-Tech",
+      "longName": ""
+    },
+    "nm-highlands": {
+      "name": "New-Mexico-Highlands",
+      "longName": ""
+    },
+    "norfolk-st": {
+      "name": "Norfolk St.",
+      "longName": ""
+    },
+    "north-ala": {
+      "name": "North Ala.",
+      "longName": ""
+    },
+    "north-carolina": {
+      "name": "North Carolina",
+      "longName": ""
+    },
+    "north-carolina-st": {
+      "name": "North Carolina St.",
+      "longName": ""
+    },
+    "north-central-il": {
+      "name": "North Central (IL)",
+      "longName": ""
+    },
+    "north-central-mn": {
+      "name": "North Central (MN)",
+      "longName": ""
+    },
+    "north-dakota": {
+      "name": "North Dakota",
+      "longName": ""
+    },
+    "north-dakota-st": {
+      "name": "North Dakota St.",
+      "longName": ""
+    },
+    "north-florida": {
+      "name": "North Florida",
+      "longName": ""
+    },
+    "north-georgia": {
+      "name": "North Ga.",
+      "longName": ""
+    },
+    "north-greenville": {
+      "name": "North Greenville",
+      "longName": ""
+    },
+    "north-park": {
+      "name": "North Park",
+      "longName": ""
+    },
+    "north-texas": {
+      "name": "North Texas",
+      "longName": ""
+    },
+    "northeastern": {
+      "name": "Northeastern",
+      "longName": ""
+    },
+    "northeastern-ill": {
+      "name": "Northeastern Ill.",
+      "longName": ""
+    },
+    "northeastern-st": {
+      "name": "Northeastern St.",
+      "longName": ""
+    },
+    "northern-ariz": {
+      "name": "Northern Ariz.",
+      "longName": ""
+    },
+    "northern-colo": {
+      "name": "Northern Colo.",
+      "longName": ""
+    },
+    "northern-ill": {
+      "name": "Northern Ill.",
+      "longName": ""
+    },
+    "northern-ky": {
+      "name": "Northern Ky.",
+      "longName": ""
+    },
+    "northern-mich": {
+      "name": "Northern Mich.",
+      "longName": ""
+    },
+    "northern-st": {
+      "name": "Northern St.",
+      "longName": ""
+    },
+    "northland": {
+      "name": "Northland",
+      "longName": ""
+    },
+    "northwest-mo-st": {
+      "name": "Northwest Mo. St.",
+      "longName": ""
+    },
+    "northwest-nazarene": {
+      "name": "Northwest Nazarene",
+      "longName": ""
+    },
+    "northwestern": {
+      "name": "Northwestern",
+      "longName": ""
+    },
+    "northwestern-okla": {
+      "name": "Northwestern Oklahoma",
+      "longName": ""
+    },
+    "northwestern-st": {
+      "name": "Northwestern St.",
+      "longName": ""
+    },
+    "northwestern-st-paul": {
+      "name": "Northwestern-St. Paul",
+      "longName": ""
+    },
+    "northwood-mi": {
+      "name": "Northwood (MI)",
+      "longName": ""
+    },
+    "norwich": {
+      "name": "Norwich",
+      "longName": ""
+    },
+    "notre-dame": {
+      "name": "Notre Dame",
+      "longName": ""
+    },
+    "notre-dame-de-namur": {
+      "name": "Notre Dame de Namur",
+      "longName": ""
+    },
+    "notre-dame-md": {
+      "name": "Notre Dame (MD)",
+      "longName": ""
+    },
+    "notre-dame-oh": {
+      "name": "Notre Dame (OH)",
+      "longName": ""
+    },
+    "nova-southeastern": {
+      "name": "Nova Southeastern",
+      "longName": ""
+    },
+    "nyack": {
+      "name": "Nyack",
+      "longName": ""
+    },
+    "nyit": {
+      "name": "New-York-Inst",
+      "longName": ""
+    },
+    "oakland": {
+      "name": "Oakland",
+      "longName": ""
+    },
+    "oakland-city": {
+      "name": "Oakland City",
+      "longName": ""
+    },
+    "oberlin": {
+      "name": "Oberlin",
+      "longName": ""
+    },
+    "occidental": {
+      "name": "Occidental",
+      "longName": ""
+    },
+    "oglethorpe": {
+      "name": "Oglethorpe",
+      "longName": ""
+    },
+    "ohio": {
+      "name": "Ohio",
+      "longName": ""
+    },
+    "ohio-dominican": {
+      "name": "Ohio Dominican",
+      "longName": ""
+    },
+    "ohio-northern": {
+      "name": "Ohio Northern",
+      "longName": ""
+    },
+    "ohio-st": {
+      "name": "Ohio St.",
+      "longName": ""
+    },
+    "ohio-valley": {
+      "name": "Ohio Valley",
+      "longName": ""
+    },
+    "ohio-wesleyan": {
+      "name": "Ohio Wesleyan",
+      "longName": ""
+    },
+    "okla-baptist": {
+      "name": "Oklahoma Baptist University",
+      "longName": ""
+    },
+    "okla-christian": {
+      "name": "Oklahoma Christian",
+      "longName": ""
+    },
+    "okla-panhandle": {
+      "name": "Oklahoma Panhandle",
+      "longName": ""
+    },
+    "oklahoma": {
+      "name": "Oklahoma",
+      "longName": ""
+    },
+    "oklahoma-st": {
+      "name": "Oklahoma St.",
+      "longName": ""
+    },
+    "old-dominion": {
+      "name": "Old Dominion",
+      "longName": ""
+    },
+    "old-westbury": {
+      "name": "Suny-Old-Westbury",
+      "longName": ""
+    },
+    "ole-miss": {
+      "name": "Mississippi",
+      "longName": ""
+    },
+    "olivet": {
+      "name": "Olivet",
+      "longName": ""
+    },
+    "oneonta-st": {
+      "name": "SUNY Oneonta",
+      "longName": ""
+    },
+    "oral-roberts": {
+      "name": "Oral Roberts",
+      "longName": ""
+    },
+    "oregon": {
+      "name": "Oregon",
+      "longName": ""
+    },
+    "oregon-st": {
+      "name": "Oregon State",
+      "longName": ""
+    },
+    "oswego-st": {
+      "name": "Suny-Oswego",
+      "longName": ""
+    },
+    "otterbein": {
+      "name": "Otterbein",
+      "longName": ""
+    },
+    "ouachita-baptist": {
+      "name": "Ouachita Baptist",
+      "longName": ""
+    },
+    "ozarks-ar": {
+      "name": "Ozarks (AR)",
+      "longName": ""
+    },
+    "pace": {
+      "name": "Pace",
+      "longName": ""
+    },
+    "pacific": {
+      "name": "Pacific",
+      "longName": ""
+    },
+    "pacific-lutheran": {
+      "name": "Pacific Lutheran",
+      "longName": ""
+    },
+    "pacific-or": {
+      "name": "Pacific (OR)",
+      "longName": ""
+    },
+    "paine": {
+      "name": "Paine",
+      "longName": ""
+    },
+    "palm-beach-atl": {
+      "name": "Palm Beach Atl.",
+      "longName": ""
+    },
+    "penn": {
+      "name": "Penn",
+      "longName": ""
+    },
+    "penn-st": {
+      "name": "Penn State",
+      "longName": ""
+    },
+    "penn-st-abington": {
+      "name": "Penn St.-Abington",
+      "longName": ""
+    },
+    "penn-st-altoona": {
+      "name": "Penn St.-Altoona",
+      "longName": ""
+    },
+    "penn-st-behrend": {
+      "name": "Penn St.-Behrend",
+      "longName": ""
+    },
+    "penn-st-berks": {
+      "name": "Penn St.-Berks",
+      "longName": ""
+    },
+    "penn-st-brandywine": {
+      "name": "Penn St. Brandywine",
+      "longName": ""
+    },
+    "penn-st-harrisburg": {
+      "name": "Penn St.-Harrisburg",
+      "longName": ""
+    },
+    "penn-tech": {
+      "name": "Penn College",
+      "longName": ""
+    },
+    "pepperdine": {
+      "name": "Pepperdine",
+      "longName": ""
+    },
+    "pfeiffer": {
+      "name": "Pfeiffer",
+      "longName": ""
+    },
+    "philadelphia-u": {
+      "name": "Jefferson University",
+      "longName": ""
+    },
+    "piedmont": {
+      "name": "Piedmont",
+      "longName": ""
+    },
+    "pine-manor": {
+      "name": "Pine Manor",
+      "longName": ""
+    },
+    "pitt-bradford": {
+      "name": "Pitt.-Bradford",
+      "longName": ""
+    },
+    "pitt-greensburg": {
+      "name": "Pitt.-Greensburg",
+      "longName": ""
+    },
+    "pitt-johnstown": {
+      "name": "Pitt.-Johnstown",
+      "longName": ""
+    },
+    "pittsburg-st": {
+      "name": "Pittsburg State",
+      "longName": ""
+    },
+    "pittsburgh": {
+      "name": "Pittsburgh",
+      "longName": ""
+    },
+    "plattsburgh-st": {
+      "name": "Plattsburgh State",
+      "longName": ""
+    },
+    "plymouth-st": {
+      "name": "Plymouth St.",
+      "longName": ""
+    },
+    "point-loma": {
+      "name": "Point Loma",
+      "longName": ""
+    },
+    "polytechnic-ny": {
+      "name": "Polytechnic (NY)",
+      "longName": ""
+    },
+    "pomona-pitzer": {
+      "name": "Pomona-Pitzer",
+      "longName": ""
+    },
+    "portland": {
+      "name": "Portland",
+      "longName": ""
+    },
+    "portland-st": {
+      "name": "Portland St.",
+      "longName": ""
+    },
+    "post": {
+      "name": "Post",
+      "longName": ""
+    },
+    "pr-bayamon": {
+      "name": "P.R.-Bayamon",
+      "longName": ""
+    },
+    "pr-cayey": {
+      "name": "P.R.-Cayey",
+      "longName": ""
+    },
+    "pr-humacao": {
+      "name": "P.R.-Humacao",
+      "longName": ""
+    },
+    "pr-mayaguez": {
+      "name": "P.R.-Mayaguez",
+      "longName": ""
+    },
+    "pr-rio-piedras": {
+      "name": "P.R.-Rio Piedras",
+      "longName": ""
+    },
+    "prairie-view": {
+      "name": "Prairie View",
+      "longName": ""
+    },
+    "pratt-institute": {
+      "name": "Pratt Institute",
+      "longName": ""
+    },
+    "presbyterian": {
+      "name": "Presbyterian",
+      "longName": ""
+    },
+    "presentation": {
+      "name": "Presentation",
+      "longName": ""
+    },
+    "princeton": {
+      "name": "Princeton",
+      "longName": ""
+    },
+    "principia": {
+      "name": "Principia",
+      "longName": ""
+    },
+    "providence": {
+      "name": "Providence",
+      "longName": ""
+    },
+    "puget-sound": {
+      "name": "Puget Sound",
+      "longName": ""
+    },
+    "purchase-st": {
+      "name": "Purchase",
+      "longName": ""
+    },
+    "purdue": {
+      "name": "Purdue",
+      "longName": ""
+    },
+    "purdue-northwest": {
+      "name": "Purdue Northwest",
+      "longName": ""
+    },
+    "queens-nc": {
+      "name": "Queens (NC)",
+      "longName": ""
+    },
+    "queens-ny": {
+      "name": "Queens (NY)",
+      "longName": ""
+    },
+    "quincy": {
+      "name": "Quincy",
+      "longName": ""
+    },
+    "quinnipiac": {
+      "name": "Quinnipiac",
+      "longName": ""
+    },
+    "radford": {
+      "name": "Radford",
+      "longName": ""
+    },
+    "ramapo": {
+      "name": "Ramapo",
+      "longName": ""
+    },
+    "randolph": {
+      "name": "Randolph",
+      "longName": ""
+    },
+    "randolph-macon": {
+      "name": "Randolph-Macon",
+      "longName": ""
+    },
+    "redlands": {
+      "name": "Redlands",
+      "longName": ""
+    },
+    "regis-co": {
+      "name": "Regis (CO)",
+      "longName": ""
+    },
+    "regis-ma": {
+      "name": "Regis College",
+      "longName": ""
+    },
+    "reneau-university": {
+      "name": "Reneau University",
+      "longName": ""
+    },
+    "rensselaer": {
+      "name": "Rensselaer",
+      "longName": ""
+    },
+    "rhode-island": {
+      "name": "Rhode Island",
+      "longName": ""
+    },
+    "rhode-island-col": {
+      "name": "Rhode Island Col.",
+      "longName": ""
+    },
+    "rhodes": {
+      "name": "Rhodes",
+      "longName": ""
+    },
+    "rice": {
+      "name": "Rice",
+      "longName": ""
+    },
+    "richard-stockton": {
+      "name": "Stockton",
+      "longName": ""
+    },
+    "richmond": {
+      "name": "Richmond",
+      "longName": ""
+    },
+    "rider": {
+      "name": "Rider",
+      "longName": ""
+    },
+    "ripon": {
+      "name": "Ripon",
+      "longName": ""
+    },
+    "rivier": {
+      "name": "Rivier",
+      "longName": ""
+    },
+    "roanoke": {
+      "name": "Roanoke",
+      "longName": ""
+    },
+    "robert-morris": {
+      "name": "Robert Morris",
+      "longName": ""
+    },
+    "roberts-wesleyan": {
+      "name": "Roberts Wesleyan",
+      "longName": ""
+    },
+    "rochester-inst": {
+      "name": "Rochester Inst.",
+      "longName": ""
+    },
+    "rochester-ny": {
+      "name": "Rochester (NY)",
+      "longName": ""
+    },
+    "rockford": {
+      "name": "Rockford",
+      "longName": ""
+    },
+    "rockhurst": {
+      "name": "Rockhurst",
+      "longName": ""
+    },
+    "roger-williams": {
+      "name": "Roger Williams",
+      "longName": ""
+    },
+    "rogers-st": {
+      "name": "Rogers State",
+      "longName": ""
+    },
+    "rollins": {
+      "name": "Rollins",
+      "longName": ""
+    },
+    "roosevelt-university": {
+      "name": "Roosevelt University",
+      "longName": ""
+    },
+    "rose-hulman": {
+      "name": "Rose-Hulman",
+      "longName": ""
+    },
+    "rosemont": {
+      "name": "Rosemont",
+      "longName": ""
+    },
+    "rowan": {
+      "name": "Rowan",
+      "longName": ""
+    },
+    "rust": {
+      "name": "Rust",
+      "longName": ""
+    },
+    "rutgers": {
+      "name": "Rutgers",
+      "longName": ""
+    },
+    "rutgers-camden": {
+      "name": "Rutgers-Camden",
+      "longName": ""
+    },
+    "rutgers-newark": {
+      "name": "Rutgers-Newark",
+      "longName": ""
+    },
+    "sacramento-st": {
+      "name": "Sacramento St.",
+      "longName": ""
+    },
+    "sacred-heart": {
+      "name": "Sacred Heart",
+      "longName": ""
+    },
+    "sage-colleges": {
+      "name": "Sage Colleges",
+      "longName": ""
+    },
+    "saginaw-valley": {
+      "name": "Saginaw Valley",
+      "longName": ""
+    },
+    "saint-johns-mn": {
+      "name": "St. John's (MN)",
+      "longName": ""
+    },
+    "saint-josephs": {
+      "name": "Saint Joseph's",
+      "longName": ""
+    },
+    "saint-leo": {
+      "name": "St. Leo",
+      "longName": ""
+    },
+    "saint-louis": {
+      "name": "St. Louis",
+      "longName": ""
+    },
+    "saint-martins": {
+      "name": "Saint-Martins",
+      "longName": ""
+    },
+    "saint-michaels": {
+      "name": "St. Michael's",
+      "longName": ""
+    },
+    "saint-rose": {
+      "name": "Saint Rose",
+      "longName": ""
+    },
+    "saint-vincent": {
+      "name": "St. Vincent",
+      "longName": ""
+    },
+    "salem": {
+      "name": "Salem",
+      "longName": ""
+    },
+    "salem-intl": {
+      "name": "Salem University",
+      "longName": ""
+    },
+    "salem-st": {
+      "name": "Salem St.",
+      "longName": ""
+    },
+    "salisbury": {
+      "name": "Salisbury",
+      "longName": ""
+    },
+    "salve-regina": {
+      "name": "Salve Regina",
+      "longName": ""
+    },
+    "sam-houston-st": {
+      "name": "Sam Houston St.",
+      "longName": ""
+    },
+    "samford": {
+      "name": "Samford",
+      "longName": ""
+    },
+    "san-diego": {
+      "name": "San Diego",
+      "longName": ""
+    },
+    "san-diego-st": {
+      "name": "San Diego St.",
+      "longName": ""
+    },
+    "san-fran-st": {
+      "name": "San Fran. St.",
+      "longName": ""
+    },
+    "san-francisco": {
+      "name": "San Francisco",
+      "longName": ""
+    },
+    "san-jose-st": {
+      "name": "San Jose St.",
+      "longName": ""
+    },
+    "santa-clara": {
+      "name": "Santa Clara",
+      "longName": ""
+    },
+    "sarah-lawrence": {
+      "name": "Sarah Lawrence",
+      "longName": ""
+    },
+    "savannah-st": {
+      "name": "Savannah St.",
+      "longName": ""
+    },
+    "sc-aiken": {
+      "name": "South-Carolina-Aiken",
+      "longName": ""
+    },
+    "scad": {
+      "name": "SCAD",
+      "longName": ""
+    },
+    "schreiner": {
+      "name": "Schreiner",
+      "longName": ""
+    },
+    "scranton": {
+      "name": "Scranton",
+      "longName": ""
+    },
+    "seattle": {
+      "name": "Seattle",
+      "longName": ""
+    },
+    "seattle-pacific": {
+      "name": "Seattle Pacific",
+      "longName": ""
+    },
+    "seton-hall": {
+      "name": "Seton Hall",
+      "longName": ""
+    },
+    "seton-hill": {
+      "name": "Seton Hill",
+      "longName": ""
+    },
+    "sewanee": {
+      "name": "Sewanee",
+      "longName": ""
+    },
+    "shaw": {
+      "name": "Shaw",
+      "longName": ""
+    },
+    "shenandoah": {
+      "name": "Shenandoah",
+      "longName": ""
+    },
+    "shepherd": {
+      "name": "Shepherd",
+      "longName": ""
+    },
+    "shippensburg": {
+      "name": "Shippensburg",
+      "longName": ""
+    },
+    "shorter": {
+      "name": "Shorter",
+      "longName": ""
+    },
+    "siena": {
+      "name": "Siena",
+      "longName": ""
+    },
+    "simmons": {
+      "name": "Simmons",
+      "longName": ""
+    },
+    "simon-fraser": {
+      "name": "Simon Fraser",
+      "longName": ""
+    },
+    "simpson": {
+      "name": "Simpson",
+      "longName": ""
+    },
+    "sioux-falls": {
+      "name": "Sioux Falls",
+      "longName": ""
+    },
+    "siu-edwardsville": {
+      "name": "SIUE",
+      "longName": ""
+    },
+    "skidmore": {
+      "name": "Skidmore",
+      "longName": ""
+    },
+    "slippery-rock": {
+      "name": "Slippery Rock",
+      "longName": ""
+    },
+    "smith": {
+      "name": "Smith",
+      "longName": ""
+    },
+    "smu": {
+      "name": "SMU",
+      "longName": ""
+    },
+    "sonoma-st": {
+      "name": "Sonoma St.",
+      "longName": ""
+    },
+    "south-ala": {
+      "name": "South Ala.",
+      "longName": ""
+    },
+    "south-carolina": {
+      "name": "South Carolina",
+      "longName": ""
+    },
+    "south-carolina-st": {
+      "name": "South Carolina St.",
+      "longName": ""
+    },
+    "south-dakota": {
+      "name": "South Dakota",
+      "longName": ""
+    },
+    "south-dakota-mines": {
+      "name": "South Dakota Mines",
+      "longName": ""
+    },
+    "south-dakota-st": {
+      "name": "South Dakota St.",
+      "longName": ""
+    },
+    "south-fla": {
+      "name": "South Fla.",
+      "longName": ""
+    },
+    "southampton": {
+      "name": "Southampton",
+      "longName": ""
+    },
+    "southeast-mo-st": {
+      "name": "Southeast Mo. St.",
+      "longName": ""
+    },
+    "southeastern-la": {
+      "name": "Southeastern La.",
+      "longName": ""
+    },
+    "southeastern-okla": {
+      "name": "Southeastern Okla.",
+      "longName": ""
+    },
+    "southern-ark": {
+      "name": "Southern Ark.",
+      "longName": ""
+    },
+    "southern-california": {
+      "name": "Southern California",
+      "longName": ""
+    },
+    "southern-conn-st": {
+      "name": "Southern Conn. St.",
+      "longName": ""
+    },
+    "southern-ill": {
+      "name": "Southern Ill.",
+      "longName": ""
+    },
+    "southern-ind": {
+      "name": "Southern Ind.",
+      "longName": ""
+    },
+    "southern-me": {
+      "name": "Southern Me.",
+      "longName": ""
+    },
+    "southern-miss": {
+      "name": "Southern Miss.",
+      "longName": ""
+    },
+    "southern-nazarene": {
+      "name": "Southern Nazarene",
+      "longName": ""
+    },
+    "southern-nh": {
+      "name": "Southern N.H.",
+      "longName": ""
+    },
+    "southern-u": {
+      "name": "Southern U.",
+      "longName": ""
+    },
+    "southern-utah": {
+      "name": "Southern Utah",
+      "longName": ""
+    },
+    "southern-va": {
+      "name": "Southern Virginia",
+      "longName": ""
+    },
+    "southern-vt": {
+      "name": "Southern Vt.",
+      "longName": ""
+    },
+    "southern-wesleyan": {
+      "name": "Southern Wesleyan",
+      "longName": ""
+    },
+    "southwest-baptist": {
+      "name": "Southwest Baptist",
+      "longName": ""
+    },
+    "southwest-minn-st": {
+      "name": "Southwest Minn. St.",
+      "longName": ""
+    },
+    "southwestern-okla": {
+      "name": "Southwestern Okla.",
+      "longName": ""
+    },
+    "southwestern-tx": {
+      "name": "Southwestern (TX)",
+      "longName": ""
+    },
+    "spalding": {
+      "name": "Spalding",
+      "longName": ""
+    },
+    "spelman": {
+      "name": "Spelman",
+      "longName": ""
+    },
+    "spring-hill": {
+      "name": "Spring Hill",
+      "longName": ""
+    },
+    "springfield": {
+      "name": "Springfield",
+      "longName": ""
+    },
+    "st-andrews": {
+      "name": "St. Andrews",
+      "longName": ""
+    },
+    "st-anselm": {
+      "name": "St. Anselm",
+      "longName": ""
+    },
+    "st-augustines": {
+      "name": "St. Augustine's",
+      "longName": ""
+    },
+    "st-benedict": {
+      "name": "Saint Benedict",
+      "longName": ""
+    },
+    "st-bonaventure": {
+      "name": "St. Bonaventure",
+      "longName": ""
+    },
+    "st-catherine": {
+      "name": "St. Catherine",
+      "longName": ""
+    },
+    "st-cloud-st": {
+      "name": "St. Cloud State",
+      "longName": ""
+    },
+    "st-edwards": {
+      "name": "St. Edward's",
+      "longName": ""
+    },
+    "st-elizabeth": {
+      "name": "St. Elizabeth",
+      "longName": ""
+    },
+    "st-francis-il": {
+      "name": "St. Francis (IL)",
+      "longName": ""
+    },
+    "st-francis-ny": {
+      "name": "St. Francis Brooklyn",
+      "longName": ""
+    },
+    "st-francis-pa": {
+      "name": "St. Francis (PA)",
+      "longName": ""
+    },
+    "st-john-fisher": {
+      "name": "St. John Fisher",
+      "longName": ""
+    },
+    "st-johns-ny": {
+      "name": "St. John's (NY)",
+      "longName": ""
+    },
+    "st-joseph-ct": {
+      "name": "St. Joseph (CT)",
+      "longName": ""
+    },
+    "st-josephs-brkln": {
+      "name": "St. Joseph's (Brkln)",
+      "longName": ""
+    },
+    "st-josephs-in": {
+      "name": "St. Joseph's (IN)",
+      "longName": ""
+    },
+    "st-josephs-li": {
+      "name": "St. Joseph's (L.I.)",
+      "longName": ""
+    },
+    "st-josephs-me": {
+      "name": "St. Joseph's (Me.)",
+      "longName": ""
+    },
+    "st-lawrence": {
+      "name": "St. Lawrence",
+      "longName": ""
+    },
+    "st-marys-ca": {
+      "name": "Saint-Mary's (CA)",
+      "longName": ""
+    },
+    "st-marys-in": {
+      "name": "Saint-Mary's (IN)",
+      "longName": ""
+    },
+    "st-marys-md": {
+      "name": "Saint-Mary's (MD)",
+      "longName": ""
+    },
+    "st-marys-mn": {
+      "name": "Saint Mary's (Minn.)",
+      "longName": ""
+    },
+    "st-marys-tx": {
+      "name": "St. Mary's (TX)",
+      "longName": ""
+    },
+    "st-norbert": {
+      "name": "St. Norbert",
+      "longName": ""
+    },
+    "st-olaf": {
+      "name": "St. Olaf",
+      "longName": ""
+    },
+    "st-pauls": {
+      "name": "St. Paul's",
+      "longName": ""
+    },
+    "st-peters": {
+      "name": "Saint Peter's",
+      "longName": ""
+    },
+    "st-scholastica": {
+      "name": "St. Scholastica",
+      "longName": ""
+    },
+    "st-thomas-aquinas": {
+      "name": "St. Thomas Aquinas",
+      "longName": ""
+    },
+    "st-thomas-fl": {
+      "name": "St. Thomas (FL)",
+      "longName": ""
+    },
+    "st-thomas-mn": {
+      "name": "St. Thomas (MN)",
+      "longName": ""
+    },
+    "st-thomas-tx": {
+      "name": "St. Thomas Houston",
+      "longName": ""
+    },
+    "stanford": {
+      "name": "Stanford",
+      "longName": ""
+    },
+    "staten-island": {
+      "name": "Staten Island",
+      "longName": ""
+    },
+    "stephen-f-austin": {
+      "name": "Stephen F. Austin",
+      "longName": ""
+    },
+    "stephens": {
+      "name": "Stephens",
+      "longName": ""
+    },
+    "stetson": {
+      "name": "Stetson",
+      "longName": ""
+    },
+    "stevens": {
+      "name": "Stevens",
+      "longName": ""
+    },
+    "stevenson": {
+      "name": "Stevenson",
+      "longName": ""
+    },
+    "stillman": {
+      "name": "Stillman",
+      "longName": ""
+    },
+    "stonehill": {
+      "name": "Stonehill",
+      "longName": ""
+    },
+    "stony-brook": {
+      "name": "Stony Brook",
+      "longName": ""
+    },
+    "suffolk": {
+      "name": "Suffolk",
+      "longName": ""
+    },
+    "sul-ross-st": {
+      "name": "Sul Ross St.",
+      "longName": ""
+    },
+    "suny-brockport": {
+      "name": "SUNY Brockport",
+      "longName": ""
+    },
+    "suny-canton": {
+      "name": "SUNY Canton",
+      "longName": ""
+    },
+    "suny-cortland": {
+      "name": "SUNY Cortland",
+      "longName": ""
+    },
+    "suny-delhi": {
+      "name": "SUNY Delhi",
+      "longName": ""
+    },
+    "suny-geneseo": {
+      "name": "SUNY Geneseo",
+      "longName": ""
+    },
+    "suny-maritime": {
+      "name": "SUNY Maritime",
+      "longName": ""
+    },
+    "suny-morrisville": {
+      "name": "State University of New York at Morrisville",
+      "longName": ""
+    },
+    "suny-new-paltz": {
+      "name": "SUNY New Paltz",
+      "longName": ""
+    },
+    "suny-potsdam": {
+      "name": "SUNY Potsdam",
+      "longName": ""
+    },
+    "sunyit": {
+      "name": "SUNY Poly",
+      "longName": ""
+    },
+    "susquehanna": {
+      "name": "Susquehanna",
+      "longName": ""
+    },
+    "swarthmore": {
+      "name": "Swarthmore",
+      "longName": ""
+    },
+    "sweet-briar": {
+      "name": "Sweet Briar",
+      "longName": ""
+    },
+    "syracuse": {
+      "name": "Syracuse",
+      "longName": ""
+    },
+    "tampa": {
+      "name": "Tampa",
+      "longName": ""
+    },
+    "tarleton-st": {
+      "name": "Tarleton St.",
+      "longName": ""
+    },
+    "tcnj": {
+      "name": "TCNJ",
+      "longName": ""
+    },
+    "tcu": {
+      "name": "TCU",
+      "longName": ""
+    },
+    "temple": {
+      "name": "Temple",
+      "longName": ""
+    },
+    "tennessee": {
+      "name": "Tennessee",
+      "longName": ""
+    },
+    "tennessee-st": {
+      "name": "Tennessee St.",
+      "longName": ""
+    },
+    "tennessee-tech": {
+      "name": "Tennessee Tech",
+      "longName": ""
+    },
+    "tex-am-intl": {
+      "name": "Tex. A&M Int'l",
+      "longName": ""
+    },
+    "tex-am-kingsville": {
+      "name": "Tex. A&M-Kingsville",
+      "longName": ""
+    },
+    "tex-permian-basin": {
+      "name": "Texas of the Permian Basin",
+      "longName": ""
+    },
+    "texas": {
+      "name": "Texas",
+      "longName": ""
+    },
+    "texas-am": {
+      "name": "Texas A&M",
+      "longName": ""
+    },
+    "texas-arlington": {
+      "name": "Texas at Arlington",
+      "longName": ""
+    },
+    "texas-dallas": {
+      "name": "Texas at Dallas",
+      "longName": ""
+    },
+    "texas-lutheran": {
+      "name": "Texas Lutheran",
+      "longName": ""
+    },
+    "texas-southern": {
+      "name": "Texas Southern",
+      "longName": ""
+    },
+    "texas-st": {
+      "name": "Texas St.",
+      "longName": ""
+    },
+    "texas-tech": {
+      "name": "Texas Tech",
+      "longName": ""
+    },
+    "texas-tyler": {
+      "name": "Texas at Tyler",
+      "longName": ""
+    },
+    "texas-wesleyan": {
+      "name": "Texas Wesleyan",
+      "longName": ""
+    },
+    "texas-womans": {
+      "name": "Texas Woman's",
+      "longName": ""
+    },
+    "thiel": {
+      "name": "Thiel",
+      "longName": ""
+    },
+    "thomas-me": {
+      "name": "Thomas (ME)",
+      "longName": ""
+    },
+    "thomas-more": {
+      "name": "Thomas More",
+      "longName": ""
+    },
+    "tiffin": {
+      "name": "Tiffin",
+      "longName": ""
+    },
+    "toledo": {
+      "name": "Toledo",
+      "longName": ""
+    },
+    "towson": {
+      "name": "Towson",
+      "longName": ""
+    },
+    "transylvania": {
+      "name": "Transylvania",
+      "longName": ""
+    },
+    "trevecca-nazarene": {
+      "name": "Trevecca Nazarene",
+      "longName": ""
+    },
+    "trine": {
+      "name": "Trine",
+      "longName": ""
+    },
+    "trinity-ct": {
+      "name": "Trinity (CT)",
+      "longName": ""
+    },
+    "trinity-tx": {
+      "name": "Trinity (TX)",
+      "longName": ""
+    },
+    "trinity-washington": {
+      "name": "Trinity Washington",
+      "longName": ""
+    },
+    "troy": {
+      "name": "Troy",
+      "longName": ""
+    },
+    "truman": {
+      "name": "Truman",
+      "longName": ""
+    },
+    "tufts": {
+      "name": "Tufts",
+      "longName": ""
+    },
+    "tulane": {
+      "name": "Tulane",
+      "longName": ""
+    },
+    "tulsa": {
+      "name": "Tulsa",
+      "longName": ""
+    },
+    "tusculum": {
+      "name": "Tusculum",
+      "longName": ""
+    },
+    "tuskegee": {
+      "name": "Tuskegee",
+      "longName": ""
+    },
+    "u-new-england": {
+      "name": "New-England",
+      "longName": ""
+    },
+    "uab": {
+      "name": "UAB",
+      "longName": ""
+    },
+    "ualr": {
+      "name": "Little-Rock",
+      "longName": ""
+    },
+    "uc-colo-springs": {
+      "name": "Colo-Springs",
+      "longName": ""
+    },
+    "uc-davis": {
+      "name": "UC Davis",
+      "longName": ""
+    },
+    "uc-irvine": {
+      "name": "UC Irvine",
+      "longName": ""
+    },
+    "uc-riverside": {
+      "name": "UC Riverside",
+      "longName": ""
+    },
+    "uc-san-diego": {
+      "name": "UC San Diego",
+      "longName": ""
+    },
+    "uc-santa-barbara": {
+      "name": "UC Santa Barbara",
+      "longName": ""
+    },
+    "uc-santa-cruz": {
+      "name": "UC Santa Cruz",
+      "longName": ""
+    },
+    "ucf": {
+      "name": "UCF",
+      "longName": ""
+    },
+    "ucla": {
+      "name": "UCLA",
+      "longName": ""
+    },
+    "uconn": {
+      "name": "Connecticut",
+      "longName": ""
+    },
+    "umass-boston": {
+      "name": "Mass.-Boston",
+      "longName": ""
+    },
+    "umass-dartmouth": {
+      "name": "Mass.-Dartmouth",
+      "longName": ""
+    },
+    "umass-lowell": {
+      "name": "Mass.-Lowell",
+      "longName": ""
+    },
+    "umbc": {
+      "name": "Maryland-Baltimore-County",
+      "longName": ""
+    },
+    "umkc": {
+      "name": "Kansas City",
+      "longName": ""
+    },
+    "unc-asheville": {
+      "name": "UNC Asheville",
+      "longName": ""
+    },
+    "unc-greensboro": {
+      "name": "UNC Greensboro",
+      "longName": ""
+    },
+    "unc-pembroke": {
+      "name": "UNC Pembroke",
+      "longName": ""
+    },
+    "unc-wilmington": {
+      "name": "UNCW",
+      "longName": ""
+    },
+    "uni": {
+      "name": "Northern Iowa",
+      "longName": ""
+    },
+    "union-ny": {
+      "name": "Union (NY)",
+      "longName": ""
+    },
+    "union-tn": {
+      "name": "Union (Tenn.)",
+      "longName": ""
+    },
+    "unlv": {
+      "name": "UNLV",
+      "longName": ""
+    },
+    "upper-iowa": {
+      "name": "Upper Iowa",
+      "longName": ""
+    },
+    "urbana": {
+      "name": "Urbana University",
+      "longName": ""
+    },
+    "ursinus": {
+      "name": "Ursinus",
+      "longName": ""
+    },
+    "ursuline": {
+      "name": "Ursuline",
+      "longName": ""
+    },
+    "usc-beaufort": {
+      "name": "USC Beaufort",
+      "longName": ""
+    },
+    "usc-upstate": {
+      "name": "South-Carolina-Upstate",
+      "longName": ""
+    },
+    "ut-martin": {
+      "name": "Tenn-Martin",
+      "longName": ""
+    },
+    "utah": {
+      "name": "Utah",
+      "longName": ""
+    },
+    "utah-st": {
+      "name": "Utah St.",
+      "longName": ""
+    },
+    "utah-tech": {
+      "name": "Utah Tech",
+      "longName": ""
+    },
+    "utah-valley": {
+      "name": "Utah Valley",
+      "longName": ""
+    },
+    "utep": {
+      "name": "Texas at El Paso",
+      "longName": ""
+    },
+    "utica": {
+      "name": "Utica",
+      "longName": ""
+    },
+    "utrgv": {
+      "name": "Texas Rio Grande Valley",
+      "longName": ""
+    },
+    "utsa": {
+      "name": "Texas at San Antonio",
+      "longName": ""
+    },
+    "uva-wise": {
+      "name": "Virginia-Wise",
+      "longName": ""
+    },
+    "va-wesleyan": {
+      "name": "Virg-Wesleyan",
+      "longName": ""
+    },
+    "valdosta-st": {
+      "name": "Valdosta St.",
+      "longName": ""
+    },
+    "valley-forge-chrst": {
+      "name": "Valley Forge",
+      "longName": ""
+    },
+    "valparaiso": {
+      "name": "Valparaiso",
+      "longName": ""
+    },
+    "vanderbilt": {
+      "name": "Vanderbilt",
+      "longName": ""
+    },
+    "vassar": {
+      "name": "Vassar",
+      "longName": ""
+    },
+    "vcu": {
+      "name": "VCU",
+      "longName": ""
+    },
+    "vermont": {
+      "name": "Vermont",
+      "longName": ""
+    },
+    "villanova": {
+      "name": "Villanova",
+      "longName": ""
+    },
+    "virginia": {
+      "name": "Virginia",
+      "longName": ""
+    },
+    "virginia-st": {
+      "name": "Virginia St.",
+      "longName": ""
+    },
+    "virginia-tech": {
+      "name": "Virginia Tech",
+      "longName": ""
+    },
+    "virginia-union": {
+      "name": "Virginia Union",
+      "longName": ""
+    },
+    "vmi": {
+      "name": "VMI",
+      "longName": ""
+    },
+    "wabash": {
+      "name": "Wabash",
+      "longName": ""
+    },
+    "wagner": {
+      "name": "Wagner",
+      "longName": ""
+    },
+    "wake-forest": {
+      "name": "Wake Forest",
+      "longName": ""
+    },
+    "walsh": {
+      "name": "Walsh",
+      "longName": ""
+    },
+    "warren-wilson-college": {
+      "name": "Warren Wilson College",
+      "longName": ""
+    },
+    "wartburg": {
+      "name": "Wartburg",
+      "longName": ""
+    },
+    "wash-jeff": {
+      "name": "Wash. & Jeff.",
+      "longName": ""
+    },
+    "wash-lee": {
+      "name": "Wash. & Lee",
+      "longName": ""
+    },
+    "washburn": {
+      "name": "Washburn",
+      "longName": ""
+    },
+    "washington": {
+      "name": "Washington",
+      "longName": ""
+    },
+    "washington-adventist": {
+      "name": "Washington Adventist",
+      "longName": ""
+    },
+    "washington-col": {
+      "name": "Washington Col.",
+      "longName": ""
+    },
+    "washington-st": {
+      "name": "Washington St.",
+      "longName": ""
+    },
+    "washington-st-louis": {
+      "name": "Washington-St. Louis",
+      "longName": ""
+    },
+    "wayne-st-mi": {
+      "name": "Wayne St. (MI)",
+      "longName": ""
+    },
+    "wayne-st-ne": {
+      "name": "Wayne St. (NE)",
+      "longName": ""
+    },
+    "waynesburg": {
+      "name": "Waynesburg",
+      "longName": ""
+    },
+    "weber-st": {
+      "name": "Weber St.",
+      "longName": ""
+    },
+    "webster": {
+      "name": "Webster",
+      "longName": ""
+    },
+    "wellesley": {
+      "name": "Wellesley",
+      "longName": ""
+    },
+    "wells": {
+      "name": "Wells",
+      "longName": ""
+    },
+    "wentworth": {
+      "name": "Wentworth Inst.",
+      "longName": ""
+    },
+    "wesley": {
+      "name": "Wesley",
+      "longName": ""
+    },
+    "wesleyan-ct": {
+      "name": "Wesleyan (CT)",
+      "longName": ""
+    },
+    "wesleyan-ga": {
+      "name": "Wesleyan (GA)",
+      "longName": ""
+    },
+    "west-ala": {
+      "name": "West Ala.",
+      "longName": ""
+    },
+    "west-chester": {
+      "name": "West Chester",
+      "longName": ""
+    },
+    "west-florida": {
+      "name": "West Fla.",
+      "longName": ""
+    },
+    "west-ga": {
+      "name": "West Ga.",
+      "longName": ""
+    },
+    "west-liberty": {
+      "name": "West Liberty",
+      "longName": ""
+    },
+    "west-tex-am": {
+      "name": "West Tex. A&M",
+      "longName": ""
+    },
+    "west-va-tech": {
+      "name": "West Va. Tech",
+      "longName": ""
+    },
+    "west-va-wesleyan": {
+      "name": "West Va. Wesleyan",
+      "longName": ""
+    },
+    "west-virginia": {
+      "name": "West Virginia",
+      "longName": ""
+    },
+    "west-virginia-st": {
+      "name": "West Virginia St.",
+      "longName": ""
+    },
+    "western-caro": {
+      "name": "Western Caro.",
+      "longName": ""
+    },
+    "western-conn-st": {
+      "name": "Western Conn. St.",
+      "longName": ""
+    },
+    "western-ill": {
+      "name": "Western Ill.",
+      "longName": ""
+    },
+    "western-ky": {
+      "name": "Western Ky.",
+      "longName": ""
+    },
+    "western-mich": {
+      "name": "Western Mich.",
+      "longName": ""
+    },
+    "western-new-eng": {
+      "name": "Western New Eng.",
+      "longName": ""
+    },
+    "western-nm": {
+      "name": "Western N.M.",
+      "longName": ""
+    },
+    "western-ore": {
+      "name": "Western Ore.",
+      "longName": ""
+    },
+    "western-st": {
+      "name": "Western Colo.",
+      "longName": ""
+    },
+    "western-wash": {
+      "name": "Western Wash.",
+      "longName": ""
+    },
+    "westfield-st": {
+      "name": "Westfield St.",
+      "longName": ""
+    },
+    "westminster-mo": {
+      "name": "Westminster (MO)",
+      "longName": ""
+    },
+    "westminster-pa": {
+      "name": "Westminster (PA)",
+      "longName": ""
+    },
+    "westminster-ut": {
+      "name": "Westminster (UT)",
+      "longName": ""
+    },
+    "westmont-college": {
+      "name": "Westmont College",
+      "longName": ""
+    },
+    "wheaton-il": {
+      "name": "Wheaton (IL)",
+      "longName": ""
+    },
+    "wheaton-ma": {
+      "name": "Wheaton (MA)",
+      "longName": ""
+    },
+    "wheeling-jesuit": {
+      "name": "Wheeling Jesuit",
+      "longName": ""
+    },
+    "wheelock": {
+      "name": "Wheelock",
+      "longName": ""
+    },
+    "whitman": {
+      "name": "Whitman",
+      "longName": ""
+    },
+    "whittier": {
+      "name": "Whittier",
+      "longName": ""
+    },
+    "whitworth": {
+      "name": "Whitworth",
+      "longName": ""
+    },
+    "wichita-st": {
+      "name": "Wichita St.",
+      "longName": ""
+    },
+    "widener": {
+      "name": "Widener",
+      "longName": ""
+    },
+    "wilkes": {
+      "name": "Wilkes",
+      "longName": ""
+    },
+    "willamette": {
+      "name": "Willamette",
+      "longName": ""
+    },
+    "william-jewell": {
+      "name": "William Jewell",
+      "longName": ""
+    },
+    "william-mary": {
+      "name": "William & Mary",
+      "longName": ""
+    },
+    "william-peace": {
+      "name": "William Peace",
+      "longName": ""
+    },
+    "william-penn": {
+      "name": "William Penn",
+      "longName": ""
+    },
+    "william-smith": {
+      "name": "William Smith",
+      "longName": ""
+    },
+    "williams": {
+      "name": "Williams",
+      "longName": ""
+    },
+    "wilmington-de": {
+      "name": "Wilmington (DE)",
+      "longName": ""
+    },
+    "wilmington-oh": {
+      "name": "Wilmington (OH)",
+      "longName": ""
+    },
+    "wilson": {
+      "name": "Wilson",
+      "longName": ""
+    },
+    "wingate": {
+      "name": "Wingate",
+      "longName": ""
+    },
+    "winona-st": {
+      "name": "Winona St.",
+      "longName": ""
+    },
+    "winston-salem": {
+      "name": "Winston-Salem",
+      "longName": ""
+    },
+    "winthrop": {
+      "name": "Winthrop",
+      "longName": ""
+    },
+    "wis-eau-claire": {
+      "name": "Wis.-Eau Claire",
+      "longName": ""
+    },
+    "wis-la-crosse": {
+      "name": "Wis.-La Crosse",
+      "longName": ""
+    },
+    "wis-lutheran": {
+      "name": "Wis. Lutheran",
+      "longName": ""
+    },
+    "wis-oshkosh": {
+      "name": "Wis.-Oshkosh",
+      "longName": ""
+    },
+    "wis-parkside": {
+      "name": "Wis.-Parkside",
+      "longName": ""
+    },
+    "wis-platteville": {
+      "name": "Wis.-Platteville",
+      "longName": ""
+    },
+    "wis-river-falls": {
+      "name": "Wis.-River Falls",
+      "longName": ""
+    },
+    "wis-stevens-point": {
+      "name": "Wis.-Stevens Point",
+      "longName": ""
+    },
+    "wis-stout": {
+      "name": "Wis.-Stout",
+      "longName": ""
+    },
+    "wis-superior": {
+      "name": "Wis.-Superior",
+      "longName": ""
+    },
+    "wis-whitewater": {
+      "name": "Wis.-Whitewater",
+      "longName": ""
+    },
+    "wisconsin": {
+      "name": "Wisconsin",
+      "longName": ""
+    },
+    "Wisconsin-Eau Claire": {
+      "name": "",
+      "longName": ""
+    },
+    "Wisconsin-La Crosse": {
+      "name": "",
+      "longName": ""
+    },
+    "wittenberg": {
+      "name": "Wittenberg",
+      "longName": ""
+    },
+    "wm-paterson": {
+      "name": "William Paterson",
+      "longName": ""
+    },
+    "wofford": {
+      "name": "Wofford",
+      "longName": ""
+    },
+    "wooster": {
+      "name": "Wooster",
+      "longName": ""
+    },
+    "worcester-st": {
+      "name": "Worcester St.",
+      "longName": ""
+    },
+    "wpi": {
+      "name": "WPI",
+      "longName": ""
+    },
+    "wright-st": {
+      "name": "Wright St.",
+      "longName": ""
+    },
+    "WVU": {
+      "name": "",
+      "longName": ""
+    },
+    "wyoming": {
+      "name": "Wyoming",
+      "longName": ""
+    },
+    "xavier": {
+      "name": "Xavier",
+      "longName": ""
+    },
+    "yale": {
+      "name": "Yale",
+      "longName": ""
+    },
+    "yeshiva": {
+      "name": "Yeshiva",
+      "longName": ""
+    },
+    "york-ny": {
+      "name": "York (NY)",
+      "longName": ""
+    },
+    "york-pa": {
+      "name": "York (PA)",
+      "longName": ""
+    },
+    "young-harris": {
+      "name": "Young Harris",
+      "longName": ""
+    },
+    "youngstown-st": {
+      "name": "Youngstown St.",
+      "longName": ""
+    }
+  }
+}

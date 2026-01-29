@@ -11,8 +11,6 @@ export function SessionProvider({ children }: { children: React.ReactNode }) {
   const supabase = useSupabaseClient()
 
   useEffect(() => {
-    if (!supabase) return
-
     // Initialize session check on mount
     supabase.auth.getSession()
 

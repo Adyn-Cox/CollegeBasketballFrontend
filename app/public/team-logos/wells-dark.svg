@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>wells</title>
+    <desc>Created with Sketch.</desc>
+    <g id="wells" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="wells_BGD">
+            <g id="Group-14" transform="translate(0.000000, 23.000000)">
+                <polygon id="Fill-1" fill="#231F20" points="-0.000135440181 77.8482994 2.41927765 101.388474 193.998962 0"></polygon>
+                <polygon id="Fill-2" fill="#231F20" points="196.707675 26.5844826 2.70857788 104.432331 5.12799097 127.972956"></polygon>
+                <polygon id="Fill-3" fill="#231F20" points="5.643386 131.016859 8.0627991 154.557033 199.642483 53.1690102"></polygon>
+                <polygon id="Fill-4" fill="#FEFEFE" points="181.983837 5.61068459 1.9337246 79.0036352 3.94455982 98.5656265"></polygon>
+                <polygon id="Fill-5" fill="#FEFEFE" points="184.692641 32.1949869 4.64252822 105.587937 6.65336343 125.149929"></polygon>
+                <polygon id="Fill-6" fill="#FEFEFE" points="187.627178 58.7792892 7.57706546 132.17224 9.58790068 151.734231"></polygon>
+                <g id="Group-13" transform="translate(2.708804, 9.920451)" fill="#FFFFFF">
+                    <path d="M0.192189616,69.6606047 L1.99805869,87.2337297 C1.99805869,87.2337297 127.662619,21.1622762 169.085192,0.435531977 C126.759684,18.4587878 0.192189616,69.6606047 0.192189616,69.6606047" id="Fill-7"></path>
+                    <path d="M2.90099323,96.244907 L4.7068623,113.818032 C4.7068623,113.818032 128.565553,48.4224506 171.793995,27.0198343 C127.662619,45.9442529 2.90099323,96.244907 2.90099323,96.244907" id="Fill-9"></path>
+                    <path d="M5.83553047,122.829209 L7.64139955,140.402334 C7.64139955,140.402334 132.177291,74.7814622 174.728533,53.6041366 C130.822889,72.3032645 5.83553047,122.829209 5.83553047,122.829209" id="Fill-11"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

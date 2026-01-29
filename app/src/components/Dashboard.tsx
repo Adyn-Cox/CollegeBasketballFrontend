@@ -1,192 +1,79 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { 
-  Home, 
-  Trophy, 
-  BarChart2, 
-  User as UserIcon, 
-  Plus, 
-  CalendarOff, 
-  TrendingUp, 
   Target,
   ChevronRight,
-  Bell,
-  LogOut,
-  Settings
+  CalendarOff,
+  TrendingUp,
+  Plus
 } from 'lucide-react'
 import { User } from '@supabase/supabase-js'
-import { useSupabaseClient } from '@/lib/supabase/client'
-import { backendLogout } from '@/lib/api/auth'
-import Image from 'next/image'
-import { useRouter } from 'next/navigation'
-import { ThemeToggle } from './ThemeToggle'
 import { TeamSelectionModal } from './TeamSelectionModal'
-
-const Skeleton = ({ className = '' }: { className?: string }) => (
-  <div className={`bg-zinc-200 animate-pulse rounded-lg dark:bg-zinc-700 ${className}`} />
-)
+import { TeamLogo } from './TeamLogo'
+import { type Game } from '@/lib/api/teams'
+import { type Team } from '@/lib/collegeData'
+import { DashboardLayout } from './DashboardLayout'
+import { useDashboardData } from '@/hooks/useDashboardData'
+import { Skeleton } from './ui/Skeleton'
 
 interface DashboardProps {
   user: User
 }
 
-interface Team {
-  id: string
-  name: string
-  logo?: string
-  conference?: string
-  primaryColor?: string
-  secondaryColor?: string
-}
-
-interface Prediction {
-  id: string
-  homeTeam: string
-  awayTeam: string
-  predictedScore?: string
-}
+const POWER_5 = ['ACC', 'Big 12', 'Big Ten', 'Pac-12', 'SEC']
+const GROUP_OF_5 = ['American Athletic', 'Conference USA', 'MAC', 'Mountain West', 'Sun Belt']
 
 export function Dashboard({ user }: DashboardProps) {
-  const [isLoading, setIsLoading] = useState(true)
-  const [favoriteTeams, setFavoriteTeams] = useState<Team[]>([])
-  const [todayPredictions] = useState<Prediction[]>([])
-  const [predictionAccuracy] = useState(0)
   const [isTeamModalOpen, setIsTeamModalOpen] = useState(false)
-  const supabase = useSupabaseClient()
-  const router = useRouter()
+  const [conferenceFilter, setConferenceFilter] = useState<'power5' | 'group5' | 'all' | 'specific'>('power5')
+  const [selectedConferenceId, setSelectedConferenceId] = useState<string>('')
 
-  useEffect(() => {
-    // Simulate API fetch delay
-    const timer = setTimeout(() => {
-      setIsLoading(false)
-    }, 2500) // Slightly longer to show off the skeleton
+  const {
+    isLoading,
+    favoriteTeams,
+    todayGames,
+    upcomingGames,
+    conferences,
+    predictionStats,
+    userPicks,
+    teamConferenceMap,
+    teamLogoMap,
+    setFavoriteTeams,
+    handlePredict,
+    handleAddFavorite,
+    handleRemoveFavorite,
+  } = useDashboardData()
 
-    return () => clearTimeout(timer)
-  }, [])
+  // Filter games based on selection
+  const filteredGames = React.useMemo(() => {
+    if (conferenceFilter === 'all') return todayGames
 
-  const handleSignOut = async () => {
-    if (!supabase) return
-    
-    // Get current session for tokens
-    const { data: { session } } = await supabase.auth.getSession()
-    
-    // Logout from backend first
-    await backendLogout(
-      session?.access_token,
-      session?.refresh_token
-    )
-    
-    // Then logout from Supabase
-    await supabase.auth.signOut()
-    
-    // Redirect to login
-    router.push('/')
-  }
+    return todayGames.filter(game => {
+      const homeConf = teamConferenceMap.get(game.home_team.school)
+      const awayConf = teamConferenceMap.get(game.away_team.school)
 
-  // Get user initials
-  const getInitials = () => {
-    if (user.email) {
-      return user.email.substring(0, 2).toUpperCase()
-    }
-    return 'U'
-  }
+      if (conferenceFilter === 'power5') {
+        return (homeConf && POWER_5.includes(homeConf)) || (awayConf && POWER_5.includes(awayConf))
+      }
+      
+      if (conferenceFilter === 'group5') {
+        return (homeConf && GROUP_OF_5.includes(homeConf)) || (awayConf && GROUP_OF_5.includes(awayConf))
+      }
 
-  // Header Component
-  const renderHeader = () => (
-    <div className="flex flex-row justify-between items-center px-6 pt-8 pb-6 bg-cream border-b-2 border-ink sticky top-0 z-20 md:hidden dark:bg-black dark:border-cream">
-      <div className="flex-1">
-        <p className="text-xs font-bold text-hoops tracking-wider mb-1 uppercase font-mono">Welcome Back</p>
-        <h1 className="text-3xl font-display text-ink tracking-tight uppercase dark:text-cream">My Dashboard</h1>
-      </div>
-      <div className="flex items-center gap-4">
-        <ThemeToggle />
-        <button className="relative p-2 border-2 border-ink bg-white hover:bg-zinc-100 transition-colors shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none dark:bg-black dark:border-cream dark:hover:bg-zinc-900 dark:shadow-[2px_2px_0px_0px_rgba(255,255,255,1)]">
-          <Bell className="w-5 h-5 text-ink dark:text-cream" />
-          <span className="absolute top-1 right-1 w-2 h-2 bg-hoops border border-ink dark:border-cream" />
-        </button>
-        <div className="w-10 h-10 border-2 border-ink bg-hoops flex items-center justify-center shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] font-display text-white dark:border-cream dark:shadow-none">
-          <span className="text-lg">{getInitials()}</span>
-        </div>
-      </div>
-    </div>
-  )
+      if (conferenceFilter === 'specific' && selectedConferenceId) {
+        // Find conference name from ID
+        const conf = conferences.find(c => c.id.toString() === selectedConferenceId)
+        if (!conf) return false
+        return homeConf === conf.abbreviation || awayConf === conf.abbreviation
+      }
 
-  // Desktop Sidebar
-  const renderSidebar = () => (
-    <div className="hidden md:flex flex-col w-64 fixed left-0 top-0 bottom-0 bg-cream border-r-2 border-ink p-6 z-30 dark:bg-black dark:border-cream">
-      <div className="flex items-center gap-3 mb-12 px-2">
-        <div className="w-12 h-12 border-2 border-ink bg-white p-1 relative group transition-transform hover:scale-105 duration-300 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] dark:border-cream dark:bg-black">
-          <Image 
-            src="/picks-predictor-light.svg" 
-            alt="Logo" 
-            fill
-            className="object-contain dark:hidden"
-          />
-          <Image 
-            src="/picks-predictor-dark.svg" 
-            alt="Logo" 
-            fill
-            className="object-contain hidden dark:block"
-          />
-        </div>
-        <div className="flex flex-col">
-          <h1 className="text-3xl font-display text-ink tracking-tight uppercase leading-none dark:text-cream">
-            Picks
-          </h1>
-          <span className="text-sm font-bold font-mono text-hoops tracking-widest uppercase leading-none">
-            Predictor
-          </span>
-        </div>
-      </div>
-
-      <div className="space-y-2 flex-1">
-        {[
-          { icon: Home, label: 'DASHBOARD', active: true },
-          { icon: Trophy, label: 'MY PICKS', active: false },
-          { icon: BarChart2, label: 'STATISTICS', active: false },
-          { icon: Settings, label: 'SETTINGS', active: false }
-        ].map((item, index) => (
-          <button
-            key={index}
-            className={`flex items-center gap-3 w-full px-4 py-3 border-2 transition-all font-mono text-sm font-bold uppercase ${
-              item.active 
-                ? 'bg-hoops text-white border-ink shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] translate-x-[-2px] translate-y-[-2px] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]' 
-                : 'bg-transparent border-transparent text-ink hover:border-ink hover:bg-white hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] dark:text-cream dark:hover:bg-zinc-900 dark:hover:border-cream dark:hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]'
-            }`}
-          >
-            <item.icon className="w-5 h-5" strokeWidth={2.5} />
-            <span>{item.label}</span>
-          </button>
-        ))}
-      </div>
-
-      <div className="pt-6 border-t-2 border-ink border-dashed dark:border-cream">
-        <div className="flex items-center justify-between px-2 py-3 mb-2">
-          <div className="flex items-center gap-3 overflow-hidden">
-            <div className="w-10 h-10 border-2 border-ink bg-white flex items-center justify-center text-sm font-bold text-ink shrink-0 font-mono dark:border-cream dark:bg-black dark:text-cream">
-              {getInitials()}
-            </div>
-            <div className="flex-1 overflow-hidden">
-              <p className="text-sm font-bold text-ink truncate font-mono uppercase dark:text-cream">{user.email}</p>
-              <p className="text-xs text-zinc-600 font-serif italic dark:text-zinc-400">Free Plan</p>
-            </div>
-          </div>
-          <ThemeToggle />
-        </div>
-        <button 
-          onClick={handleSignOut}
-              className="flex items-center gap-3 w-full px-4 py-2 text-ink border-2 border-transparent hover:border-ink hover:bg-red-50 hover:text-red-600 transition-all font-mono text-sm font-bold uppercase dark:text-cream dark:hover:bg-red-900/30 dark:hover:border-cream dark:hover:text-red-400"
-        >
-          <LogOut className="w-4 h-4" />
-          Sign Out
-        </button>
-      </div>
-    </div>
-  )
+      return false
+    })
+  }, [todayGames, conferenceFilter, selectedConferenceId, teamConferenceMap, conferences])
 
   // Helper function to convert hex color to CSS color
-  const hexToColor = (hex: string | undefined): string => {
+  const hexToColor = (hex: string | null | undefined): string => {
     if (!hex || !hex.trim()) return ''
     const cleanHex = hex.replace('#', '').trim()
     if (cleanHex.length === 6) {
@@ -226,7 +113,7 @@ export function Dashboard({ user }: DashboardProps) {
         </button>
       ) : (
         <div className="flex gap-4 overflow-x-auto pb-4 -mx-6 px-6 md:mx-0 md:px-0 scrollbar-hide md:grid md:grid-cols-4 md:overflow-visible">
-          {isLoading ? (
+          {isLoading && favoriteTeams.length === 0 ? (
             [1, 2, 3, 4].map((_, index) => (
               <div
                 key={`skeleton-${index}`}
@@ -257,62 +144,35 @@ export function Dashboard({ user }: DashboardProps) {
                     borderColor: secondaryColor || primaryColor,
                   } : {}}
                 >
-                  {isLoading ? (
-                    <>
-                      <Skeleton className="w-12 h-12 rounded-full mb-3" />
-                      <Skeleton className="w-20 h-3" />
-                    </>
-                  ) : (
-                    <>
-                      <div className="w-16 h-16 md:w-20 md:h-20 flex-shrink-0 relative mb-3">
-                        {team.logo ? (
-                          <div className="w-full h-full rounded-full bg-white/90 border-2 border-black/10 flex items-center justify-center p-2 shadow-sm">
-                            <div className="w-full h-full relative">
-                              <Image
-                                src={team.logo}
-                                alt={`${team.name} logo`}
-                                fill
-                                className="object-contain"
-                                unoptimized
-                                onError={(e) => {
-                                  // Hide logo container if image fails
-                                  e.currentTarget.style.display = 'none'
-                                }}
-                              />
-                            </div>
-                          </div>
-                        ) : (
-                          <div 
-                            className="w-full h-full rounded-full flex items-center justify-center text-2xl md:text-3xl border-2 bg-white/90"
-                            style={{
-                              borderColor: primaryColor || 'currentColor',
-                            }}
-                          >
-                            🏀
-                          </div>
-                        )}
-                      </div>
-                      <p 
-                        className="text-base md:text-lg font-display truncate w-full text-center uppercase font-bold px-2"
-                        style={primaryColor ? {
-                          color: secondaryColor || '#ffffff',
-                          textShadow: '1px 1px 2px rgba(0,0,0,0.3)',
-                        } : undefined}
-                      >
-                        {team.name}
-                      </p>
-                    </>
-                  )}
+                  <div className="w-16 h-16 md:w-20 md:h-20 flex-shrink-0 relative mb-3">
+                    <div className="w-full h-full rounded-full bg-white/90 border-2 border-black/10 flex items-center justify-center p-2 shadow-sm">
+                      <TeamLogo 
+                        teamName={team.school || team.name}
+                        logoUrl={team.logo}
+                        size={64}
+                        className="w-full h-full"
+                      />
+                    </div>
+                  </div>
+                  <p 
+                    className="text-base md:text-lg font-display truncate w-full text-center uppercase font-bold px-2"
+                    style={primaryColor ? {
+                      color: secondaryColor || '#ffffff',
+                      textShadow: '1px 1px 2px rgba(0,0,0,0.3)',
+                    } : undefined}
+                  >
+                    {team.name}
+                  </p>
                 </div>
-                {!isLoading && team.conference && (
+                {team.conference && (
                   <p 
                     className="text-[10px] font-bold text-center uppercase tracking-wide font-mono border-t-2 border-transparent group-hover:border-hoops pt-1 transition-colors"
                     style={primaryColor ? { color: primaryColor } : undefined}
                   >
                     {team.conference}
                   </p>
-                  )}
-                </div>
+                )}
+              </div>
               )
             })
           )}
@@ -321,85 +181,226 @@ export function Dashboard({ user }: DashboardProps) {
     </div>
   )
 
-  // Today's Predictions Section
-  const renderTodayPredictions = () => (
+  // Today's Games/Predictions Section
+  const renderTodayGames = () => (
     <div className="mb-10 px-6 md:px-0">
-      <div className="flex items-center gap-2 mb-4 border-b-2 border-ink pb-2 border-dashed dark:border-cream">
-        <div className="w-3 h-3 bg-red-600 border-2 border-ink animate-pulse" />
-        <h2 className="text-sm font-bold text-ink uppercase tracking-wider font-mono dark:text-cream">Live Predictions</h2>
+      <div className="flex flex-col md:flex-row md:items-center justify-between mb-6 gap-4 border-b-2 border-ink pb-4 border-dashed dark:border-cream">
+        <div className="flex items-center gap-2">
+          <div className="w-3 h-3 bg-red-600 border-2 border-ink animate-pulse" />
+          <h2 className="text-sm font-bold text-ink uppercase tracking-wider font-mono dark:text-cream">Today&apos;s Games</h2>
+        </div>
+
+        {/* Conference Filter Controls */}
+        <div className="flex flex-wrap items-center gap-2">
+          <div className="flex bg-white border-2 border-ink p-1 dark:bg-black dark:border-cream">
+            <button
+              onClick={() => setConferenceFilter('power5')}
+              className={`px-3 py-1 text-xs font-bold font-mono uppercase transition-colors ${
+                conferenceFilter === 'power5' 
+                  ? 'bg-hoops text-white' 
+                  : 'text-ink hover:bg-zinc-100 dark:text-cream dark:hover:bg-zinc-900'
+              }`}
+            >
+              Power 5
+            </button>
+            <button
+              onClick={() => setConferenceFilter('group5')}
+              className={`px-3 py-1 text-xs font-bold font-mono uppercase transition-colors ${
+                conferenceFilter === 'group5' 
+                  ? 'bg-hoops text-white' 
+                  : 'text-ink hover:bg-zinc-100 dark:text-cream dark:hover:bg-zinc-900'
+              }`}
+            >
+              Group 5
+            </button>
+            <button
+              onClick={() => setConferenceFilter('all')}
+              className={`px-3 py-1 text-xs font-bold font-mono uppercase transition-colors ${
+                conferenceFilter === 'all' 
+                  ? 'bg-hoops text-white' 
+                  : 'text-ink hover:bg-zinc-100 dark:text-cream dark:hover:bg-zinc-900'
+              }`}
+            >
+              All
+            </button>
+          </div>
+
+          <div className="relative">
+            <select
+              value={conferenceFilter === 'specific' ? selectedConferenceId : ''}
+              onChange={(e) => {
+                if (e.target.value) {
+                  setConferenceFilter('specific')
+                  setSelectedConferenceId(e.target.value)
+                }
+              }}
+              className="appearance-none pl-3 pr-8 py-1.5 bg-white border-2 border-ink text-xs font-bold font-mono uppercase text-ink focus:outline-none focus:border-hoops cursor-pointer dark:bg-black dark:border-cream dark:text-cream max-w-[150px]"
+            >
+              <option value="" disabled>Conference...</option>
+              {conferences.map(conf => (
+                <option key={conf.id} value={conf.id}>{conf.abbreviation}</option>
+              ))}
+            </select>
+            <ChevronRight className="w-3 h-3 absolute right-2 top-1/2 -translate-y-1/2 rotate-90 pointer-events-none text-ink dark:text-cream" />
+          </div>
+        </div>
       </div>
 
-      {todayPredictions.length === 0 && !isLoading ? (
+      {filteredGames.length === 0 && !isLoading ? (
         <div className="bg-white border-2 border-ink p-8 flex flex-col items-center justify-center text-center h-full shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:bg-black dark:border-cream dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]">
           <CalendarOff className="w-10 h-10 text-ink mb-3 opacity-50 dark:text-cream" />
-          <p className="text-lg font-display text-ink uppercase dark:text-cream">No Key Games Today</p>
-          <p className="text-xs text-zinc-600 mt-1 font-mono dark:text-cream">Check back later for upcoming matchups.</p>
+          <p className="text-lg font-display text-ink uppercase dark:text-cream">No Games Found</p>
+          <p className="text-xs text-zinc-600 mt-1 font-mono dark:text-cream">
+            {todayGames.length > 0 
+              ? "Try changing the conference filter." 
+              : "Check back tomorrow for more matchups."}
+          </p>
+          {todayGames.length === 0 && (
+            <p className="text-[10px] text-zinc-500 mt-2 font-mono dark:text-zinc-400">
+              Teams and games load from the API. If nothing loads, ensure the backend is running (e.g. {process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}).
+            </p>
+          )}
         </div>
       ) : (
         <div className="space-y-4 md:grid md:grid-cols-2 md:gap-6 md:space-y-0">
-          {(isLoading ? [1, 2, 3] : todayPredictions).map((item, index) => (
-            <div
-              key={`pred-${index}`}
-              className="bg-white border-2 border-ink p-5 relative overflow-hidden group hover:bg-cream transition-all shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] dark:bg-black dark:border-cream dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] dark:hover:bg-zinc-900"
-            >
-              {isLoading ? (
-                <div className="space-y-4">
-                  <div className="flex justify-between items-center">
-                    <div className="flex items-center gap-3">
-                      <Skeleton className="w-8 h-8 rounded-full" />
-                      <Skeleton className="w-24 h-4" />
+          {(isLoading ? [1, 2, 3, 4] : filteredGames).map((item, index) => {
+            if (typeof item === 'number') {
+              // Loading skeleton
+              return (
+                <div key={`skel-${index}`} className="bg-white border-2 border-ink p-5 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:bg-black dark:border-cream dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]">
+                  <div className="space-y-4">
+                    <div className="flex justify-between items-center">
+                      <div className="flex items-center gap-3">
+                        <Skeleton className="w-8 h-8 rounded-full" />
+                        <Skeleton className="w-24 h-4" />
+                      </div>
+                      <Skeleton className="w-8 h-6" />
                     </div>
-                    <Skeleton className="w-16 h-6 rounded-full" />
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <div className="flex items-center gap-3">
-                      <Skeleton className="w-8 h-8 rounded-full" />
-                      <Skeleton className="w-24 h-4" />
+                    <div className="flex justify-between items-center">
+                      <div className="flex items-center gap-3">
+                        <Skeleton className="w-8 h-8 rounded-full" />
+                        <Skeleton className="w-24 h-4" />
+                      </div>
+                      <Skeleton className="w-8 h-6" />
                     </div>
-                  </div>
-                  <div className="border-t border-zinc-800 pt-3 flex justify-between">
-                    <Skeleton className="w-20 h-3" />
-                    <Skeleton className="w-12 h-3" />
+                    <div className="border-t border-zinc-200 pt-3 flex justify-between dark:border-zinc-800">
+                      <Skeleton className="w-20 h-3" />
+                      <Skeleton className="w-12 h-3" />
+                    </div>
                   </div>
                 </div>
-              ) : (
-                <>
-                  {/* Game Content */}
-                  <div className="relative z-10">
-                    <div className="flex items-center justify-between mb-4">
-                      <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 bg-cream border-2 border-ink flex items-center justify-center text-lg shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] dark:bg-black dark:border-cream dark:shadow-none">🦁</div>
-                        <span className="font-display text-ink tracking-wide text-xl uppercase dark:text-cream">Kansas</span>
-                      </div>
-                      <div className="text-3xl font-display font-bold text-ink tracking-tight tabular-nums dark:text-cream">
-                        78
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-center justify-between mb-5">
-                      <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 bg-cream border-2 border-ink flex items-center justify-center text-lg shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] dark:bg-black dark:border-cream dark:shadow-none">🐻</div>
-                        <span className="font-display text-zinc-600 tracking-wide text-xl uppercase dark:text-cream">Baylor</span>
-                      </div>
-                      <div className="text-3xl font-display font-bold text-zinc-500 tracking-tight tabular-nums dark:text-cream">
-                        72
-                      </div>
-                    </div>
+              )
+            }
 
-                    <div className="flex items-center justify-between pt-4 border-t-2 border-ink border-dashed dark:border-cream">
-                      <div className="flex items-center gap-2">
-                        <div className="w-2 h-2 bg-emerald-500 border border-ink dark:border-cream" />
-                        <span className="text-xs font-mono font-bold text-emerald-600 uppercase tracking-wider dark:text-emerald-400">High Confidence</span>
+            const game = item as Game
+            const homeScore = game.home_score
+            const awayScore = game.away_score
+            const isLive = game.status === 'in_progress'
+            const isFinal = game.status === 'final'
+            const pickData = userPicks.get(game.id)
+            const pickedTeamId = pickData?.teamId
+            const isHomePicked = pickedTeamId === game.home_team.id
+            const isAwayPicked = pickedTeamId === game.away_team.id
+            const homeLogo = teamLogoMap.get(game.home_team.school)
+            const awayLogo = teamLogoMap.get(game.away_team.school)
+
+            return (
+              <div
+                key={game.id}
+                className="bg-white border-2 border-ink p-5 relative overflow-hidden group hover:bg-cream transition-all shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] dark:bg-black dark:border-cream dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] dark:hover:bg-zinc-900"
+              >
+                {/* Game Content */}
+                <div className="relative z-10">
+                  {/* Home Team */}
+                  <div 
+                    className={`flex items-center justify-between mb-4 cursor-pointer p-2 -mx-2 rounded transition-colors ${
+                      isHomePicked 
+                        ? 'bg-hoops/10 border-2 border-hoops dark:bg-hoops/20' 
+                        : 'hover:bg-zinc-50 dark:hover:bg-zinc-800 border-2 border-transparent'
+                    }`}
+                    onClick={() => handlePredict(game.id, game.home_team.id)}
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 bg-cream border-2 border-ink flex items-center justify-center p-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] dark:bg-black dark:border-cream dark:shadow-none">
+                        <TeamLogo teamName={game.home_team.school} logoUrl={homeLogo} size={32} />
                       </div>
-                      <div className="bg-ink text-cream px-2 py-1 text-xs font-mono font-bold border border-ink dark:bg-cream dark:text-ink">
-                        82% WIN PROB
+                      <span className={`font-display tracking-wide text-lg uppercase truncate max-w-[140px] ${
+                        isHomePicked ? 'text-hoops font-bold' : 'text-ink dark:text-cream'
+                      }`}>
+                        {game.home_team.school}
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      {isHomePicked && (
+                        <span className="text-xs font-mono font-bold text-hoops uppercase bg-white dark:bg-black px-2 py-0.5 border border-hoops rounded">
+                          PICKED
+                        </span>
+                      )}
+                      <div className={`text-2xl font-display font-bold tracking-tight tabular-nums ${
+                        homeScore !== null && awayScore !== null && homeScore > awayScore ? 'text-ink dark:text-cream' : 'text-zinc-500'
+                      }`}>
+                        {homeScore ?? '-'}
                       </div>
                     </div>
                   </div>
-                </>
-              )}
-            </div>
-          ))}
+                  
+                  {/* Away Team */}
+                  <div 
+                    className={`flex items-center justify-between mb-5 cursor-pointer p-2 -mx-2 rounded transition-colors ${
+                      isAwayPicked 
+                        ? 'bg-hoops/10 border-2 border-hoops dark:bg-hoops/20' 
+                        : 'hover:bg-zinc-50 dark:hover:bg-zinc-800 border-2 border-transparent'
+                    }`}
+                    onClick={() => handlePredict(game.id, game.away_team.id)}
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 bg-cream border-2 border-ink flex items-center justify-center p-1 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] dark:bg-black dark:border-cream dark:shadow-none">
+                        <TeamLogo teamName={game.away_team.school} logoUrl={awayLogo} size={32} />
+                      </div>
+                      <span className={`font-display tracking-wide text-lg uppercase truncate max-w-[140px] ${
+                        isAwayPicked ? 'text-hoops font-bold' : 'text-ink dark:text-cream'
+                      }`}>
+                        {game.away_team.school}
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      {isAwayPicked && (
+                        <span className="text-xs font-mono font-bold text-hoops uppercase bg-white dark:bg-black px-2 py-0.5 border border-hoops rounded">
+                          PICKED
+                        </span>
+                      )}
+                      <div className={`text-2xl font-display font-bold tracking-tight tabular-nums ${
+                        homeScore !== null && awayScore !== null && awayScore > homeScore ? 'text-ink dark:text-cream' : 'text-zinc-500'
+                      }`}>
+                        {awayScore ?? '-'}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center justify-between pt-4 border-t-2 border-ink border-dashed dark:border-cream">
+                    <div className="flex items-center gap-2">
+                      {isLive ? (
+                        <>
+                          <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
+                          <span className="text-xs font-mono font-bold text-red-600 uppercase tracking-wider">LIVE</span>
+                        </>
+                      ) : isFinal ? (
+                        <span className="text-xs font-mono font-bold text-zinc-500 uppercase tracking-wider">FINAL</span>
+                      ) : (
+                        <span className="text-xs font-mono font-bold text-zinc-600 uppercase tracking-wider dark:text-zinc-400">
+                          {game.time || 'TBD'}
+                        </span>
+                      )}
+                    </div>
+                    {/* Prediction Placeholder */}
+                    <div className="bg-ink text-cream px-2 py-1 text-xs font-mono font-bold border border-ink dark:bg-cream dark:text-ink">
+                      PREDICT
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )
+          })}
         </div>
       )}
     </div>
@@ -410,13 +411,13 @@ export function Dashboard({ user }: DashboardProps) {
     <div className="mb-24 px-6 md:px-0 md:mb-10">
       <h2 className="text-sm font-bold text-ink uppercase tracking-wider mb-4 font-mono dark:text-cream">Performance</h2>
       <div className="bg-white border-2 border-ink p-6 relative overflow-hidden h-full shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:bg-black dark:border-cream dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]">
-        {isLoading ? (
+        {isLoading && !predictionStats ? (
           <div className="flex flex-col items-center py-4">
             <Skeleton className="w-24 h-24 rounded-full mb-4" />
             <Skeleton className="w-32 h-4 mb-2" />
             <Skeleton className="w-24 h-3" />
           </div>
-        ) : predictionAccuracy === 0 ? (
+        ) : !predictionStats || predictionStats.total === 0 ? (
           <div className="flex items-center justify-between relative z-10">
             <div>
               <div className="w-10 h-10 rounded-lg bg-hoops/10 flex items-center justify-center mb-3">
@@ -444,96 +445,57 @@ export function Dashboard({ user }: DashboardProps) {
           <div className="relative z-10">
             <div className="flex items-center gap-2 mb-2">
               <TrendingUp className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
-              <span className="text-sm font-medium text-emerald-600 dark:text-emerald-400 font-mono uppercase">Top 10% this week</span>
+              <span className="text-sm font-medium text-emerald-600 dark:text-emerald-400 font-mono uppercase">
+                {predictionStats.win_percentage.toFixed(1)}% Win Rate
+              </span>
             </div>
-            {/* Real stats would go here */}
+            <div className="text-3xl font-display text-ink dark:text-cream mb-1">
+              {predictionStats.correct} - {predictionStats.incorrect}
+            </div>
+            <p className="text-xs text-zinc-500 font-mono uppercase">
+              {predictionStats.pending} Pending
+            </p>
           </div>
         )}
       </div>
     </div>
   )
 
-  // Bottom Navigation (Mobile Only)
-  const renderBottomTabs = () => (
-    <div className="fixed bottom-0 left-0 right-0 bg-cream border-t-2 border-ink pb-8 pt-4 px-6 md:hidden z-20 dark:bg-black dark:border-cream">
-      <div className="flex justify-between items-center max-w-md mx-auto">
-        {[
-          { icon: Home, label: 'Home', active: true },
-          { icon: Trophy, label: 'Picks', active: false },
-          { icon: BarChart2, label: 'Stats', active: false },
-          { icon: UserIcon, label: 'Profile', active: false }
-        ].map((tab, index) => (
-          <button
-            key={index}
-            className={`flex flex-col items-center gap-1.5 w-16 group ${
-              tab.active ? 'text-hoops' : 'text-zinc-600 hover:text-zinc-800 dark:text-cream dark:hover:text-cream'
-            }`}
-          >
-            <tab.icon 
-              className={`w-6 h-6 transition-transform group-hover:scale-110 ${
-                tab.active ? 'fill-hoops/20' : ''
-              }`} 
-              strokeWidth={tab.active ? 2.5 : 2}
-            />
-            <span className="text-[10px] font-medium tracking-wide">{tab.label}</span>
-          </button>
-        ))}
-      </div>
-    </div>
-  )
-
   return (
-    <div className="min-h-screen bg-cream font-sans selection:bg-hoops/30 dark:bg-black dark:text-cream">
-      {renderSidebar()}
-      
-      <div className="md:pl-64 min-h-screen relative">
-        {/* Desktop Header */}
-        <div className="hidden md:flex justify-between items-center px-8 py-6 sticky top-0 z-20 bg-cream border-b-2 border-ink dark:bg-black dark:border-cream">
-          <h1 className="text-4xl font-display text-ink uppercase tracking-tighter dark:text-cream">Dashboard</h1>
-          <div className="flex items-center gap-4">
-            <ThemeToggle />
-            <button className="relative p-2 border-2 border-ink bg-white hover:bg-zinc-50 transition-all shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none dark:bg-black dark:border-cream dark:text-cream dark:hover:bg-zinc-900 dark:shadow-[2px_2px_0px_0px_rgba(255,255,255,1)]">
-              <Bell className="w-5 h-5 text-ink dark:text-cream" />
-              <span className="absolute top-1 right-1 w-2 h-2 bg-hoops border border-ink dark:border-cream" />
-            </button>
-          </div>
-        </div>
-
-        <div className="max-w-7xl mx-auto md:p-8">
-          {renderHeader()}
-          
-          <div className="md:grid md:grid-cols-12 md:gap-8">
-            <div className="md:col-span-8 space-y-8">
-              {renderFavoriteTeams()}
-              {renderTodayPredictions()}
-            </div>
-            
-            <div className="md:col-span-4 space-y-8">
-              {renderPredictionAccuracy()}
-              
-              {/* Desktop Only Extra Widget */}
-              <div className="hidden md:block bg-white border-2 border-ink p-6 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:bg-black dark:border-cream dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]">
-                <h3 className="font-display text-xl text-ink mb-4 uppercase tracking-wide dark:text-cream">Trending Matchups</h3>
-                <div className="space-y-4">
-                  {[1, 2, 3].map((_, i) => (
-                    <div key={i} className="flex items-center justify-between p-3 bg-zinc-50 border-2 border-ink hover:bg-white transition-colors cursor-pointer group dark:bg-black dark:border-cream dark:hover:bg-zinc-900">
-                      <div className="flex items-center gap-3">
-                        <span className="text-xs font-mono font-bold text-hoops">#{i + 1}</span>
-                        <div className="text-sm font-bold font-mono text-ink uppercase dark:text-cream">Duke vs UNC</div>
-                      </div>
-                      <ChevronRight className="w-4 h-4 text-ink group-hover:translate-x-1 transition-transform dark:text-cream" />
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {renderBottomTabs()}
+    <DashboardLayout user={user}>
+      <div className="md:grid md:grid-cols-12 md:gap-8">
+        <div className="md:col-span-8 space-y-8">
+          {renderFavoriteTeams()}
+          {renderTodayGames()}
         </div>
         
-        {/* Background Texture - Light Mode Only */}
-        <div className="fixed inset-0 opacity-[0.03] pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/paper.png')] dark:hidden" />
+        <div className="md:col-span-4 space-y-8">
+          {renderPredictionAccuracy()}
+          
+          {/* Upcoming Games Widget (Desktop Only) */}
+          <div className="hidden md:block bg-white border-2 border-ink p-6 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:bg-black dark:border-cream dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]">
+            <h3 className="font-display text-xl text-ink mb-4 uppercase tracking-wide dark:text-cream">Upcoming</h3>
+            {upcomingGames.length === 0 ? (
+              <p className="text-sm text-zinc-500 dark:text-zinc-400">No upcoming games scheduled.</p>
+            ) : (
+              <div className="space-y-4">
+                {upcomingGames.map((game, i) => (
+                  <div key={i} className="flex items-center justify-between p-3 bg-zinc-50 border-2 border-ink hover:bg-white transition-colors cursor-pointer group dark:bg-black dark:border-cream dark:hover:bg-zinc-900">
+                    <div className="flex items-center gap-3 overflow-hidden">
+                      <span className="text-xs font-mono font-bold text-hoops whitespace-nowrap">
+                        {new Date(game.date).toLocaleDateString('en-US', { weekday: 'short', month: 'numeric', day: 'numeric' })}
+                      </span>
+                      <div className="text-sm font-bold font-mono text-ink uppercase dark:text-cream truncate">
+                        {game.home_team.abbreviation} vs {game.away_team.abbreviation}
+                      </div>
+                    </div>
+                    <ChevronRight className="w-4 h-4 text-ink group-hover:translate-x-1 transition-transform dark:text-cream flex-shrink-0" />
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
       </div>
 
       {/* Team Selection Modal */}
@@ -541,13 +503,9 @@ export function Dashboard({ user }: DashboardProps) {
         isOpen={isTeamModalOpen}
         onClose={() => setIsTeamModalOpen(false)}
         selectedTeams={favoriteTeams}
-        onSelectTeam={(team) => {
-          setFavoriteTeams((prev) => [...prev, team])
-        }}
-        onDeselectTeam={(teamId) => {
-          setFavoriteTeams((prev) => prev.filter((team) => team.id !== teamId))
-        }}
+        onSelectTeam={handleAddFavorite}
+        onDeselectTeam={handleRemoveFavorite}
       />
-    </div>
+    </DashboardLayout>
   )
 }

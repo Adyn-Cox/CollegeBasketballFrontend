@@ -2,8 +2,9 @@
 
 import React, { useState, useMemo, useEffect } from 'react'
 import { X, Search, Check, ChevronDown, ChevronUp } from 'lucide-react'
-import Image from 'next/image'
-import { loadAllTeams, type Team } from '@/lib/collegeData'
+import { loadTeamsFromCSV, type Team } from '@/lib/collegeData'
+import { TeamLogo } from './TeamLogo'
+import { useTheme } from 'next-themes'
 
 interface TeamSelectionModalProps {
   isOpen: boolean
@@ -30,11 +31,12 @@ export function TeamSelectionModal({
   const [allTeams, setAllTeams] = useState<Team[]>([])
   const [isLoadingTeams, setIsLoadingTeams] = useState(true)
   const [expandedConferences, setExpandedConferences] = useState<Set<string>>(new Set())
-  const [failedLogos, setFailedLogos] = useState<Set<string>>(new Set())
+  const { theme } = useTheme()
+  const isDark = theme === 'dark'
 
-  // Load teams from CSV on component mount
+  // Load teams from local CSV + SVG logos (fast, no API)
   useEffect(() => {
-    loadAllTeams()
+    loadTeamsFromCSV({ dark: isDark })
       .then((teams) => {
         setAllTeams(teams)
         setIsLoadingTeams(false)
@@ -46,7 +48,7 @@ export function TeamSelectionModal({
         console.error('Error loading teams:', error)
         setIsLoadingTeams(false)
       })
-  }, [])
+  }, [isDark])
 
   // Get all unique conferences
   const allConferences = useMemo(() => {
@@ -210,12 +212,13 @@ export function TeamSelectionModal({
         {/* Team List */}
         <div className="flex-1 overflow-y-auto p-6 space-y-2 scrollbar-hide">
           {isLoadingTeams ? (
-            <div className="text-center py-12">
-              <p className="text-lg font-display text-ink uppercase dark:text-cream mb-2">
-                Loading teams...
+            <div className="text-center py-16">
+              <div className="w-12 h-12 rounded-full border-2 border-hoops border-t-transparent animate-spin mx-auto mb-4" />
+              <p className="text-lg font-display text-ink uppercase dark:text-cream mb-1">
+                Loading teams
               </p>
-              <p className="text-sm text-zinc-600 font-mono dark:text-zinc-400">
-                Please wait
+              <p className="text-xs text-zinc-500 font-mono dark:text-zinc-400">
+                CSV + logos loading…
               </p>
             </div>
           ) : filteredTeams.length === 0 ? (
@@ -229,7 +232,8 @@ export function TeamSelectionModal({
             </div>
           ) : teamsByConference ? (
             // Grouped by conference view (when not searching)
-            teamsByConference.map((group) => {
+            <div className="animate-fade-in">
+            {teamsByConference.map((group) => {
               const isExpanded = expandedConferences.has(group.conference)
               const selectedCount = group.teams.filter(t => isTeamSelected(t.id)).length
               
@@ -275,22 +279,8 @@ export function TeamSelectionModal({
                                 : 'bg-white border-ink hover:bg-zinc-50 hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] dark:bg-black dark:border-cream dark:hover:bg-zinc-900 dark:hover:shadow-[2px_2px_0px_0px_rgba(255,255,255,1)]'
                             }`}
                           >
-                            {/* Logo */}
-                            {team.logo && !failedLogos.has(team.logo) && (
-                              <div className="w-8 h-8 flex-shrink-0 relative">
-                                <Image
-                                  src={team.logo}
-                                  alt={`${team.name} logo`}
-                                  fill
-                                  className="object-contain"
-                                  unoptimized
-                                  onError={() => {
-                                    // Track failed logos to prevent future attempts
-                                    setFailedLogos(prev => new Set(prev).add(team.logo!))
-                                  }}
-                                />
-                              </div>
-                            )}
+                            {/* Logo — use precomputed team.logo from CSV for instant SVG load */}
+                            <TeamLogo teamName={team.school || team.name} logoUrl={team.logo} size={32} />
                             <div className="flex-1 min-w-0">
                               <p
                                 className={`font-display text-base uppercase tracking-wide truncate ${
@@ -312,10 +302,11 @@ export function TeamSelectionModal({
                   )}
                 </div>
               )
-            })
+            })}
+            </div>
           ) : (
-            // Flat list view (when searching or filtering)
-            filteredTeams.map((team) => {
+            <div className="animate-fade-in">
+            {filteredTeams.map((team) => {
               const selected = isTeamSelected(team.id)
               return (
                 <button
@@ -327,22 +318,8 @@ export function TeamSelectionModal({
                       : 'bg-white border-ink hover:bg-zinc-50 hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] dark:bg-black dark:border-cream dark:hover:bg-zinc-900 dark:hover:shadow-[2px_2px_0px_0px_rgba(255,255,255,1)]'
                   }`}
                 >
-                  {/* Logo */}
-                  {team.logo && !failedLogos.has(team.logo) && (
-                    <div className="w-10 h-10 flex-shrink-0 relative">
-                      <Image
-                        src={team.logo}
-                        alt={`${team.name} logo`}
-                        fill
-                        className="object-contain"
-                        unoptimized
-                        onError={() => {
-                          // Track failed logos to prevent future attempts
-                          setFailedLogos(prev => new Set(prev).add(team.logo!))
-                        }}
-                      />
-                    </div>
-                  )}
+                  {/* Logo — use precomputed team.logo from CSV for instant SVG load */}
+                  <TeamLogo teamName={team.school || team.name} logoUrl={team.logo} size={40} />
                   <div className="flex-1 min-w-0">
                     <p
                       className={`font-display text-lg uppercase tracking-wide ${
@@ -370,7 +347,8 @@ export function TeamSelectionModal({
                   )}
                 </button>
               )
-            })
+            })}
+            </div>
           )}
         </div>
 

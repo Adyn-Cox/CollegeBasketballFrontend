@@ -1,12 +1,16 @@
 /**
  * Backend Authentication API Client
  * 
- * Handles communication with the Django backend for authentication.
+ * Handles communication with the backend for authentication.
  * All endpoints return proper error responses that the frontend handles
  * by redirecting to login on any error.
  */
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'
+import { buildUrl, getJsonHeaders, getAuthHeaders } from './config'
+
+// ============================================================================
+// Types
+// ============================================================================
 
 export interface LoginResponse {
   message: string
@@ -29,6 +33,10 @@ export interface AuthError {
   details?: Record<string, string[]>
 }
 
+// ============================================================================
+// API Functions
+// ============================================================================
+
 /**
  * Login/Register user with backend
  * Sends Supabase tokens to backend to create/update user record
@@ -40,15 +48,12 @@ export async function backendLogin(
   accessToken: string,
   refreshToken: string
 ): Promise<LoginResponse> {
-  const url = `${API_BASE_URL}/api/auth/login/`
-  console.log(`Calling backend login: ${url}`)
+  const url = buildUrl('/auth/login/')
   
   try {
     const response = await fetch(url, {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
+      headers: getJsonHeaders(),
       body: JSON.stringify({
         access_token: accessToken,
         refresh_token: refreshToken,
@@ -62,7 +67,8 @@ export async function backendLogin(
       try {
         const error = JSON.parse(responseText)
         throw error as AuthError
-      } catch {
+      } catch (e) {
+        if (isAuthError(e)) throw e
         throw { error: `Backend returned ${response.status}: ${responseText.slice(0, 100)}` } as AuthError
       }
     }
@@ -90,11 +96,11 @@ export async function backendLogin(
 export async function backendRefresh(
   refreshToken: string
 ): Promise<RefreshResponse> {
-  const response = await fetch(`${API_BASE_URL}/api/auth/refresh/`, {
+  const url = buildUrl('/auth/refresh/')
+  
+  const response = await fetch(url, {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
+    headers: getJsonHeaders(),
     body: JSON.stringify({
       refresh_token: refreshToken,
     }),
@@ -115,15 +121,10 @@ export async function backendRefresh(
  * @returns Always succeeds (idempotent)
  */
 export async function backendLogout(accessToken?: string, refreshToken?: string): Promise<void> {
-  const headers: HeadersInit = {
-    'Content-Type': 'application/json',
-  }
+  const url = buildUrl('/auth/logout/')
+  const headers = accessToken ? getAuthHeaders(accessToken) : getJsonHeaders()
 
-  if (accessToken) {
-    headers['Authorization'] = `Bearer ${accessToken}`
-  }
-
-  await fetch(`${API_BASE_URL}/api/auth/logout/`, {
+  await fetch(url, {
     method: 'POST',
     headers,
     body: refreshToken ? JSON.stringify({ refresh_token: refreshToken }) : '{}',
@@ -143,4 +144,3 @@ export function isAuthError(error: unknown): error is AuthError {
     typeof (error as AuthError).error === 'string'
   )
 }
-

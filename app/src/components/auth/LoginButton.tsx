@@ -9,11 +9,6 @@ export function LoginButton() {
   const supabase = useSupabaseClient()
 
   const handleLogin = async (provider: Provider) => {
-    if (!supabase) {
-      alert('Supabase client not ready. Please wait a moment and try again.')
-      return
-    }
-
     try {
       setLoading(provider)
       const options: {
@@ -51,19 +46,6 @@ export function LoginButton() {
     } finally {
       setLoading(null)
     }
-  }
-
-  if (!supabase) {
-    return (
-      <div className="space-y-3 w-full">
-        <button
-          disabled
-          className="flex h-12 w-full items-center justify-center gap-2 bg-cream border-2 border-ink px-5 text-ink opacity-50 cursor-not-allowed font-sans font-bold tracking-wide dark:bg-black dark:border-cream dark:text-cream"
-        >
-          Loading...
-        </button>
-      </div>
-    )
   }
 
   return (

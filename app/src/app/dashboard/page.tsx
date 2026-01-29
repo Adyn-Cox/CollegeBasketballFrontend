@@ -1,150 +1,55 @@
 'use client'
 
-import { Dashboard } from "@/components/Dashboard";
-import { useSupabaseClient } from "@/lib/supabase/client";
-import { useRouter } from "next/navigation";
-import { useEffect, useState, useCallback } from "react";
-import type { User, Session, AuthChangeEvent } from "@supabase/supabase-js";
-import { backendLogin, backendRefresh, isAuthError } from "@/lib/api/auth";
+import { Dashboard } from "@/components/Dashboard"
+import { useSupabaseClient } from "@/lib/supabase/client"
+import { useRouter } from "next/navigation"
+import { useEffect, useState } from "react"
+import type { User } from "@supabase/supabase-js"
 
 export default function DashboardPage() {
-  const supabase = useSupabaseClient();
-  const router = useRouter();
-  const [user, setUser] = useState<User | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
-  const [isVerifying, setIsVerifying] = useState(false);
-
-  // Redirect to login page
-  const redirectToLogin = useCallback((error?: string) => {
-    const params = error ? `?error=${error}` : '';
-    router.push(`/${params}`);
-  }, [router]);
-
-  // Verify session with backend
-  const verifyWithBackend = useCallback(async (accessToken: string, refreshToken: string): Promise<boolean> => {
-    try {
-      await backendLogin(accessToken, refreshToken);
-      return true;
-    } catch (error) {
-      if (isAuthError(error)) {
-        console.error('Backend verification failed:', error.error);
-      }
-      return false;
-    }
-  }, []);
-
-  // Attempt to refresh tokens
-  const attemptRefresh = useCallback(async (refreshToken: string): Promise<boolean> => {
-    try {
-      const newTokens = await backendRefresh(refreshToken);
-      
-      // Update Supabase session with new tokens
-      if (supabase) {
-        await supabase.auth.setSession({
-          access_token: newTokens.access_token,
-          refresh_token: newTokens.refresh_token,
-        });
-      }
-      
-      return true;
-    } catch (error) {
-      if (isAuthError(error)) {
-        console.error('Token refresh failed:', error.error);
-      }
-      return false;
-    }
-  }, [supabase]);
+  const supabase = useSupabaseClient()
+  const router = useRouter()
+  const [user, setUser] = useState<User | null>(null)
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    if (!supabase) return;
+    // Get initial session
+    supabase.auth.getSession().then(({ data: { session } }: { data: { session: { user: User } | null } }) => {
+      setUser(session?.user ?? null)
+      setIsLoading(false)
+    })
 
-    const initAuth = async () => {
-      setIsLoading(true);
-      
-      const { data: { session } } = await supabase.auth.getSession();
-      
-      if (!session) {
-        // No session - redirect to login
-        redirectToLogin();
-        return;
+    // Listen for auth changes
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event: string, session: { user: User } | null) => {
+      if (_event === 'SIGNED_IN' || _event === 'TOKEN_REFRESHED') {
+        setUser(session?.user ?? null)
+      } else if (_event === 'SIGNED_OUT') {
+        setUser(null)
+        router.replace('/')
       }
+    })
 
-      setIsVerifying(true);
+    return () => subscription.unsubscribe()
+  }, [supabase, router])
 
-      // Verify with backend
-      const verified = await verifyWithBackend(
-        session.access_token,
-        session.refresh_token
-      );
-
-      if (verified) {
-        setUser(session.user);
-        setIsLoading(false);
-        setIsVerifying(false);
-        return;
-      }
-
-      // Backend verification failed - try refresh
-      const refreshed = await attemptRefresh(session.refresh_token);
-
-      if (refreshed) {
-        // Get updated session
-        const { data: { session: newSession } } = await supabase.auth.getSession();
-        if (newSession) {
-          setUser(newSession.user);
-          setIsLoading(false);
-          setIsVerifying(false);
-          return;
-        }
-      }
-
-      // All attempts failed - sign out and redirect
-      await supabase.auth.signOut();
-      redirectToLogin('session_expired');
-    };
-
-    initAuth();
-
-    // Listen for auth state changes
-    const {
-      data: { subscription },
-    } = supabase.auth.onAuthStateChange(async (event: AuthChangeEvent, session: Session | null) => {
-      if (event === 'SIGNED_OUT' || !session) {
-        redirectToLogin();
-      } else if (event === 'TOKEN_REFRESHED' && session) {
-        // Token was refreshed by Supabase - verify with backend
-        const verified = await verifyWithBackend(
-          session.access_token,
-          session.refresh_token
-        );
-        
-        if (!verified) {
-          await supabase.auth.signOut();
-          redirectToLogin('session_expired');
-        }
-      }
-    });
-
-    return () => subscription.unsubscribe();
-  }, [supabase, attemptRefresh, redirectToLogin, verifyWithBackend]);
+  // Redirect to login if not authenticated (after loading complete)
+  useEffect(() => {
+    if (!isLoading && !user) {
+      router.replace('/?error=session_expired')
+    }
+  }, [isLoading, user, router])
 
   if (isLoading) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-zinc-950">
-        <div className="flex flex-col items-center gap-4">
-          <div className="w-8 h-8 rounded-full border-2 border-orange-500 border-t-transparent animate-spin" />
-          {isVerifying && (
-            <p className="text-sm text-zinc-500">Verifying session...</p>
-          )}
-        </div>
+      <div className="flex min-h-screen items-center justify-center bg-cream dark:bg-zinc-950">
+        <div className="w-8 h-8 rounded-full border-2 border-hoops border-t-transparent animate-spin" />
       </div>
-    );
+    )
   }
 
   if (!user) {
-    return null;
+    return null
   }
 
-  return <Dashboard user={user} />;
+  return <Dashboard user={user} />
 }
-

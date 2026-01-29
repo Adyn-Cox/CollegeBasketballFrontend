@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>menlo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="menlo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="menlo_BGD">
+            <g id="Group" transform="translate(21.000000, 0.000000)">
+                <path d="M78.9057075,35.7326601 L106.190538,0.243902439 L157.811415,0.243902439 L138.025222,17.9173018 L78.9057075,199.97904 L19.7861931,17.9173018 L0,0.243902439 L51.6208767,0.243902439 L78.9057075,35.7326601 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                <path d="M79.0273829,43.2881574 L109.210042,4.63414634 L145.863408,4.63414634 L134.56521,14.9356898 L88.4471119,157.145817 L103.061026,40.6264291 L79.0273829,67.7789158 L54.9937398,40.6264291 L69.607654,157.145817 L23.4895562,14.9356898 L12.191358,4.63414634 L48.8447235,4.63414634 L79.0273829,43.2881574 Z" id="Combined-Shape" fill="#002A4D"></path>
+                <path d="M78.9752363,82.3395817 L90.166522,67.5609756 L78.9752363,185.588081 L67.7839506,67.5609756 L78.9752363,82.3395817 Z" id="Combined-Shape" fill="#B9B9B9"></path>
+            </g>
+        </g>
+    </g>
+</svg>
